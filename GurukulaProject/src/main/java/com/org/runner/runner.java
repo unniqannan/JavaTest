@@ -7,8 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {"src//main//resources//featuresFile"},glue= {"cucumber.stepdefinitions"},
-tags= {"@FunctionalLogin"})
-//plugin = { "pretty", "html:target/cucumber-reports" },monochrome = true)
+plugin = { "pretty", "html:target/cucumber-reports" },tags = {"@SmokeTest"}, monochrome = true)
 public class runner {
 
 }

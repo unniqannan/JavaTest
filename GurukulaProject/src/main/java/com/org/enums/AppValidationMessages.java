@@ -20,6 +20,7 @@ public class AppValidationMessages {
 	
 	//Login
 	public static final String MoreThanFiftycharslengthWarningMessageForLoginstr="Your Login cannot be longer than 50 characters.";
+	
 	public static final String LoginRquiredStr="Your login is required.";
 	public static final String specialCharsCheckStr="Your login can only contain lower-case letters and digits.";
 	
@@ -39,7 +40,12 @@ public class AppValidationMessages {
 	public static final String PasswordConfirmationMatchTextStr="The password and its confirmation do not match!";
 	public static final String SettingPagetitle="User settings for [";
 	public static final String SettingsSavedMsg = "Settings saved!";
+	public static final String StaffsPagetitle = "Staffs";
+	public static final String CreateorEditStaffpopuptitle = "Create or edit a Staff";
+	
+	//Staff
 	public static final String BranchesPagetitle = "Branches";
+	public static final String MoreThanFiftycharslengthWarningMessageForStaffNameStr="This field cannot be longer than 50 characters.";
 	
 	public static final String firstnameRequiredMsgStr="Your first name is required.";
 	public static final String lastnameRequiredMsgStr="Your last name is required.";
@@ -51,10 +57,13 @@ public class AppValidationMessages {
 	public static final String CreateorEditBranchpopupStr="Create or edit a Branch";
 	public static final String BranchDetailTitleStr="Branch";
 	public static final String NewBranchNameTextfieldValidationMsgfieldRequiredstr="This field is required.";
+	public static final String Maxtwentytwocharlengthvalidationstr="This field cannot be longer than 20 characters.";
+	
 	//public static final String NewBranchNameTextfieldValidationMsgfieldRequiredstr = null;
 	public static final String minimumcharlengthvalidationstr="This field is required to be at least 5 characters.";
 	//public static final String minimumtwocharlengthvalidationstr="This field is required to be at least 2 characters.";
 	public static final String minimumtwocharlengthvalidationstr="This field is required to be at least 2 characters.";
+	
 	
 	public static final String PatternfollowedTextFieldvalidationstr ="This field should follow pattern ^[A-Z0-9]*$.";
 	public static final String MintwoCharStr = "7";

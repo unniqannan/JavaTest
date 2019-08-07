@@ -28,16 +28,14 @@ private static final String NoTextEntry="NoTextEntry";
 private static final String MinCharCheck="MinCharCheck";
 
 public void lanuchApplication() {
-	//webdrivermanager=new WebDriverManager();
-	// driver=webdrivermanager.getDriver();	
-	// logger.info("driver is initialized");
-	 //driver.get("http://127.0.0.1:8080");
+	 
 }
 
 @Given("^A User launches application logs in successfully with valid credentials$")
 public void a_User_launches_application_logs_in_successfully_with_valid_credentials()  {
 	driver=CommonPageStepDefinition.lanuchApplication();
 	LoginPage loginpage=new LoginPage(driver);
+	loginpage.ApplicationLaunchLoginButtonClick();
 	 loginpage.LoginIntoGuruKulPage("admin","admin");
 	   
 }
@@ -149,7 +147,7 @@ public void save_button_is_disabled_if_any_of_the_field_of_firstname_lastname_em
 @Then("^Settings_FunctionalityCheck_Feature_user closes the session$")
 public static void closeBrowser() {
 	logger.info("user closes the session");
-	CommonPageStepDefinition.Close_session();
+	//CommonPageStepDefinition.Close_session();
 }
 
 	   

@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import com.org.managers.WebDriverManager;
+import com.org.pages.LoginPage;
 import com.org.pages.ResetPasswordPage;
 import com.org.util.Log;
 import com.org.util.LoggerHelper;
@@ -23,10 +24,9 @@ public class ResetPasswordFunctionality {
   
 	@Given("^A user launches application and navigates to Reset Password page through Forgot Password link$")
 	public void a_user_launches_application_and_navigates_to_Reset_Password_page_through_Forgot_Password_link() { 
-		WebDriverManager webdrivermanager=new WebDriverManager();
-		 driver=webdrivermanager.getDriver();	
-		 logger.info("driver is initialized");
-		 driver.get("http://127.0.0.1:8080/#/login");
+		driver=CommonPageStepDefinition.lanuchApplication();
+		LoginPage login=new LoginPage(driver);
+		login.ApplicationLaunchLoginButtonClick();
 		 ResetPasswordPage resetPassword=new ResetPasswordPage(driver);
 		 	resetPassword.ForgotPasswordlinkClick();
 			resetPassword.ResetPasswordPageVerification();
@@ -83,9 +83,9 @@ public class ResetPasswordFunctionality {
 		ResetPasswordPage resetPassword=new ResetPasswordPage(driver);
 	     resetPassword.NoEmailidVerificationWarningMessage();
 	}
-	//@After
-	public static void closeBrowser() {
-		Log.info("Browser is closed and driver quit");
-		driver.quit();
+	@Then("^ResetPassword_FunctionalityCheck_Feature_user closes the session$")
+	public void closeBrowser() {
+		logger.info("user closes the session");
+		//CommonPageStepDefinition.Close_session();
 	}
 }

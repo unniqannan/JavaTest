@@ -9,11 +9,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import com.org.enums.AppValidationMessages;
+import com.org.util.FunctionLibrary;
 //import com.org.util.ObjectsHelper;
 import com.org.util.LoggerHelper;
 //import com.org.util.ObjectsHelper;
 
-public class UpdatePasswordPage  {
+public class UpdatePasswordPage extends FunctionLibrary {
 	
 	Logger logger=LoggerHelper.getLogger(UpdatePasswordPage.class);
 	
@@ -85,7 +87,11 @@ public class UpdatePasswordPage  {
 			String text=PasswordNotChangedTextEle.getText();
 		logger.info(text +" is still displaying and user not able to change password");
 		if(text.equals(strPasswordNotChanged))
+		{
 			assertFalse(true);
+			driver.quit();
+			driver.close();
+		}
 		}
 		catch(Exception e) {}
 		//assertFalse(!PasswordNotChangedTextEle.isDisplayed());
@@ -102,44 +108,34 @@ public class UpdatePasswordPage  {
 	
 	public void UpdatePasswordPageTitleValidation() {
 		logger.info("update Password Page title Verification");
-		logger.info("ExpectedResult is "+UpdatePasswordPageTitleText);
-		logger.info("ActualResult is "+UpdatePasswordPageTitle.getText());
-		assertEquals(UpdatePasswordPageTitleText,UpdatePasswordPageTitle.getText());
+		//logger.info("ExpectedResult is "+UpdatePasswordPageTitleText);
+		//logger.info("ActualResult is "+UpdatePasswordPageTitle.getText());
+		//assertEquals(UpdatePasswordPageTitleText,UpdatePasswordPageTitle.getText());
+		  assertTrue(commonVerifyLabelText(UpdatePasswordPageTitle,UpdatePasswordPageTitleText));
 	}
 
 	 
 	public void FiveCharsWarningMessageValidation(String ElementName) {
 		 if (ElementName.equals("password")) {
-		String msg="Verification of Five Chars Length minimum required warning message for Password length";
-		String ExpectedResult=FivecharslengthWarningMessageForPasswordstr;
-		String ActualResult=FivecharslengthWarningMessageForPassword.getText();
-		//ObjectsHelper.MessageValidation(msg,ActualResult,ExpectedResult);
+			 commonSetTextTextBox(password, AppValidationMessages.MinCharStr); 
+			  assertTrue(commonVerifyLabelText(FivecharslengthWarningMessageForPassword,AppValidationMessages.FivecharslengthWarningMessageForPasswordstr));
 		 }
 		 else {
-			 	String msg="Verification of Five Chars Length minimum required warning message for Password length";
-				String ExpectedResult=FivecharslengthWarningMessageForConfirmPasswordstr;
-				String ActualResult=FivecharslengthWarningMessageForConfirmPassword.getText();
-			//	ObjectsHelper.MessageValidation(msg,ActualResult,ExpectedResult);
+			 commonSetTextTextBox(confirmPassword, AppValidationMessages.MinCharStr); 
+			  assertTrue(commonVerifyLabelText(FivecharslengthWarningMessageForConfirmPassword,AppValidationMessages.FivecharslengthWarningMessageForConfirmPasswordstr));
 		 }
 	}
 	 
 
 	public void FiftyCharsLenthValidation(String ElementName) {
-		String fiftychars="sfdsfsdfsdlfjsdlfjsadljfodsodskdlsfklsdfjlsdjflsdjflsdjflksdjfljsdlfkjdslkfjdslfjlskdjfsdfdsfdsfdsfdsfdsf";
 		if (ElementName.equals("password")) {
-				password.sendKeys(fiftychars);
-				String msg="Verification of fifty Chars Length minimum required warning message for Password length";
-				String ExpectedResult=MoreThanFiftycharslengthWarningMessageForPasswordstr;
-				String ActualResult=MoreThanFiftycharslengthWarningMessageForPassword.getText();
-				//ObjectsHelper.MessageValidation(msg,ActualResult,ExpectedResult);
+			   commonSetTextTextBox(password, AppValidationMessages.MaxCharsStr); 
+			   assertTrue(commonVerifyLabelText(MoreThanFiftycharslengthWarningMessageForPassword,AppValidationMessages.MoreThanFiftycharslengthWarningMessageForPasswordstr));
 		}
 		else
 		{
-			confirmPassword.sendKeys(fiftychars);
-			String msg="Verification of fifty Chars Length minimum required warning message for Password length";
-					String ExpectedResult=MoreThanFiftycharslengthWarningMessageForConfirmPasswordstr;
-					String ActualResult=MoreThanFiftycharslengthWarningMessageForConfirmPassword.getText();
-					//ObjectsHelper.MessageValidation(msg,ActualResult,ExpectedResult);
+					 commonSetTextTextBox(confirmPassword,  AppValidationMessages.MaxCharsStr); 
+					assertTrue(commonVerifyLabelText(MoreThanFiftycharslengthWarningMessageForConfirmPassword,AppValidationMessages.MoreThanFiftycharslengthWarningMessageForConfirmPasswordstr));
 		}		
 	}
 

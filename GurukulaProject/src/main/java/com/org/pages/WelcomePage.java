@@ -16,7 +16,15 @@ import org.apache.log4j.Logger;
 public class WelcomePage extends FunctionLibrary {
 	
 	private WebDriver driver;
+	 
 	static Logger logger = Logger.getLogger(WelcomePage.class.getName());
+	
+	
+	@FindBy(xpath="//*[text()='Account']")
+	WebElement Accountmenu1;
+	
+	@FindBy(xpath="//*[text()='Register']")
+	WebElement Register1;
 	
 	@FindBy(xpath= "//h1[@translate='main.title']")
 	WebElement MainTitle;
@@ -27,7 +35,8 @@ public class WelcomePage extends FunctionLibrary {
 	@FindBy(xpath="//h1[@translate='login.title']")
 	WebElement AuthenticationTitle;
 	
-	//@FindBy(xpath="//li//a//span[@translate='global.menu.account.main']")
+ 
+	
 	@FindBy(xpath="//span[@class='hidden-tablet ng-scope']")
 	WebElement AccountMenu;
 	@FindBy(xpath="//span[text()='Password']")
@@ -51,8 +60,8 @@ public class WelcomePage extends FunctionLibrary {
 		PageFactory.initElements(driver, this);
 	}
 	public void PasswordSubMenuClick() {
-		//commonClick_MenuItem(AccountMenu,PasswordSubMenu);
-		PasswordSubMenu.click();
+		commonClick_MenuItem(driver,AccountMenu,PasswordSubMenu);
+		//PasswordSubMenu.click();
 	}
 	public void WelcomePageloginlinkClick() {
 		commonClick(login);
@@ -84,13 +93,19 @@ public class WelcomePage extends FunctionLibrary {
 		commonClick_MenuItem(driver,AccountMenu,AuthenticateSubMenu);
 		logger.info("In welcome Screen, Account Menu > Authenticate Sub menu is clicked");
 	}
+	
 	public void RegisterSubMenuClick() {
-		commonClick_MenuItem(driver,AccountMenu,RegisterSubMenu);
-		//AccountMenu.click();
-		logger.info("In welcome Screen, Account Menu is clicked");
+		//commonClick_MenuItem(driver,AccountMenu,RegisterSubMenu);
+		//commonClick_MenuItem(driver,Accountmenu1,Register1);
+	//	AccountMenu.click();
+		driver.findElement(By.xpath("//span[@class='hidden-tablet ng-scope']")).click();
 		JavascriptExecutor js = (JavascriptExecutor) driver; 
-		//js.executeScript("arguments[0].click();",AccountMenu);
-	//	js.executeScript("arguments[0].click();",RegisterSubMenu);
+		js.executeScript("arguments[0].click();",Accountmenu1);
+		WebElement reg=driver.findElement(By.xpath("//span[contains(text(),'Register')]"));
+		logger.info("In welcome Screen, Account Menu is clicked");
+		JavascriptExecutor js1 = (JavascriptExecutor) driver; 
+		js1.executeScript("arguments[0].click();",reg);
+	    //js.executeScript("arguments[0].click();",RegisterSubMenu);
 		 
 		logger.info("In welcome Screen, Account Menu > Register Sub menu is clicked");
 	}

@@ -1,23 +1,16 @@
 package cucumber.stepdefinitions;
 
-import static org.junit.Assert.assertTrue;
-
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.org.enums.AppValidationMessages;
-import com.org.managers.WebDriverManager;
-import com.org.pages.LoginPage;
 import com.org.pages.RegistrationPage;
 import com.org.pages.WelcomePage;
 import com.org.util.LoggerHelper;
 
 import cucumber.api.DataTable;
-import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,12 +24,10 @@ private static final String specialCharsCheck="specialCharsCheck";
 private static final String NoTextEntry="NoTextEntry";
 private static final String MinCharCheck="MinCharCheck";
 
- 
-public void lanuchApplication() {
-	WebDriverManager webdrivermanager=new WebDriverManager();
-	 driver=webdrivermanager.getDriver();	
-	 logger.info("driver is initialized");
-	 driver.get("http://127.0.0.1:8080");
+  
+@Given("^Registration_Feature_User launches the application$")
+public void registration_feature_user_launches_the_application() throws Throwable {
+	driver=CommonPageStepDefinition.lanuchApplication();
 }
 
 @Given("^user navigates to Registration details page by clicking Register a new Account link in welcome screen$")
@@ -145,10 +136,8 @@ public void user_provides_different_password_text_in_Registration_page_for_compl
 }
  
 
-//@After 
-public static void closeBrowser() {
-	 driver.quit();
-}
-
-	   
+@Then("^Registration_FunctionalityCheck_Feature_user closes the session$")
+public void registration_functionalitycheck_feature_user_closes_the_session() throws Throwable {
+	//CommonPageStepDefinition.Close_session();
+}	   
  }

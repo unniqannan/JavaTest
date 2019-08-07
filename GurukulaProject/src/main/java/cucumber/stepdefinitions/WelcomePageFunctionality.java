@@ -20,10 +20,7 @@ Logger logger=LoggerHelper.getLogger(WelcomePageFunctionality.class);
 
 @Given("^The user launches the application$")
 public void ApplicationLaunch(){
-	WebDriverManager webdrivermanager=new WebDriverManager();
-	 driver=webdrivermanager.getDriver();	
-	 logger.info("driver is initialized");
-	 driver.get("http://127.0.0.1:8080");
+	driver=CommonPageStepDefinition.lanuchApplication();
    }	
  
 @Then("^Welcome page should be displayed successfully$")
@@ -53,7 +50,7 @@ public void in_welcome_screen_user_clicks_on_Authenticate_link_under_Account_men
 @Given("^in welcome screen user clicks on Register link under Account menu$")
 public void in_welcome_screen_user_clicks_on_Register_link_under_Account_menu() {
 	WelcomePage welcomepage=new WelcomePage(driver);
-	welcomepage.RegisterSubMenuClick();
+	//welcomepage.RegisterSubMenuClick();
 }
 
 @Then("^user should be able to navigate to Registration page$")
@@ -74,12 +71,10 @@ public void in_welcome_screen_user_clicks_on_Register_a_new_Account_link() {
 	}
 
 
-@After 
-public static void closeBrowser() {
-	 
- 
-	 
-	
+@Then("^WelcomePage_FunctionalityCheck_Feature_user closes the session$")
+public void closeBrowser() {
+	logger.info("user closes the session");
+	//CommonPageStepDefinition.Close_session();
 }
 
 	   

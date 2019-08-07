@@ -21,11 +21,11 @@ public class WebDriverManager {
 
 	ConfigFileReader configfileReader;
 	public WebDriverManager() {
-		//driverType = //FileReaderManager.getInstance().getConfigReader().getBrowser();
+	 
 		 configfileReader=new ConfigFileReader();
 		driverType =configfileReader.getBrowser();
 		environmentType = configfileReader.getEnvironment();
-				//FileReaderManager.getInstance().getConfigReader().getEnvironment();
+			 
 	}
 	public WebDriver getDriver() {
 		if(driver == null) driver = createDriver();

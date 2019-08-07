@@ -63,7 +63,7 @@ public class SessionsPageFunctionality {
 	@Then("^Sessions_FunctionalityCheck_Feature_user closes the session$")
 	public void user_closes_the_session() {
 			logger.info("user closes the session");
-			CommonPageStepDefinition.Close_session();
+			//CommonPageStepDefinition.Close_session();
 			//webdrivermanager.closeDriver();
 	}
 }

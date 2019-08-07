@@ -3,13 +3,17 @@ package com.org.pages;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.org.enums.AppValidationMessages;
 import com.org.util.FunctionLibrary;
@@ -44,6 +48,7 @@ public class BranchesPage extends FunctionLibrary {
 	
 	 //BranchPopup
 	@FindBy(xpath="//input[@name='name']")
+	
 	WebElement NewBranchNametextfield;
 	@FindBy(xpath="//input[@name='code']")
 	WebElement NewBranchcodetextfield;
@@ -58,6 +63,9 @@ public class BranchesPage extends FunctionLibrary {
 			
 	@FindBy(xpath="//p[contains(text(),'This field is required to be at least 5 characters')]")
 	WebElement NewBranchNameTextfieldminCharlengthValidationMsgEle;
+	@FindBy(xpath="//p[contains(text(),'This field cannot be longer than 20 characters.')]")
+	WebElement NewBranchNameTextfieldmaxCharlengthValidationMsgEle;
+	
 	@FindBy(xpath="//p[contains(text(),'This field is required to be at least 2 characters')]")
 	WebElement NewBranchCodeTextfieldminCharlengthValidationMsgEle; 
 	@FindBy(xpath="/html[1]/body[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/div[3]/div[1]/p[1]")
@@ -90,18 +98,47 @@ public class BranchesPage extends FunctionLibrary {
 	@FindBy(xpath="//button[@class='btn btn-danger']")
 	WebElement BranchDeletepopupDeleteButton;
 	
+	//SearchPage
+	@FindBy(xpath="//*[@id=\"searchQuery\"]")
+	WebElement BranchSearchtextfield;
+	@FindBy(xpath="//span[contains(text(),'Search a ')]")
+	WebElement BranchSearchButton;
 	
 	public BranchesPage(WebDriver driver) {
 		this.driver=driver;
-		Log.info("BranchesPage elements are initialized");
 		PageFactory.initElements(driver, this);
 	}
 	
+	public void BranchSearch(String sText) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 commonSetTextTextBox(BranchSearchtextfield, sText);
+	//	driver.findElement(By.xpath("//*[@id=\"searchQuery\"]")).sendKeys(sText);
+		 try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		commonClick(BranchSearchButton);
+		
+	}
+	
 	public void NewBranchButtonClick() {
+		 
+		//wait.until(ExpectedConditions.elementToBeClickable(NewBranch));
 		commonClick(NewBranch);
 		Log.info("NewBranch link is clicked in Branches page");
 		}
 	
+	public void createNewBranch(String BranchName,String Code) {
+		NewBranchButtonClick();
+		CreateBranch(BranchName,Code); 
+	}
 	 
 	public void EnterNewBranchNametextfield(String BranchName) {
 		commonSetTextTextBox(NewBranchNametextfield, BranchName);
@@ -116,6 +153,7 @@ public class BranchesPage extends FunctionLibrary {
 		assertTrue(commonVerifyLabelText(BranchesPageTitle,AppValidationMessages.BranchesPagetitle));
 		}
 	public void NewBranchCancelButton() {
+		
 		commonClick(NewBranchCancelButton);
 	}
 
@@ -124,19 +162,53 @@ public class BranchesPage extends FunctionLibrary {
 	}
 
 	public void CreateBranch(String NewBranchname,String NewBranchcode) {
-		commonSetTextTextBox(NewBranchNametextfield, NewBranchname);		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		commonSetTextTextBox(NewBranchNametextfield, NewBranchname);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		commonSetTextTextBox(NewBranchcodetextfield, NewBranchcode);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		commonClick(NewBranchSaveButton);
+		 
+		 try {
+		 	Thread.sleep(5000);
+		 } catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+		 	e.printStackTrace();
+		 }
 	}
 
 	public void BranchCheck(String name, String code) {
 		assertTrue(commonWebTableVerifyText(BranchListWebTable,name,code));
 		
 	}
+	public void BranchCheck(String name) {
+		
+		assertTrue(commonWebTableVerifyText(BranchListWebTable,name));	
+	}
 	public void BranchNotAvailable(String name, String code) {
-		logger.info("Branch details verification for Branch Name " +name+" having code " +code);
+		logger.info("Details verification for Branch Name " +name+" having code " +code);
 		assertTrue(!commonWebTableVerifyText(BranchListWebTable,name,code));
 		
+	}
+	public void BranchNotAvailable(String name) {
+		logger.info("Branch/Staff details verification for Name " +name);
+		assertTrue(!commonWebTableVerifyText(BranchListWebTable,name));
+		logger.info("Search Results are not shown up for " +name);
 	}
 
 	public void ClickViewButton() {
@@ -160,17 +232,20 @@ public class BranchesPage extends FunctionLibrary {
 		assertTrue(commonVerifyValueTextBox(BranchDetailCodeTextField, Code));
 	}
 
+	//Name Field Validation
 	public void NameTextFieldNewBranchmandatoryfieldCheck() {
 		commonSetTextTextBox(NewBranchNametextfield, AppValidationMessages.NoCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldValidationMsgTextdRequired,AppValidationMessages.NewBranchNameTextfieldValidationMsgfieldRequiredstr));
-		
 	}
 	  
 	public void MiniumCharLengthValidationNameTextField() {
 		commonSetTextTextBox(NewBranchNametextfield,  AppValidationMessages.MinCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldminCharlengthValidationMsgEle,AppValidationMessages.minimumcharlengthvalidationstr));
 	}
-
+	public void MaxCharLengthValidationNameTextField() {
+		commonSetTextTextBox(NewBranchNametextfield,  AppValidationMessages.MaxCharsStr);
+		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldmaxCharlengthValidationMsgEle,AppValidationMessages.Maxtwentytwocharlengthvalidationstr));
+	}
 	
 	
 	public void CodeTextFieldNewBranchmandatoryfieldCheck() {
@@ -209,6 +284,10 @@ public void BranchDeletepopupCancelButton() {
 
 public void BranchCheckNotAvailable(String name, String code) {
 	assertTrue(!commonWebTableVerifyText(BranchListWebTable,name,code));
+	
+}
+public void BranchCheckNotAvailable(String name) {
+	assertTrue(!commonWebTableVerifyText(BranchListWebTable,name));
 	
 }
 

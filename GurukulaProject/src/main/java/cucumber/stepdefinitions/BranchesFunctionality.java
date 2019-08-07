@@ -1,32 +1,21 @@
 package cucumber.stepdefinitions;
 
 import org.apache.log4j.Logger;
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 
-import com.org.managers.WebDriverManager;
 import com.org.pages.BranchesPage;
 import com.org.pages.LoginPage;
 import com.org.util.LoggerHelper;
 
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class BranchesFunctionality {
 	public static WebDriver driver;
-	//public static WebDriverManager webdrivermanager;
 Logger logger=LoggerHelper.getLogger(BranchesFunctionality.class);
-
-
 
 @Given("^Branches Feature_User launches the application$")
 public void lanuchApplication() {
-	 //webdrivermanager=new WebDriverManager();
-	// driver=webdrivermanager.getDriver();	
-	// logger.info("driver is initialized for Branches Feature");
-	// logger.info("Application is launched");
 	driver=CommonPageStepDefinition.lanuchApplication();
 }
 
@@ -111,7 +100,7 @@ public void name_text_field_has_mandatory_check_minmum_char_length_max_char_lent
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.NameTextFieldNewBranchmandatoryfieldCheck();
 	branchesPage.MiniumCharLengthValidationNameTextField();
-    
+	branchesPage.MaxCharLengthValidationNameTextField();
 }
 
 @Then("^Code text field has functionality of mandatory check,only digits can be entered$")
@@ -170,7 +159,7 @@ public void user_cannot_see_the_Branch_and_created_and_listed_in_the_Branches_pa
 @Then("^Branches_FunctionalityCheck_Feature_user closes the session$")
 public  void closeBrowser() {
 	logger.info("user closes the session");
-	CommonPageStepDefinition.Close_session();
+	//CommonPageStepDefinition.Close_session();
 }
 
 	   

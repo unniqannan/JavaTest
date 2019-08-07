@@ -28,7 +28,10 @@ import java.util.concurrent.TimeUnit;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import com.org.pages.BranchesPage;
 import com.org.pages.UpdatePasswordPage;
+
+import cucumber.api.DataTable;
 
 
 
@@ -206,7 +209,7 @@ public class FunctionLibrary {
 				   iTextBoxInfo.sendKeys(sText);
 				   logger.info(sText+ " text Entered in textbox");
 				   result = true;
-
+				   
 				   // VP>>>Verify that value has been entered
 				  // result = commonVerifyValueTextBox(iTextBoxInfo, sText);
 
@@ -253,19 +256,22 @@ public class FunctionLibrary {
 
 				  try {
 				   sTemp = controlInfo.getText().trim().toLowerCase();
+				   	logger.info("Actual Text is "+ sTemp);
+				    logger.info("Expected Text is "+ sExpectedText.toLowerCase());
 				   if (sTemp.contains(sExpectedText.toLowerCase())) {
 				    Result = true;
-				    logger.info("Actual Text is "+ sTemp);
-				    logger.info("Expected Text is "+ sExpectedText.toLowerCase());
+				    logger.info("Validation of message is working fine");
 				   } else {
 				    Result = false;
 				   }
 				  } catch (Exception e) {
+					  logger.info("Expected Text is "+ sExpectedText.toLowerCase());
 					  logger.info(
 				     "Exception in commonVerifyLabelText:" + e.getMessage(), e);
-					  logger.info("Actual Text is "+ sTemp);
-					    logger.info("Expected Text is "+ sExpectedText.toLowerCase());
-				   Result = false;
+					  return false;
+					//  logger.info("Actual Text is "+ sTemp);
+					    
+				  // Result = false;
 				  }
 				  return Result;
 				 }
@@ -298,13 +304,19 @@ public class FunctionLibrary {
 	}
 	
 	//Take Snapshot for analysing the failures
-	public static String fn_TakeSnapshot(WebDriver driver, String DestFilePath) throws IOException{
+	public static String fn_TakeSnapshot(WebDriver driver, String DestFilePath) {
 		String TS=fn_GetTimeStamp();
 		TakesScreenshot tss=(TakesScreenshot) driver;
 		File srcfileObj= tss.getScreenshotAs(OutputType.FILE);
 		DestFilePath=DestFilePath+TS+".png";
 		File DestFileObj=new File(DestFilePath);
-		FileUtils.copyFile(srcfileObj, DestFileObj);
+		
+		try {
+			FileUtils.copyFile(srcfileObj, DestFileObj);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return DestFilePath;
 		}
 	
@@ -362,7 +374,6 @@ public class FunctionLibrary {
 
 			   //To calculate no of columns(cells) In that specific row.
 			   int columns_count = Columns_row.size();
-			  // System.out.println("Number of cells In Row " + row + " are " + columns_count);
 
 			   //Loop will execute till the last cell of that specific row.
 			   for (int column = 0; column < columns_count; column++) {
@@ -376,6 +387,49 @@ public class FunctionLibrary {
 	}
 		return false;
 	}
+	public Boolean commonWebTableVerifyText(WebElement ele,String srText1) { 
+		WebElement mytable = ele;//driver.findElement(By.xpath("//table[@class='table table-striped']//tbody"));
+		List < WebElement > rows_table = mytable.findElements(By.tagName("tr"));
+		int rows_count = rows_table.size();
+		for (int row = 0; row < rows_count; row++) {
+
+			   //To locate columns(cells) of that specific row.
+			   List < WebElement > Columns_row = rows_table.get(row).findElements(By.tagName("td"));
+
+			   //To calculate no of columns(cells) In that specific row.
+			   int columns_count = Columns_row.size();
+
+			   //Loop will execute till the last cell of that specific row.
+			   for (int column = 0; column < columns_count; column++) {
+			    //To retrieve text from the cells.
+				  // logger.info("In Branches list "+srText1);
+				 
+			    String celltext = Columns_row.get(column).getText();
+			   // logger.info("celltext "+celltext);
+			    if (celltext.equalsIgnoreCase(srText1)) {
+			    	 logger.info(srText1+ " Name is available");
+			    	 return true;	
+			    }
+		}
+	}
+		return false;
+	}
+
+	public String commonGetTextWebTable(WebElement ele) {
+		WebElement mytable = ele;//driver.findElement(By.xpath("//table[@class='table table-striped']//tbody"));
+		List < WebElement > rows_table = mytable.findElements(By.tagName("tr"));
+		int rows_count = rows_table.size();
+		for (int row = 0; row < rows_count; row++) {
+			   //To locate columns(cells) of that specific row.
+			   List < WebElement > Columns_row = rows_table.get(row).findElements(By.tagName("td"));
+			   int columns_count = Columns_row.size();
+	  			    String celltext = Columns_row.get(1).getText();
+			   	    	 return celltext;	
+			    }
+			return null;
+			   }
+		
+	
 }
 		
 

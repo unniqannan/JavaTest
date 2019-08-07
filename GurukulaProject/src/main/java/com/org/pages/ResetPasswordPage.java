@@ -2,15 +2,18 @@ package com.org.pages;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.org.util.FunctionLibrary;
 import com.org.util.LoggerHelper;
 
-public class ResetPasswordPage {
+public class ResetPasswordPage extends FunctionLibrary{
 	
 	private WebDriver driver;
 	Logger logger=LoggerHelper.getLogger(ResetPasswordPage.class);
@@ -47,77 +50,90 @@ public class ResetPasswordPage {
 	public ResetPasswordPage(WebDriver driver) {
 		this.driver=driver;
 		logger.info("ResetPasswordPage elements are initialized");
-		PageFactory.initElements(driver, this);
+		 PageFactory.initElements(driver, this);
 	}
 	
 	public void ResetPasswordPageVerification() {
 			logger.info("ResetPasswordPageVerification is in progress");
-		ResetPasswordPageTitle.getText();
+		    ResetPasswordPageTitle.getText();
 			logger.info("ExpectedResult is "+ResetPasswordTitle);
 			logger.info("ActualResult is "+ResetPasswordPageTitle.getText());
+		
 		assertEquals(ResetPasswordPageTitle.getText(),ResetPasswordTitle);
 	}
 	
 	public void ForgotPasswordlinkClick() {
-		ForgotPasswordLink.click();		
+		//ForgotPasswordLink.click();
+		commonClick(ForgotPasswordLink);
 		logger.info("Forgot Password link is clicked");
 		}
 	
 	public void validEmailIdverification(String emailid ) {
-		EmailTextField.sendKeys(emailid);		
+		//EmailTextField.sendKeys(emailid);	
+		commonSetTextTextBox(EmailTextField, emailid);
 		logger.info("Emailid is entered as "+emailid);
-		submit.click();
+		commonClick(submit);
 		logger.info("Submit button is clicked");
 		logger.info("Verifying the emailid and submit button is displayed still or not ");
 		assertFalse(EmailTextField.isDisplayed());		
 		}
 	
 	public void InvalidEmailIdverification(String emailid) {
-		EmailTextField.sendKeys(emailid);		
+		//EmailTextField.sendKeys(emailid);
+		commonSetTextTextBox(EmailTextField, emailid);
 		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		submit.click();
-		logger.info("Submit button is clicked");
-		logger.info("ExpectedResult is "+ERROR);
-		logger.info("ActualResult is "+ErrorMessage.getText());
+		//submit.click();
+		commonClick(submit);
+		//logger.info("Submit button is clicked");
+		//logger.info("ExpectedResult is "+ERROR);
+		//logger.info("ActualResult is "+ErrorMessage.getText());
 		assertEquals(ERROR,ErrorMessage.getText());
+		assertTrue(commonVerifyLabelText(ErrorMessage, ERROR));
 		EmailTextField.clear();
 		}
 
 	public void InvalidEmailidWithoutSymbol(String emailid) {
-		EmailTextField.sendKeys(emailid);		
-		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		logger.info("ExpectedResult is "+InvalidEmailidErrorMessageExpected);
-		logger.info("ActualResult is "+InvalidEmailidErrorMessage.getText());
-		assertEquals(InvalidEmailidErrorMessageExpected,InvalidEmailidErrorMessage.getText());
+		//EmailTextField.sendKeys(emailid);		
+		//logger.info("Invalid and unregistered Emailid is entered as "+emailid);
+		//logger.info("ExpectedResult is "+InvalidEmailidErrorMessageExpected);
+		//logger.info("ActualResult is "+InvalidEmailidErrorMessage.getText());
+		//assertEquals(InvalidEmailidErrorMessageExpected,InvalidEmailidErrorMessage.getText());
+		commonSetTextTextBox(EmailTextField, emailid);
+		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMessage, InvalidEmailidErrorMessageExpected));
 		EmailTextField.clear();
 		
 	}
 	public void InvalidEmailid5CharsCheck(String emailid) {
-		EmailTextField.sendKeys(emailid);		
-		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		logger.info("ExpectedResult is "+InvalidEmailid5charsErrorMessageExpected);
-		logger.info("ActualResult is "+InvalidEmailid5charsErrorMessage.getText());
-		assertEquals(InvalidEmailid5charsErrorMessageExpected,InvalidEmailid5charsErrorMessage.getText());
+		//EmailTextField.sendKeys(emailid);		
+		commonSetTextTextBox(EmailTextField, emailid);
+	//	logger.info("Invalid and unregistered Emailid is entered as "+emailid);
+	//	logger.info("ExpectedResult is "+InvalidEmailid5charsErrorMessageExpected);
+	//	logger.info("ActualResult is "+InvalidEmailid5charsErrorMessage.getText());
+	//	assertEquals(InvalidEmailid5charsErrorMessageExpected,InvalidEmailid5charsErrorMessage.getText());
+		assertTrue(commonVerifyLabelText(InvalidEmailid5charsErrorMessage, InvalidEmailid5charsErrorMessageExpected));
 		EmailTextField.clear();
 	}
 	
 	public void InvalidEmailidwith50CharsValidation(String emailid) {
-		EmailTextField.sendKeys(emailid);		
-		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		logger.info("ExpectedResult is "+InvalidEmailid50charsErrorMessageExpected);
-		logger.info("ActualResult is "+InvalidEmailidErrorMsgwith50Chars.getText());
-		assertEquals(InvalidEmailid50charsErrorMessageExpected,InvalidEmailidErrorMsgwith50Chars.getText());
+		commonSetTextTextBox(EmailTextField, emailid);
+		//EmailTextField.sendKeys(emailid);		
+		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMsgwith50Chars, InvalidEmailid50charsErrorMessageExpected));
+		//logger.info("Invalid and unregistered Emailid is entered as "+emailid);
+		//logger.info("ExpectedResult is "+InvalidEmailid50charsErrorMessageExpected);
+		//logger.info("ActualResult is "+InvalidEmailidErrorMsgwith50Chars.getText());
+	//	assertEquals(InvalidEmailid50charsErrorMessageExpected,InvalidEmailidErrorMsgwith50Chars.getText());
 		EmailTextField.clear();
 	}
 
 	public void NoEmailidVerificationWarningMessage() {
-		EmailTextField.sendKeys("remove");
+		commonSetTextTextBox(EmailTextField, "remove");
 		EmailTextField.clear();
-		logger.info("Emailid text field is made empty");
-		logger.info("Invalid and unregistered Emailid is entered as blank ");
-		logger.info("ExpectedResult is "+EmailidRequireErrorMessageExpected);
-		logger.info("ActualResult is "+EmailidRequireErrorMessageExpectedElement.getText());
-		assertEquals(EmailidRequireErrorMessageExpected,EmailidRequireErrorMessageExpectedElement.getText());
+		assertTrue(commonVerifyLabelText(EmailidRequireErrorMessageExpectedElement, EmailidRequireErrorMessageExpected));
+		//logger.info("Emailid text field is made empty");
+		//logger.info("Invalid and unregistered Emailid is entered as blank ");
+		//logger.info("ExpectedResult is "+EmailidRequireErrorMessageExpected);
+		//logger.info("ActualResult is "+EmailidRequireErrorMessageExpectedElement.getText());
+		//assertEquals(EmailidRequireErrorMessageExpected,EmailidRequireErrorMessageExpectedElement.getText());
 	}
 	 
 	

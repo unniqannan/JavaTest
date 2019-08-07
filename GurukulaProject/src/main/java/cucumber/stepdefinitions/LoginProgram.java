@@ -22,7 +22,6 @@ import com.org.util.LoggerHelper;
 
 public class LoginProgram {
 	public static WebDriver driver;
-	public static WebDriverManager webdrivermanager;
 	Logger logger=LoggerHelper.getLogger(LoginProgram.class);
 
 	 
@@ -112,5 +111,6 @@ public void user_should_not_be_logged_in_the_new_browser() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
  
 }
+
 
  }

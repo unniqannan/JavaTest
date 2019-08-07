@@ -1,44 +1,32 @@
 package cucumber.stepdefinitions;
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import com.org.managers.WebDriverManager;
 import com.org.pages.LoginPage;
-import com.org.pages.ResetPasswordPage;
 import com.org.pages.UpdatePasswordPage;
 import com.org.pages.WelcomePage;
-import com.org.util.Log;
 import com.org.util.LoggerHelper;
 
-import cucumber.api.DataTable;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
-public class UpdatePasswordFunctionality {
+public class UpdatePasswordFunctionality  {
 
 	public static WebDriver driver;
 	Logger logger=LoggerHelper.getLogger(UpdatePasswordFunctionality.class);
 	
 	@Given("^A user launches application logs in successfully with valid credentials$")
 	public void a_user_launches_application_logs_in_successfully() {  
-		WebDriverManager webdrivermanager=new WebDriverManager();
-		 driver=webdrivermanager.getDriver();	
-		 logger.info("driver is initialized");
-		 driver.get("http://127.0.0.1:8080");
+		driver=CommonPageStepDefinition.lanuchApplication();
 		 LoginPage loginpage=new LoginPage(driver);
+		 loginpage.ApplicationLaunchLoginButtonClick();
 		 loginpage.LoginIntoGuruKulPage("admin","admin");
 	}
 
 	@Given("^clicking Password submenu under Account Menu options and navigates to update password page$")
 	public void clicking_Password_submenu_under_Account_Menu_options()  {
 		WelcomePage welcomepage=new WelcomePage(driver);
-	//	welcomepage.AccountMenuClick();
 		welcomepage.PasswordSubMenuClick();
 	}
 
@@ -126,7 +114,28 @@ public void user_provides_more_than_fifty_chars_length_in_the_New_Password_text_
 public void user_provides_more_than_fifty_chars_length_in_the_confirm_Password_text_field(){
 	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 	updatePasswordPage.FiftyCharsLenthValidation("ConfirmPassword");
-	
+}
+
+@Then("^Verify that Error message is shown up stating cannot be more than fifty chars for Password field$")
+public void verify_that_Error_message_is_shown_up_stating_cannot_be_more_than_fifty_chars_for_Password_field() throws Throwable {
+	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
+	updatePasswordPage.FiftyCharsLenthValidation("password");
+     
+}
+
+@Then("^Verify that Error message is shown up stating cannot be more than fifty chars for confirm Password field$")
+public void verify_that_Error_message_is_shown_up_stating_cannot_be_more_than_fifty_chars_for_confirm_Password_field() throws Throwable {
+	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
+	updatePasswordPage.FiftyCharsLenthValidation("confirmpassword");
+    
+}
+
+
+
+@Then("^UpdatePassword_FunctionalityCheck_Feature_user closes the session$")
+public void closeBrowser() {
+	logger.info("user closes the session");
+	//CommonPageStepDefinition.Close_session();
 }
 }
  

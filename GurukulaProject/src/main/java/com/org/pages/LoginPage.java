@@ -16,9 +16,9 @@ import com.org.util.FunctionLibrary;
 public class LoginPage extends FunctionLibrary{
 	
 private WebDriver driver;
-//static Logger logger = Logger.getLogger(LoginPage.class);
+ 
 static Logger logger = Logger.getLogger(LoginPage.class.getName());
-//	Log log=new Log();
+ 
 	@FindBy(xpath="//button[@type='submit' and text()='Authenticate']")
 	WebElement Authenticate;
 	@FindBy(id="username")
@@ -26,8 +26,10 @@ static Logger logger = Logger.getLogger(LoginPage.class.getName());
 	@FindBy(id="password")
 	WebElement password;
 	
-	@FindBy(xpath="//*[@id=\"navbar-collapse\"]/ul/li[3]/a/span/span[2]")
+	//@FindBy(xpath="//*[@id=\"navbar-collapse\"]/ul/li[3]/a/span/span[2]")
+	@FindBy(xpath="//*[text()='Account']")
 	WebElement Account;
+	//@FindBy(xpath="//*[text()='Log out']")
 	@FindBy(xpath="//*[@id=\"navbar-collapse\"]//span[text()='Log out']")
 	WebElement Logout;
 	@FindBy(xpath="//a[text()='login'] ")
@@ -53,6 +55,7 @@ static Logger logger = Logger.getLogger(LoginPage.class.getName());
 		}
   
 public void ApplicationLaunchLoginButtonClick() {
+	logger.info("Application is Launched");
 	commonClick(login);
 }
 
@@ -60,6 +63,7 @@ public void LoginIntoGuruKulPage(String strusername,String strpassword) {
 	// commonClick(login);
 	 Boolean bool=commonSetTextTextBox(username,strusername);
 	 assertTrue(bool);
+	
 	 logger.info(strusername+" username is entered");
 	 bool=commonSetTextTextBox(password,strpassword);
 	 assertTrue(bool); 
@@ -69,11 +73,12 @@ public void LoginIntoGuruKulPage(String strusername,String strpassword) {
 	}
 
 public void Logout() {
-	Account.click();
-	logger.info("Account menu is clicked");
-	Logout.click();		
-	logger.info("Logout link is clicked Under Account menu");
-	}
+	commonClick_MenuItem(driver, Account, Logout);
+	//Account.click();
+	//logger.info("Account menu is clicked");
+	//Logout.click();		
+	//logger.info("Logout link is clicked Under Account menu");
+}
 
 public void clearLogintext(){
 	 username.clear();
@@ -97,7 +102,9 @@ public void rememberMecheckboxClick() {
 		rememberMecheckbox.click();
 		logger.info("rememberMe Checkbox if selected, then unchecked it");
 }
+
 public void CloseSession() {
+	 fn_TakeSnapshot(driver,"target//Screenshots");
 	logger.info("user closes the session");
 	driver.close();
 	driver.quit();
