@@ -183,6 +183,7 @@ public class BranchesPage extends FunctionLibrary {
 			e.printStackTrace();
 		}
 		commonClick(NewBranchSaveButton);
+		logger.info("Save button is clicked to create a new Branch");
 		 
 		 try {
 		 	Thread.sleep(5000);
@@ -193,12 +194,14 @@ public class BranchesPage extends FunctionLibrary {
 	}
 
 	public void BranchCheck(String name, String code) {
+		logger.info("Branch Title verification");
 		assertTrue(commonWebTableVerifyText(BranchListWebTable,name,code));
 		
 	}
 	public void BranchCheck(String name) {
-		
+		logger.info("List is verified for the respective searching criteria");
 		assertTrue(commonWebTableVerifyText(BranchListWebTable,name));	
+		logger.info("List is verified and found the Branch/ Staff which is created/ Edited");
 	}
 	public void BranchNotAvailable(String name, String code) {
 		logger.info("Details verification for Branch Name " +name+" having code " +code);
@@ -212,10 +215,13 @@ public class BranchesPage extends FunctionLibrary {
 	}
 
 	public void ClickViewButton() {
+		logger.info("Clicking view button");
 		commonClick(BranchListView);
+		
 	}
 	public void clickBackButtonBranchDetailsPage() {
 			commonClick(BranchDetailBackButton);
+			logger.info("BranchDetailPage_BackButton is clicked");
 	}
 	
 
@@ -234,27 +240,33 @@ public class BranchesPage extends FunctionLibrary {
 
 	//Name Field Validation
 	public void NameTextFieldNewBranchmandatoryfieldCheck() {
+		logger.info("Name Text field_Mandatory Check is in progress");
 		commonSetTextTextBox(NewBranchNametextfield, AppValidationMessages.NoCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldValidationMsgTextdRequired,AppValidationMessages.NewBranchNameTextfieldValidationMsgfieldRequiredstr));
+		logger.info("Name field_Mandatory check validation is working fine");
 	}
 	  
 	public void MiniumCharLengthValidationNameTextField() {
 		commonSetTextTextBox(NewBranchNametextfield,  AppValidationMessages.MinCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldminCharlengthValidationMsgEle,AppValidationMessages.minimumcharlengthvalidationstr));
+		logger.info("Minimum Char length validation check is working fine");
 	}
 	public void MaxCharLengthValidationNameTextField() {
 		commonSetTextTextBox(NewBranchNametextfield,  AppValidationMessages.MaxCharsStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameTextfieldmaxCharlengthValidationMsgEle,AppValidationMessages.Maxtwentytwocharlengthvalidationstr));
+		logger.info("Max char length validation check is working fine");
 	}
 	
 	
 	public void CodeTextFieldNewBranchmandatoryfieldCheck() {
 		commonSetTextTextBox(NewBranchcodetextfield, AppValidationMessages.NoCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchNameCodeTextfieldValidationMsgfieldRequired,AppValidationMessages.NewBranchNameTextfieldValidationMsgfieldRequiredstr));
+		logger.info("Code field_Mandatory check validation is working fine");
 	}
 	public void OnlyDigitsInputValidationNameTextField() {
 		commonSetTextTextBox(NewBranchcodetextfield, AppValidationMessages.MinCharStr);
 		assertTrue(commonVerifyLabelText(NewBranchCodeTextfieldValidationMsgOnlyDigits,AppValidationMessages.PatternfollowedTextFieldvalidationstr));
+		logger.info("Code field_Only Digits_validation is working fine");
 	}
 
 	public void MiniumCharLengthValidationCodeTextField() { 
@@ -264,15 +276,16 @@ public class BranchesPage extends FunctionLibrary {
 
 	public void ClickEditButtonBranchList() {
 		commonClick(BranchListEdit);	
-		//driver.findElement(By.xpath("//span[contains(text(),'Edit')]")).click();
 	}
 
 	public void EditScreenValidation(String Name,String Code) {
 		assertTrue(commonVerifyValueTextBox(NewBranchNametextfield,Name));
 		assertTrue(commonVerifyValueTextBox(NewBranchcodetextfield,Code));
+		logger.info("Edit Screen validation is working fine showing the Name and Code data");
 	}
 public void BranchIDDelete() {
 	commonClick(BranchListDelete);
+	logger.info("Delete button is clicked");
 }
 
 public void BranchListDeletebuttonInPopup() {
@@ -288,13 +301,6 @@ public void BranchCheckNotAvailable(String name, String code) {
 }
 public void BranchCheckNotAvailable(String name) {
 	assertTrue(!commonWebTableVerifyText(BranchListWebTable,name));
-	
-}
-
-public void CloseSession() {
-	logger.info("user closes the session");
-	driver.close();
-	driver.quit();
 	
 }
   

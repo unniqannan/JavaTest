@@ -21,7 +21,7 @@ public class SearchStaffFunctionality {
 	Logger logger=LoggerHelper.getLogger(SearchBranchFunctinality.class);
 	
 	@Given("^Search_Staff_Feature_User launches the application and navigates to Account Menu > Staffes with default admin login$")
-	public void search_staff_feature_user_launches_the_application_and_navigates_to_Account_Menu_Staffes_with_default_admin_login() throws Throwable {
+	public void LaunchesApplication_NavigatesStaffPage() throws Throwable {
 	    driver=CommonPageStepDefinition.lanuchApplication();
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.ApplicationLaunchLoginButtonClick();

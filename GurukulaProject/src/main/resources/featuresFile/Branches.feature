@@ -1,22 +1,22 @@
 #Author: your.email@your.domain.com
 #Keywords Summary :
 
-@SmokeTest
+@ssd
 Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete Branch, Field Validation 
 
-	  Scenario: Navigate to Branches page-User would be able to navigate to Branches page from Account menu > Branches   
+	  Scenario: Branches Page Title Verification    
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     Then User should be able to see the Branches page
 
-    Scenario: Create Branch page Navigation -User should be able to navigate to Create Branch page from 	Branches page
+    Scenario: Create Branch page popup Title verification 
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  User able to click Create a new Branch link
     Then  User should be able to see a popup for creating a Branch
     
     
-    Scenario: Save > Branch created Functionality -User would be able to create a new Branch and can see the same created Branch details in the Branches page   
+    Scenario: Create Branch Functionality - Create Branch click and click Save to create a Branch   
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  User able to click Create a new Branch link
@@ -24,7 +24,7 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     Then User can see the Branch "NewBranchName" and "7777" created and listed in the Branches page
     
     
-   Scenario: Create Branch > Cancel Button -Branch will not be created when user clicks cancel in creating Branch pop up page 
+   Scenario: Create Branch > Cancel Button - Branch will not be created when user clicks cancel in creating Branch pop up page 
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  User able to click Create a new Branch link
@@ -32,14 +32,14 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     Then User cannot see the Branch "CancelBranchName" and "8888" in the Branches page as it is cancelled
     
     
-   Scenario: Branches page > View -User would be able to see the Branch details by clicking view link   
+   Scenario: Click View link to see Branch details    
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the view link for the <NewBranchName> code in the webtable
     Then 	User can see the Branch details
     
     
-    Scenario: Branches page > Branch ID -User would be able to see the Branch details by clicking Branch ID link   
+    Scenario: Click Branch ID - User would be able to see the Branch details by clicking Branch ID link   
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the Branch ID of given <NewBranchName> in the webtable
@@ -54,28 +54,28 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     Then User should be able to see the Branches page
     
     
-   Scenario: Create Brach Popup > Name Text field validation >Name field in Create Branch popup has mandatory check,minmum char length, max char lenth for Name field   
+   Scenario: Branch Popup> Name Text field validation for mandatory,length checks     
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  User able to click Create a new Branch link
     Then  Name text field has functionality of mandatory check,minmum char length, max char lenth
     
     
-   Scenario: Create Branch Popup > Code Text field validation >Code field in Create Branch popup has mandatory check,only digits can be entered in Code field   
+   Scenario: Branch Popup> Code Text field validation for mandatory,length checks,Digits entry check   
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
      And  User able to click Create a new Branch link
     Then  Code text field has functionality of mandatory check,only digits can be entered
     
     
-    Scenario: Branches > Edit link -Clicking Edit link should navigate to Edit Branch page    
+    Scenario: Edit link Functional check -Clicking Edit link should navigate to Edit Branch page    
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks Edit link
     Then  Name and Code is shown for for "NewBranchName" and "7777" in Edit Branch page 
     
      
-     Scenario: Branches > Edit link > Cancel -Clicking cancel button should not able to modify the Branch details  
+     Scenario: Edit link_Cancel button functional check -Clicking cancel button should not able to modify the Branch details  
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks Edit link
@@ -83,7 +83,7 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     Then User cannot see the Branch "CancelBranchName" and "8888" in the Branches page as it is cancelled
     
     
-   Scenario: Branches > Edit link > Save -Clicking cancel button should not able to modify the Branch details  
+   Scenario: Edit link_Save button functional check - Clicking Save button should save the modified branch details  
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
      And  	User clicks Edit link
@@ -91,7 +91,7 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
      Then User can see the Branch "EditedBranchName" and "8888" created and listed in the Branches page
      
      
-     Scenario: BranchID > Delete > Cancel -Clicking cancel button should not able to delete the Branch details  
+     Scenario: Delete popup_Cancel button functional check -Clicking cancel button should not able to delete the Branch details  
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the Delete link for <EditedBranchName>
@@ -99,7 +99,7 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     Then User can see the Branch "EditedBranchName" and "8888" created and listed in the Branches page
     
     
-     Scenario: BranchID > Delete > Cancel -Clicking cancel button should not able to delete the Branch details  
+     Scenario: Delete functinal check -Clicking Delete button in delete popup should delete the Branch details  
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the Delete link for <EditedBranchName>

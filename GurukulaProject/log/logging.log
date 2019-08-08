@@ -46140,3 +46140,844 @@ Session ID: 1858c28486544c60a41cc80278a4c683
 2019-08-07 17:49:03 INFO  LoginPage:72 - Authenticate button is clicked for Login
 2019-08-07 17:49:04 INFO  BranchesPage:71 - Navigated to Staff Page
 2019-08-07 17:49:07 INFO  CommonPageStepDefinition:43 - StaffID > Delete > Cancel -Clicking cancel button should not able to delete the Staff details  execution is completed
+2019-08-08 00:31:09 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:31:09 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:31:11 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:31:11 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:11 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:31:11 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:11 INFO  LoginPage:71 - password is entered
+2019-08-08 00:31:12 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:31:14 INFO  FunctionLibrary:259 - Actual Text is branches
+2019-08-08 00:31:14 INFO  FunctionLibrary:260 - Expected Text is branches
+2019-08-08 00:31:14 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 00:31:14 INFO  CommonPageStepDefinition:37 - Branches Page Title Verification  execution is completed
+2019-08-08 00:31:21 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:31:21 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:31:22 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:31:22 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:22 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:31:23 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:23 INFO  LoginPage:71 - password is entered
+2019-08-08 00:31:23 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:31:25 INFO  Log:47 - NewBranch link is clicked in Branches page
+2019-08-08 00:31:25 INFO  FunctionLibrary:259 - Actual Text is 
+2019-08-08 00:31:25 INFO  FunctionLibrary:260 - Expected Text is create or edit a branch
+2019-08-08 00:31:25 INFO  CommonPageStepDefinition:37 - Create Branch page popup Title verification  execution is completed
+2019-08-08 00:31:32 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:31:32 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:31:33 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:31:33 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:33 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:31:33 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:33 INFO  LoginPage:71 - password is entered
+2019-08-08 00:31:33 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:31:36 INFO  Log:47 - NewBranch link is clicked in Branches page
+2019-08-08 00:31:37 INFO  FunctionLibrary:210 - NewBranchName text Entered in textbox
+2019-08-08 00:31:38 INFO  FunctionLibrary:210 - 7777 text Entered in textbox
+2019-08-08 00:31:40 INFO  BranchesPage:186 - Save button is clicked to create a new Branch
+2019-08-08 00:31:45 INFO  BranchesPage:197 - Branch Title verification
+2019-08-08 00:31:45 INFO  FunctionLibrary:383 - In Branches list NewBranchName Name is available and 7777 code is available
+2019-08-08 00:31:45 INFO  CommonPageStepDefinition:37 - Create Branch Functionality - Create Branch click and click Save to create a Branch  execution is completed
+2019-08-08 00:31:54 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:31:54 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:31:54 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:31:54 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:54 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:31:54 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:31:54 INFO  LoginPage:71 - password is entered
+2019-08-08 00:31:55 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:31:57 INFO  Log:47 - NewBranch link is clicked in Branches page
+2019-08-08 00:31:57 INFO  FunctionLibrary:210 - CancelBranchName text Entered in textbox
+2019-08-08 00:31:58 INFO  FunctionLibrary:210 - 8888 text Entered in textbox
+2019-08-08 00:31:58 INFO  BranchesPage:207 - Details verification for Branch Name CancelBranchName having code 8888
+2019-08-08 00:31:59 INFO  CommonPageStepDefinition:37 - Create Branch > Cancel Button - Branch will not be created when user clicks cancel in creating Branch pop up page  execution is completed
+2019-08-08 00:32:09 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:32:09 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:32:10 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:32:10 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:32:10 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:32:11 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:32:11 INFO  LoginPage:71 - password is entered
+2019-08-08 00:32:11 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:32:13 INFO  BranchesPage:218 - Clicking view button
+2019-08-08 00:32:13 INFO  FunctionLibrary:259 - Actual Text is branch
+2019-08-08 00:32:13 INFO  FunctionLibrary:260 - Expected Text is branch
+2019-08-08 00:32:13 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 00:32:13 INFO  CommonPageStepDefinition:37 - Click View link to see Branch details  execution is completed
+2019-08-08 00:32:19 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:32:19 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:32:20 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:32:20 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:32:20 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:32:20 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:32:20 INFO  LoginPage:71 - password is entered
+2019-08-08 00:32:20 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:32:24 INFO  FunctionLibrary:187 - Exception in commonClick:Cannot locate an element using xpath=//a[text()='1']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: RemoteWebDriver
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[text()='1']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:331)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at com.org.util.FunctionLibrary.commonClick(FunctionLibrary.java:184)
+	at com.org.pages.BranchesPage.ClickingBranchID(BranchesPage.java:233)
+	at cucumber.stepdefinitions.BranchesFunctionality.user_clicks_the_Branch_ID_of_given_BranchID_in_the_webtable(BranchesFunctionality.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+2019-08-08 00:32:24 INFO  FunctionLibrary:233 - Expected Results is :newbranchname
+2019-08-08 00:32:24 INFO  FunctionLibrary:245 - Exception in commonSetTextTextBox:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c3f3a4e4ea94b96a41159bfc3e0dbb77
+*** Element info: {Using=xpath, value=//tr[1]//td[2]//input[1]}
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c3f3a4e4ea94b96a41159bfc3e0dbb77
+*** Element info: {Using=xpath, value=//tr[1]//td[2]//input[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy16.getAttribute(Unknown Source)
+	at com.org.util.FunctionLibrary.commonVerifyValueTextBox(FunctionLibrary.java:235)
+	at com.org.pages.BranchesPage.ViewBranchDetailsNameCode(BranchesPage.java:237)
+	at cucumber.stepdefinitions.BranchesFunctionality.user_can_see_the_Branch_details_of_and_of_the_BranchID(BranchesFunctionality.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:763)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:463)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:209)
+2019-08-08 00:32:24 INFO  CommonPageStepDefinition:37 - Click Branch ID - User would be able to see the Branch details by clicking Branch ID link  execution is completed
+2019-08-08 00:34:21 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:34:21 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:34:22 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:34:22 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 00:34:22 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:22 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:34:22 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 00:34:22 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:23 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:23 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 00:34:23 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 00:34:23 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 00:34:23 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 00:34:23 INFO  LoginPage:68 - admin1 username is entered
+2019-08-08 00:34:23 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:23 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:23 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:23 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 00:34:23 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 00:34:23 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 00:34:23 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 00:34:23 INFO  LoginPage:68 -  username is entered
+2019-08-08 00:34:24 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:24 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:24 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:24 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 00:34:24 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 00:34:24 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 00:34:24 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:24 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:34:25 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 00:34:25 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:25 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:25 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 00:34:25 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 00:34:25 INFO  CommonPageStepDefinition:37 - Invalid User Credentials - Login Functionailty Check - User should not ble able login with invalid credentials  execution is completed
+2019-08-08 00:34:32 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:34:32 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:34:32 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:34:32 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:32 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:34:32 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:32 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:33 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:33 INFO  CommonPageStepDefinition:37 - Vaild user Credentials - Login with Valid user credentials  execution is completed
+2019-08-08 00:34:40 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:34:40 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:34:40 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:34:40 INFO  ResetPasswordPage:57 - ResetPasswordPage elements are initialized
+2019-08-08 00:34:40 INFO  ResetPasswordPage:73 - Forgot Password link is clicked
+2019-08-08 00:34:40 INFO  CommonPageStepDefinition:37 - ForgotPassword link click navigation check  execution is completed
+2019-08-08 00:34:47 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:34:47 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:34:47 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:34:47 INFO  Log:47 - RegistrationPage elements are initialized
+2019-08-08 00:34:47 INFO  Log:47 - Register New Account link is clicked
+2019-08-08 00:34:47 INFO  CommonPageStepDefinition:37 - Registration link click navigation check  execution is completed
+2019-08-08 00:34:54 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:34:54 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:34:54 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:34:55 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:55 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:34:55 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:34:55 INFO  LoginPage:71 - password is entered
+2019-08-08 00:34:55 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:34:57 INFO  CommonPageStepDefinition:37 - Logout Functionality check  execution is completed
+2019-08-08 00:35:08 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:35:08 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:35:08 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:35:08 INFO  LoginPage:93 - Gurukula logo is clicked
+2019-08-08 00:35:08 INFO  CommonPageStepDefinition:37 - Gurukula logo link functional check of navigating to Home page  execution is completed
+2019-08-08 00:35:16 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:35:16 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:35:16 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:35:16 INFO  LoginPage:102 - Verified that rememberMeCheck is selected or not
+2019-08-08 00:35:16 INFO  LoginPage:104 - rememberMe Checkbox if selected, then unchecked it
+2019-08-08 00:35:17 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:35:17 INFO  LoginPage:68 - admin username is entered
+2019-08-08 00:35:17 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 00:35:17 INFO  LoginPage:71 - password is entered
+2019-08-08 00:35:17 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 00:35:17 INFO  CommonPageStepDefinition:37 - User should not remain logged in if remember me checkbox is unchecked  execution is completed
+2019-08-08 00:35:25 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 00:35:25 INFO  LoginPage:58 - Application is Launched
+2019-08-08 00:35:25 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 00:35:26 INFO  LoginPage:98 - Gurukula home Link is clicked
+2019-08-08 00:35:26 INFO  CommonPageStepDefinition:37 - Home link functional check where clicking it should navigate to Home page  execution is completed
+2019-08-08 01:48:04 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:48:04 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:48:05 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:48:05 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:05 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:05 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:48:06 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:48:06 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:06 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:06 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:06 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:06 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:06 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:48:06 INFO  LoginPage:68 - admin1 username is entered
+2019-08-08 01:48:07 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:07 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:07 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:07 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:07 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:07 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:07 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:48:07 INFO  LoginPage:68 -  username is entered
+2019-08-08 01:48:08 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:08 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:08 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:08 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:08 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:08 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:08 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:08 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:48:09 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:48:09 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:09 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:09 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:09 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:09 INFO  CommonPageStepDefinition:37 - Invalid User Credentials - Login Functionailty Check - User should not ble able login with invalid credentials  execution is completed
+2019-08-08 01:48:33 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:48:34 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:48:34 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:48:34 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:34 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:34 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:48:34 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:48:34 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:35 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:35 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:35 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:35 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:35 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:48:35 INFO  LoginPage:68 - admin1 username is entered
+2019-08-08 01:48:35 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:35 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:36 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:36 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:36 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:36 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:36 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:48:36 INFO  LoginPage:68 -  username is entered
+2019-08-08 01:48:36 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:36 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:37 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:37 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:37 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:37 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:48:37 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:48:37 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:48:37 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:48:37 INFO  LoginPage:71 - password is entered
+2019-08-08 01:48:37 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:48:38 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:48:38 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:48:38 INFO  CommonPageStepDefinition:37 - Invalid User Credentials - Login Functionailty Check - User should not ble able login with invalid credentials  execution is completed
+2019-08-08 01:49:51 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:49:51 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:49:52 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:49:52 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:49:52 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:49:52 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:49:52 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:49:52 INFO  LoginPage:71 - password is entered
+2019-08-08 01:49:53 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:49:53 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:49:53 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:49:53 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:49:53 INFO  FunctionLibrary:210 - admin1 text Entered in textbox
+2019-08-08 01:49:53 INFO  LoginPage:68 - admin1 username is entered
+2019-08-08 01:49:53 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:49:53 INFO  LoginPage:71 - password is entered
+2019-08-08 01:49:53 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:49:53 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:49:53 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:49:53 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:49:54 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:49:54 INFO  LoginPage:68 -  username is entered
+2019-08-08 01:49:54 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:49:54 INFO  LoginPage:71 - password is entered
+2019-08-08 01:49:54 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:49:54 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:49:54 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:49:54 INFO  LoginProgram:34 - Invalid Credentials provided and Login should fail
+2019-08-08 01:49:54 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:49:54 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:49:55 INFO  FunctionLibrary:210 -  text Entered in textbox
+2019-08-08 01:49:55 INFO  LoginPage:71 - password is entered
+2019-08-08 01:49:55 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:49:55 INFO  LoginPage:86 - Username text box is cleared
+2019-08-08 01:49:55 INFO  LoginPage:88 - Password text box is cleared
+2019-08-08 01:49:55 INFO  CommonPageStepDefinition:37 - Invalid User Credentials - Login Functionailty Check - User should not ble able login with invalid credentials  execution is completed
+2019-08-08 01:50:03 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:03 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:03 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:04 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:04 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:50:04 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:04 INFO  LoginPage:71 - password is entered
+2019-08-08 01:50:04 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:50:04 INFO  CommonPageStepDefinition:37 - Vaild user Credentials - Login with Valid user credentials  execution is completed
+2019-08-08 01:50:15 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:15 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:16 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:16 INFO  ResetPasswordPage:57 - ResetPasswordPage elements are initialized
+2019-08-08 01:50:16 INFO  ResetPasswordPage:73 - Forgot Password link is clicked
+2019-08-08 01:50:16 INFO  CommonPageStepDefinition:37 - ForgotPassword link click navigation check  execution is completed
+2019-08-08 01:50:23 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:23 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:24 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:24 INFO  Log:47 - RegistrationPage elements are initialized
+2019-08-08 01:50:24 INFO  Log:47 - Register New Account link is clicked
+2019-08-08 01:50:24 INFO  CommonPageStepDefinition:37 - Registration link click navigation check  execution is completed
+2019-08-08 01:50:32 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:32 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:32 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:33 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:33 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:50:33 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:33 INFO  LoginPage:71 - password is entered
+2019-08-08 01:50:34 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:50:35 INFO  CommonPageStepDefinition:37 - Logout Functionality check  execution is completed
+2019-08-08 01:50:41 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:41 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:42 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:42 INFO  LoginPage:93 - Gurukula logo is clicked
+2019-08-08 01:50:42 INFO  CommonPageStepDefinition:37 - Gurukula logo link functional check of navigating to Home page  execution is completed
+2019-08-08 01:50:49 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:49 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:50 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:50 INFO  LoginPage:102 - Verified that rememberMeCheck is selected or not
+2019-08-08 01:50:50 INFO  LoginPage:104 - rememberMe Checkbox if selected, then unchecked it
+2019-08-08 01:50:50 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:50 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:50:51 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:50:51 INFO  LoginPage:71 - password is entered
+2019-08-08 01:50:51 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:50:51 INFO  CommonPageStepDefinition:37 - User should not remain logged in if remember me checkbox is unchecked  execution is completed
+2019-08-08 01:50:58 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:50:58 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:50:58 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:50:58 INFO  LoginPage:98 - Gurukula home Link is clicked
+2019-08-08 01:50:58 INFO  CommonPageStepDefinition:37 - Home link functional check where clicking it should navigate to Home page  execution is completed
+2019-08-08 01:55:19 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:55:19 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:55:19 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:55:20 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:55:20 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:55:20 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:55:20 INFO  LoginPage:71 - password is entered
+2019-08-08 01:55:20 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:55:20 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 01:55:23 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 01:55:23 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 01:55:23 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 01:55:23 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 01:55:23 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 01:55:30 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 01:55:30 INFO  LoginPage:58 - Application is Launched
+2019-08-08 01:55:31 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 01:55:31 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:55:31 INFO  LoginPage:68 - admin username is entered
+2019-08-08 01:55:32 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 01:55:32 INFO  LoginPage:71 - password is entered
+2019-08-08 01:55:32 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 01:55:32 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 01:55:34 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 01:55:35 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 01:55:35 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 01:55:36 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 01:55:36 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 01:55:36 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 01:55:36 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 02:07:27 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 02:07:27 INFO  LoginPage:58 - Application is Launched
+2019-08-08 02:07:27 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 02:07:28 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 02:07:28 INFO  LoginPage:68 - admin username is entered
+2019-08-08 02:07:28 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 02:07:28 INFO  LoginPage:71 - password is entered
+2019-08-08 02:07:28 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 02:07:28 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 02:07:31 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 02:07:31 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 02:07:31 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 02:07:31 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 02:07:31 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 02:07:40 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 02:07:40 INFO  LoginPage:58 - Application is Launched
+2019-08-08 02:07:40 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 02:07:41 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 02:07:41 INFO  LoginPage:68 - admin username is entered
+2019-08-08 02:07:41 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 02:07:41 INFO  LoginPage:71 - password is entered
+2019-08-08 02:07:41 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 02:07:41 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 02:07:43 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 02:07:45 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 02:07:45 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 02:07:45 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 02:07:45 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 02:07:45 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 02:07:45 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 10:52:52 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 10:52:52 INFO  LoginPage:58 - Application is Launched
+2019-08-08 10:52:52 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 10:52:52 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 10:52:52 INFO  LoginPage:68 - admin username is entered
+2019-08-08 10:52:52 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 10:52:52 INFO  LoginPage:71 - password is entered
+2019-08-08 10:52:52 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 10:52:52 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 10:52:54 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 10:52:54 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 10:52:54 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 10:52:54 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 10:52:54 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 10:53:00 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 10:53:00 INFO  LoginPage:58 - Application is Launched
+2019-08-08 10:53:01 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 10:53:01 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 10:53:01 INFO  LoginPage:68 - admin username is entered
+2019-08-08 10:53:01 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 10:53:01 INFO  LoginPage:71 - password is entered
+2019-08-08 10:53:01 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 10:53:01 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 10:53:03 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 10:53:03 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 10:53:03 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 10:53:03 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 10:53:03 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 10:53:03 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 10:53:03 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 12:38:36 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 12:38:36 INFO  LoginPage:58 - Application is Launched
+2019-08-08 12:38:37 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 12:38:37 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 12:38:37 INFO  LoginPage:68 - admin username is entered
+2019-08-08 12:38:37 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 12:38:37 INFO  LoginPage:71 - password is entered
+2019-08-08 12:38:42 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 12:38:42 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 12:38:49 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 12:38:49 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 12:38:49 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 12:38:49 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 12:38:49 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 12:38:58 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 12:38:58 INFO  LoginPage:58 - Application is Launched
+2019-08-08 12:38:58 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 12:38:58 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 12:38:58 INFO  LoginPage:68 - admin username is entered
+2019-08-08 12:38:58 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 12:38:58 INFO  LoginPage:71 - password is entered
+2019-08-08 12:38:58 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 12:38:58 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 12:39:00 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 12:39:01 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 12:39:01 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 12:39:01 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 12:39:01 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 12:39:01 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 12:39:01 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 14:22:49 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:22:49 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:22:49 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:22:50 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:22:50 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:22:50 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:22:50 INFO  LoginPage:71 - password is entered
+2019-08-08 14:22:50 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:22:50 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:22:52 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:22:52 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 14:22:52 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 14:22:52 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:22:52 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 14:22:59 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:22:59 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:22:59 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:22:59 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:22:59 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:22:59 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:22:59 INFO  LoginPage:71 - password is entered
+2019-08-08 14:23:00 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:23:00 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:23:01 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:23:02 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 14:23:02 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:23:02 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 14:23:02 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 14:23:02 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:23:02 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 14:28:45 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:28:45 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:28:45 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:28:46 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:28:46 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:28:46 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:28:46 INFO  LoginPage:71 - password is entered
+2019-08-08 14:28:46 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:28:46 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:28:48 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:28:48 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 14:28:48 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 14:28:48 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:28:48 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 14:28:54 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:28:54 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:28:54 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:28:54 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:28:54 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:28:55 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:28:55 INFO  LoginPage:71 - password is entered
+2019-08-08 14:28:55 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:28:55 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:28:56 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:28:57 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 14:28:57 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:28:57 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 14:28:57 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 14:28:57 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:28:57 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 14:32:49 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:32:49 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:32:49 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:32:49 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:32:49 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:32:49 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:32:49 INFO  LoginPage:71 - password is entered
+2019-08-08 14:32:49 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:32:49 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:32:56 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:32:57 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 14:32:57 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 14:32:57 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:32:57 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 14:33:04 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 14:33:04 INFO  LoginPage:58 - Application is Launched
+2019-08-08 14:33:04 INFO  LoginPage:60 - user clicked the login button is Launched
+2019-08-08 14:33:04 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:33:04 INFO  LoginPage:68 - admin username is entered
+2019-08-08 14:33:04 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 14:33:04 INFO  LoginPage:71 - password is entered
+2019-08-08 14:33:04 INFO  LoginPage:73 - Authenticate button is clicked for Login
+2019-08-08 14:33:04 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:33:06 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:33:07 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 14:33:07 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 14:33:07 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 14:33:07 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 14:33:07 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 14:33:07 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:18:46 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:18:46 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:19:42 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:19:42 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:20:15 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:20:15 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:20:21 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:20:21 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:25:47 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:25:47 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:25:55 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:25:55 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:26:15 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:26:15 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:29:11 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:29:13 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 15:46:39 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 15:46:39 INFO  LoginPage:57 - Application is Launched
+2019-08-08 15:46:40 INFO  LoginPage:59 - user clicked the login button is Launched
+2019-08-08 15:47:07 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 15:47:07 INFO  LoginPage:67 - admin username is entered
+2019-08-08 15:47:34 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 15:47:34 INFO  LoginPage:70 - password is entered
+2019-08-08 15:47:35 INFO  LoginPage:72 - Authenticate button is clicked for Login
+2019-08-08 15:47:35 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 15:47:51 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 15:47:51 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 15:47:51 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 15:47:51 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 15:47:51 INFO  SessionsPageFunctionality:65 - user closes the session
+2019-08-08 15:47:51 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 15:48:01 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 15:48:01 INFO  LoginPage:57 - Application is Launched
+2019-08-08 15:48:01 INFO  FunctionLibrary:187 - Exception in commonClick:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'WP3078', ip: '10.234.0.121', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\kannanu\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cf555c2543c1f892ba448b3f559b984c
+*** Element info: {Using=xpath, value=//a[text()='login'] }
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'WP3078', ip: '10.234.0.121', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\kannanu\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cf555c2543c1f892ba448b3f559b984c
+*** Element info: {Using=xpath, value=//a[text()='login'] }
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.org.util.FunctionLibrary.commonClick(FunctionLibrary.java:184)
+	at com.org.pages.LoginPage.ApplicationLaunchLoginButtonClick(LoginPage.java:58)
+	at cucumber.stepdefinitions.SessionsPageFunctionality.user_login_into_the_Gurukul_application(SessionsPageFunctionality.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2019-08-08 15:48:01 INFO  LoginPage:59 - user clicked the login button is Launched
+2019-08-08 15:48:01 INFO  FunctionLibrary:218 - Exception in commonSetTextTextBox:no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'WP3078', ip: '10.234.0.121', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\kannanu\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cf555c2543c1f892ba448b3f559b984c
+*** Element info: {Using=id, value=username}
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.142)
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'WP3078', ip: '10.234.0.121', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.142, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\kannanu\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cf555c2543c1f892ba448b3f559b984c
+*** Element info: {Using=id, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.org.util.FunctionLibrary.commonSetTextTextBox(FunctionLibrary.java:207)
+	at com.org.pages.LoginPage.LoginIntoGuruKulPage(LoginPage.java:64)
+	at com.org.pages.LoginPage.LogindefaultUserDetails(LoginPage.java:53)
+	at cucumber.stepdefinitions.SessionsPageFunctionality.user_login_into_the_Gurukul_application(SessionsPageFunctionality.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.runtime.Runtime.run(Runtime.java:122)
+	at cucumber.api.cli.Main.run(Main.java:36)
+	at cucumber.api.cli.Main.main(Main.java:18)
+2019-08-08 15:48:01 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed
+2019-08-08 17:11:35 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 17:11:35 INFO  LoginPage:57 - Application is Launched
+2019-08-08 17:11:35 INFO  LoginPage:59 - user clicked the login button is Launched
+2019-08-08 17:11:35 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 17:11:35 INFO  LoginPage:67 - admin username is entered
+2019-08-08 17:11:35 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 17:11:35 INFO  LoginPage:70 - password is entered
+2019-08-08 17:11:35 INFO  LoginPage:72 - Authenticate button is clicked for Login
+2019-08-08 17:11:35 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 17:11:37 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 17:11:37 INFO  FunctionLibrary:259 - Actual Text is active sessions for [admin]
+2019-08-08 17:11:37 INFO  FunctionLibrary:260 - Expected Text is active sessions for [admin]
+2019-08-08 17:11:37 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 17:11:37 INFO  CommonPageStepDefinition:37 - Verify that user can navigate for the sessions page  execution is completed
+2019-08-08 17:11:46 INFO  CommonPageStepDefinition:22 - driver is initialized
+2019-08-08 17:11:46 INFO  LoginPage:57 - Application is Launched
+2019-08-08 17:11:46 INFO  LoginPage:59 - user clicked the login button is Launched
+2019-08-08 17:11:46 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 17:11:46 INFO  LoginPage:67 - admin username is entered
+2019-08-08 17:11:46 INFO  FunctionLibrary:210 - admin text Entered in textbox
+2019-08-08 17:11:46 INFO  LoginPage:70 - password is entered
+2019-08-08 17:11:46 INFO  LoginPage:72 - Authenticate button is clicked for Login
+2019-08-08 17:11:46 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 17:11:48 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 17:11:48 INFO  SessionsPage:53 - Invalidate Button is clicked to delete the session
+2019-08-08 17:11:48 INFO  SessionsPage:18 - UpdatePasswordPage elements are initialized
+2019-08-08 17:11:49 INFO  FunctionLibrary:259 - Actual Text is session invalidated!
+2019-08-08 17:11:49 INFO  FunctionLibrary:260 - Expected Text is session invalidated!
+2019-08-08 17:11:49 INFO  FunctionLibrary:263 - Validation of message is working fine
+2019-08-08 17:11:49 INFO  CommonPageStepDefinition:37 - Verify that user can able to delete the session  execution is completed

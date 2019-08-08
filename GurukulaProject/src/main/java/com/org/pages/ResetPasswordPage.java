@@ -28,17 +28,22 @@ public class ResetPasswordPage extends FunctionLibrary{
 	WebElement EmailTextField;
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement submit;
-	@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/div[1]")
+	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/div[1]")
+	@FindBy(xpath="//strong[contains(text(),'E-Mail address isn't registered!')]")
 	WebElement ErrorMessage;
-	@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[2]")
+	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[2]")
+	@FindBy(xpath="//*[text()='Your e-mail is invalid.']")
 	WebElement InvalidEmailidErrorMessage;
 	 
-	@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[3]")
+	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[3]")
+	@FindBy(xpath="//p[contains(text(),'Your e-mail is required to be at least 5 character')]")
 	WebElement InvalidEmailid5charsErrorMessage;
 	 
-	@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[4]")
+	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[4]")
+	@FindBy(xpath="//p[contains(text(),'Your e-mail cannot be longer than 50 characters.')]")
 	WebElement InvalidEmailidErrorMsgwith50Chars;
-	@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[1]")
+	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[1]")
+	@FindBy(xpath="//*[text()='Your e-mail is required.']")
 	WebElement EmailidRequireErrorMessageExpectedElement;
 	
 	private static final String ERROR="E-Mail address isn't registered! Please check and try again";
@@ -55,85 +60,60 @@ public class ResetPasswordPage extends FunctionLibrary{
 	
 	public void ResetPasswordPageVerification() {
 			logger.info("ResetPasswordPageVerification is in progress");
-		    ResetPasswordPageTitle.getText();
-			logger.info("ExpectedResult is "+ResetPasswordTitle);
-			logger.info("ActualResult is "+ResetPasswordPageTitle.getText());
+		    //ResetPasswordPageTitle.getText();
+			assertTrue(commonVerifyLabelText(ResetPasswordPageTitle, ResetPasswordTitle));
+			//logger.info("ExpectedResult is "+ResetPasswordTitle);
+			//logger.info("ActualResult is "+ResetPasswordPageTitle.getText());
 		
-		assertEquals(ResetPasswordPageTitle.getText(),ResetPasswordTitle);
+		//assertEquals(ResetPasswordPageTitle.getText(),ResetPasswordTitle);
 	}
 	
 	public void ForgotPasswordlinkClick() {
-		//ForgotPasswordLink.click();
 		commonClick(ForgotPasswordLink);
 		logger.info("Forgot Password link is clicked");
 		}
 	
 	public void validEmailIdverification(String emailid ) {
-		//EmailTextField.sendKeys(emailid);	
 		commonSetTextTextBox(EmailTextField, emailid);
-		logger.info("Emailid is entered as "+emailid);
+			logger.info("Emailid is entered as "+emailid);
 		commonClick(submit);
-		logger.info("Submit button is clicked");
-		logger.info("Verifying the emailid and submit button is displayed still or not ");
+			logger.info("Submit button is clicked");
+			logger.info("Verifying the emailid and submit button is displayed still or not ");
 		assertFalse(EmailTextField.isDisplayed());		
 		}
 	
 	public void InvalidEmailIdverification(String emailid) {
-		//EmailTextField.sendKeys(emailid);
 		commonSetTextTextBox(EmailTextField, emailid);
 		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		//submit.click();
 		commonClick(submit);
-		//logger.info("Submit button is clicked");
-		//logger.info("ExpectedResult is "+ERROR);
-		//logger.info("ActualResult is "+ErrorMessage.getText());
-		assertEquals(ERROR,ErrorMessage.getText());
+		//assertEquals(ERROR,ErrorMessage.getText());
 		assertTrue(commonVerifyLabelText(ErrorMessage, ERROR));
 		EmailTextField.clear();
 		}
 
 	public void InvalidEmailidWithoutSymbol(String emailid) {
-		//EmailTextField.sendKeys(emailid);		
-		//logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		//logger.info("ExpectedResult is "+InvalidEmailidErrorMessageExpected);
-		//logger.info("ActualResult is "+InvalidEmailidErrorMessage.getText());
-		//assertEquals(InvalidEmailidErrorMessageExpected,InvalidEmailidErrorMessage.getText());
+		
 		commonSetTextTextBox(EmailTextField, emailid);
 		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMessage, InvalidEmailidErrorMessageExpected));
 		EmailTextField.clear();
 		
 	}
 	public void InvalidEmailid5CharsCheck(String emailid) {
-		//EmailTextField.sendKeys(emailid);		
 		commonSetTextTextBox(EmailTextField, emailid);
-	//	logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-	//	logger.info("ExpectedResult is "+InvalidEmailid5charsErrorMessageExpected);
-	//	logger.info("ActualResult is "+InvalidEmailid5charsErrorMessage.getText());
-	//	assertEquals(InvalidEmailid5charsErrorMessageExpected,InvalidEmailid5charsErrorMessage.getText());
 		assertTrue(commonVerifyLabelText(InvalidEmailid5charsErrorMessage, InvalidEmailid5charsErrorMessageExpected));
 		EmailTextField.clear();
 	}
 	
 	public void InvalidEmailidwith50CharsValidation(String emailid) {
 		commonSetTextTextBox(EmailTextField, emailid);
-		//EmailTextField.sendKeys(emailid);		
 		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMsgwith50Chars, InvalidEmailid50charsErrorMessageExpected));
-		//logger.info("Invalid and unregistered Emailid is entered as "+emailid);
-		//logger.info("ExpectedResult is "+InvalidEmailid50charsErrorMessageExpected);
-		//logger.info("ActualResult is "+InvalidEmailidErrorMsgwith50Chars.getText());
-	//	assertEquals(InvalidEmailid50charsErrorMessageExpected,InvalidEmailidErrorMsgwith50Chars.getText());
-		EmailTextField.clear();
+		 EmailTextField.clear();
 	}
 
 	public void NoEmailidVerificationWarningMessage() {
 		commonSetTextTextBox(EmailTextField, "remove");
 		EmailTextField.clear();
 		assertTrue(commonVerifyLabelText(EmailidRequireErrorMessageExpectedElement, EmailidRequireErrorMessageExpected));
-		//logger.info("Emailid text field is made empty");
-		//logger.info("Invalid and unregistered Emailid is entered as blank ");
-		//logger.info("ExpectedResult is "+EmailidRequireErrorMessageExpected);
-		//logger.info("ActualResult is "+EmailidRequireErrorMessageExpectedElement.getText());
-		//assertEquals(EmailidRequireErrorMessageExpected,EmailidRequireErrorMessageExpectedElement.getText());
 	}
 	 
 	

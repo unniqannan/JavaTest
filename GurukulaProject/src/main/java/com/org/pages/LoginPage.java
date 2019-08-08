@@ -1,6 +1,5 @@
 package com.org.pages;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
@@ -9,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.org.util.FunctionLibrary;
+import com.org.util.FunctionLibrary;;
 
   
 
@@ -57,6 +56,7 @@ static Logger logger = Logger.getLogger(LoginPage.class.getName());
 public void ApplicationLaunchLoginButtonClick() {
 	logger.info("Application is Launched");
 	commonClick(login);
+	logger.info("user clicked the login button is Launched");
 }
 
 public void LoginIntoGuruKulPage(String strusername,String strpassword) {

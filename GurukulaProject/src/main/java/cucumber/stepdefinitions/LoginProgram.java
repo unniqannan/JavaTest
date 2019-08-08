@@ -4,47 +4,35 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import com.org.managers.WebDriverManager;
 import com.org.pages.LoginPage;
 import com.org.pages.RegistrationPage;
 import com.org.pages.ResetPasswordPage;
-import com.org.pages.SettingsPage;
-import com.org.util.Log;
-
 import cucumber.api.DataTable;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import com.org.util.LoggerHelper;
 //
 
 public class LoginProgram {
 	public static WebDriver driver;
 	Logger logger=LoggerHelper.getLogger(LoginProgram.class);
-
-	 
 	
 @Given("^A user launch the Gurukul application$")
 public void naviagate_to_GurukulaURL_page() {
 	driver=CommonPageStepDefinition.lanuchApplication();
    }
-
 @Given("^User logs in by clicking Login button$")
 public void user_logs_in_by_clicking_Login_button() throws Throwable {
 	LoginPage loginpage=new LoginPage(driver);
 	loginpage.ApplicationLaunchLoginButtonClick();
-
 }
-
 @Then("^User should not be able to login with invalid credentials <username> and <password>$")
 public void user_should_not_be_able_to_login_with_invalid_credentials_username_and_password(DataTable testdata) throws Throwable {
 	LoginPage loginpage=new LoginPage(driver);
 	List<List<String>> data = testdata.raw();
 	for(int i=1;i<5;i++) {
-		loginpage.LoginIntoGuruKulPage(data.get(i).get(0),data.get(i).get(1));
 		logger.info("Invalid Credentials provided and Login should fail");
+		loginpage.LoginIntoGuruKulPage(data.get(i).get(0),data.get(i).get(1));
 		loginpage.clearLogintext();
 	}
 }
@@ -53,8 +41,6 @@ public void user_should_not_be_able_to_login_with_invalid_credentials_username_a
 public void user_should_be_able_to_login_successfully_with_correct_credentials_username_and_password(DataTable testdata) {
 	List<String> login=testdata.asList(String.class);
 	LoginPage loginpage=new LoginPage(driver);
-	System.out.println(login.get(0));
-	System.out.println(login.get(1));
 	loginpage.LoginIntoGuruKulPage(login.get(0),login.get(1));
 }
 

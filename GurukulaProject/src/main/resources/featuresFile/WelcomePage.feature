@@ -1,5 +1,5 @@
 @FunctionalTesting
-Feature: Validation of Welcome Page object Functionality an 
+Feature: Validation of Welcome Page object Functionality
    
  Scenario: User can navigate to login page from Authenticate link under Account menu	
 	Given The user launches the application  

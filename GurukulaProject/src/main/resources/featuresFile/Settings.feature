@@ -1,45 +1,45 @@
 @FunctionalTesting
 Feature: Validation of Settings Page Functionality 
    
-	 Scenario: User would be able to navigate to Settings page from Account menu > Settings   
+	 Scenario: Settings Page Navigation - User would be able to navigate to Settings page from Account menu > Settings   
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen
     Then User should be able to see the Settings page
       
 	  
-	  Scenario: User would be able to change the Settings details in Settings page 
+	  Scenario: Change Settings without changes  - User would be able to change the Settings details in Settings page 
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
     Then user without any changes should be able to change the Settings details by clicking Save button
 	     
 	   
-	  Scenario: User would be able to change the Settings details in Settings page 
+	  Scenario: Change Settings without changes - User would be able to change the Settings details in Settings page 
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
     Then user does the changes the settings and clicking save button should be able to change the settings 
 	    
 	 
-  	  Scenario: Verify that the First Name has mandatory checks,max chars in Settings details at Settings page 
+  	  Scenario: First Name_Text field validation - mandatory checks,max chars in Settings details at Settings page 
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
      And mandatory field check for First Name field if text is not provided
      And Max chars can enter is fifty in the length for First Name field
      
      
-	   Scenario: Verify that the Last Name has mandatory checks,max chars in Settings details at Settings page 
+	   Scenario: LastName_Text field validation - mandatory checks,max chars in Settings details at Settings page 
    Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
      And mandatory field check for Last Name field if text is not provided
      And Max chars can enter is fifty in the length for Last Name field   
 	   
 	      
-	 Scenario: Verify warning message shown when not entered in E-mail field as part of mandatory field validation in Settings details at Settings page
+	 Scenario: Email field_Text field validation - mandatory check 
    Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen
    Then User provides no emailid and verify warning error message showing up
    
       
-   Scenario: Verify proper error message is shown up as part of E-mail invalid field validation in Settings details at Settings page 
+   Scenario: Email field_Minimum chars checks
    Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen
    Then user provides email text having less than five chars without @ symbol in <Emailid> and verify validation is done for minimum char
@@ -49,7 +49,7 @@ Feature: Validation of Settings Page Functionality
     |abcd| 
    
     
-    Scenario: Verify proper error message is shown up as part of E-mail invalid field validation in Settings details at Settings page 
+    Scenario: Email field_mail id with out @ symbol  
    Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen
    Then user provides email text without @ symbol in <Emailid> and verify validation is done for invalid emailid

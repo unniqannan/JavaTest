@@ -1,4 +1,4 @@
-@FunctionalTesting
+@SmokeTest
 Feature: Sessions Page Functional Scenarios
   
  

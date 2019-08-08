@@ -2,26 +2,20 @@ package cucumber.stepdefinitions;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import com.org.managers.WebDriverManager;
-import com.org.pages.LoginPage;
-import com.org.util.FunctionLibrary;
 import com.org.util.LoggerHelper;
-
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 
 public class CommonPageStepDefinition extends AbstractPageStepDefinition {
 
 	static Logger logger=LoggerHelper.getLogger(CommonPageStepDefinition.class);
 	 
 	public static WebDriver driver;
-	 
+	
+	//Returns driver to every step definition file
 	public static WebDriver lanuchApplication() {
 		webdrivermanager=new WebDriverManager();
 		 driver=webdrivermanager.getDriver();	
@@ -47,8 +41,7 @@ public class CommonPageStepDefinition extends AbstractPageStepDefinition {
 		//else
 			//kk=FunctionLibrary.fn_TakeSnapshot(driver, "target/Screenshots/Pass/ScreenshotPass");
 		 
-		driver.close();
-		driver.quit();
+			Close_session();
 	}
 	
 }

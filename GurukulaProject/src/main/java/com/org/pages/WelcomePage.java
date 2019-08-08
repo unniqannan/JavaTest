@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.org.util.FunctionLibrary;
-import com.org.util.Log;
 import static org.junit.Assert.*;
 
 import org.apache.log4j.Logger;

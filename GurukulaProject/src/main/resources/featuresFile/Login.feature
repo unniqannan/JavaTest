@@ -1,4 +1,4 @@
-@LoginFunctionalTesting
+@SmokeTestFunSmokeTest
 Feature: Login Functionality Check 
    
  
@@ -20,19 +20,19 @@ Feature: Login Functionality Check
     Then User should be able to login successfully with valid credentials <username> and <password>
     |admin		|admin		|
    
-   Scenario:  ForgotPassword Functionality  
+   Scenario:  ForgotPassword link click navigation check  
     Given A user launch the Gurukul application
      And User logs in by clicking Login button
     Then User should be able to navigate to Reset Password page by clicking Forgot Password link
     
  
-    Scenario: Registration of New User
+    Scenario: Registration link click navigation check
     Given A user launch the Gurukul application
      And User logs in by clicking Login button
     Then User clicking on Register new account link should navigate to register new user page
  
     
-    Scenario: Logout Functionality
+    Scenario: Logout Functionality check
     Given A user launch the Gurukul application 
      And User logs in by clicking Login button
 	   Then User should be able to login successfully with valid credentials <username> and <password>
