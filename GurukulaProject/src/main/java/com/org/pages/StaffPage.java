@@ -58,7 +58,7 @@ public class StaffPage extends FunctionLibrary {
 //	@FindBy(xpath="//form[@name='deleteForm']//span[@class='ng-scope'][contains(text(),'Cancel')]")
 	//WebElement BranchDeletepopupCancelButton;
 	
-	Logger logger=LoggerHelper.getLogger(BranchesPage.class);
+	Logger logger=LoggerHelper.getLogger(StaffPage.class);
 	
 	public StaffPage(WebDriver driver) {
 		this.driver=driver;

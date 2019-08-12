@@ -1,7 +1,7 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-
-@ssd
+#Author: Unni Kannan
+#This feature is about the functionaliy on Branches page of having Title Verification, creating the Branch, Editing the Branch, Deleting the Branch, 
+#Text Field Validations
+@BranchFunctionalTesting
 Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete Branch, Field Validation 
 
 	  Scenario: Branches Page Title Verification    
@@ -15,6 +15,12 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     And  User able to click Create a new Branch link
     Then  User should be able to see a popup for creating a Branch
     
+    Scenario: Create Branch > Cancel Button - Branch will not be created when user clicks cancel in creating Branch pop up page 
+    Given Branches Feature_User launches the application
+    And User logs in and navigates to Branches page by clicking Account Menu > Branches 
+    And  User able to click Create a new Branch link
+    And User provides the details "CancelBranchName" and "8888" in the Create new Branch popup page and clicks Cancel button
+    Then User cannot see the Branch "CancelBranchName" and "8888" in the Branches page as it is cancelled
     
     Scenario: Create Branch Functionality - Create Branch click and click Save to create a Branch   
     Given Branches Feature_User launches the application
@@ -23,27 +29,26 @@ Feature: Branches functionality.  Covering the scnarios of Create, Edit, Delete 
     And User provides the details "NewBranchName" and "7777" in the Create new Branch popup page and clicks Save button
     Then User can see the Branch "NewBranchName" and "7777" created and listed in the Branches page
     
-    
-   Scenario: Create Branch > Cancel Button - Branch will not be created when user clicks cancel in creating Branch pop up page 
-    Given Branches Feature_User launches the application
+    Scenario: Create Multiple Branches Functionality
+  	Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
-    And  User able to click Create a new Branch link
-    And User provides the details "CancelBranchName" and "8888" in the Create new Branch popup page and clicks Cancel button
-    Then User cannot see the Branch "CancelBranchName" and "8888" in the Branches page as it is cancelled
+    Then User creates Branches by giving Branch Name <BranchName> in Name field and Code <Code> in code Field in Create Branch popup page and clicks save button
+     |BranchName	|Code	|
+    |GurukulBranchOne		|777|
+    |GurukulBranchTwo		|888|	
+    |GurukulBranchThree		|999|	
     
-    
-   Scenario: Click View link to see Branch details    
+    Scenario: Click View link to see Branch details    
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the view link for the <NewBranchName> code in the webtable
     Then 	User can see the Branch details
     
-    
     Scenario: Click Branch ID - User would be able to see the Branch details by clicking Branch ID link   
     Given Branches Feature_User launches the application
     And User logs in and navigates to Branches page by clicking Account Menu > Branches 
     And  	User clicks the Branch ID of given <NewBranchName> in the webtable
-    Then 	User can see the Branch details of "NewBranchName" and "7777" of the BranchID 
+    Then 	User can see the Branch details of "GurukulBranchOne" and "777" of the BranchID 
     
     
     Scenario: Branch View Page > Back Button functionality - User would be able Navigate to Branches page by clicking Back button in respective Branch page   

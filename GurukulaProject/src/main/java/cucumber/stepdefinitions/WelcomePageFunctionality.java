@@ -68,14 +68,5 @@ public void user_navigates_to_Welcome_Screen_by_clicking_Home_link() {
 public void in_welcome_screen_user_clicks_on_Register_a_new_Account_link() {
 	WelcomePage welcomepage=new WelcomePage(driver);
 	welcomepage.RegisterANewAccountlinkclick();
-	}
-
-
-@Then("^WelcomePage_FunctionalityCheck_Feature_user closes the session$")
-public void closeBrowser() {
-	logger.info("user closes the session");
-	//CommonPageStepDefinition.Close_session();
-}
-
-	   
+	}	   
  }

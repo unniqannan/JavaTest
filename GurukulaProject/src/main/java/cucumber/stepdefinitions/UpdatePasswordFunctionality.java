@@ -46,8 +46,6 @@ public class UpdatePasswordFunctionality  {
 		UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 		updatePasswordPage.PasswordChangeVerfication();
 	}
-	
-
 	@Given("^user provides less than five chars as \"([^\"]*)\" in the New Password text field$")
 	public void user_provides_less_than_five_chars_in_the_New_Password_text_field(String testdata)  {
 		UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
@@ -58,9 +56,6 @@ public class UpdatePasswordFunctionality  {
 		UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 		updatePasswordPage.FiveCharsWarningMessageValidation("password");
 	}
-	 
-	 
-	
 	@Given("^user provides less than five chars as \"([^\"]*)\" in the Confirm Password text field$")
 	public void user_provides_less_than_five_chars_in_the_Confirm_Password_text_field(String testdata) {
 		UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
@@ -90,20 +85,16 @@ public class UpdatePasswordFunctionality  {
 		updatePasswordPage.ConfirmPasswordEntry(arg2);
 		updatePasswordPage.submitClick();
 	}
-
-
 	@Then("^Verify that Error message is shown up if new password and confirm password not matching$")
 	public void verify_that_Error_message_is_shown_up_if_new_password_and_confirm_password_not_matching(){
 		UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 		updatePasswordPage.NoMatchingPassword();
 	}
-
 @Given("^user provides different password text for complexity check and seen that password Strength is shown up$")
 public void user_provides_different_password_text_for_complexity_check_and_seen_that_password_Strength_is_shown_up(){
 	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 	updatePasswordPage.PasswordStrengthCheck("Kannan", "Kannan@","Kannan@112");
 }
-
 @Given("^user provides more than fifty chars length in the New Password text field$")
 public void user_provides_more_than_fifty_chars_length_in_the_New_Password_text_field(){
 	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
@@ -122,20 +113,11 @@ public void verify_that_Error_message_is_shown_up_stating_cannot_be_more_than_fi
 	updatePasswordPage.FiftyCharsLenthValidation("password");
      
 }
-
 @Then("^Verify that Error message is shown up stating cannot be more than fifty chars for confirm Password field$")
 public void verify_that_Error_message_is_shown_up_stating_cannot_be_more_than_fifty_chars_for_confirm_Password_field() throws Throwable {
 	UpdatePasswordPage updatePasswordPage=new UpdatePasswordPage(driver);
 	updatePasswordPage.FiftyCharsLenthValidation("confirmpassword");
     
-}
-
-
-
-@Then("^UpdatePassword_FunctionalityCheck_Feature_user closes the session$")
-public void closeBrowser() {
-	logger.info("user closes the session");
-	//CommonPageStepDefinition.Close_session();
 }
 }
  

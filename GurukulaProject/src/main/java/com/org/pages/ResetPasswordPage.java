@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.org.enums.AppValidationMessages;
 import com.org.util.FunctionLibrary;
 import com.org.util.LoggerHelper;
 
@@ -28,14 +29,13 @@ public class ResetPasswordPage extends FunctionLibrary{
 	WebElement EmailTextField;
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement submit;
-	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/div[1]")
-	@FindBy(xpath="//strong[contains(text(),'E-Mail address isn't registered!')]")
-	WebElement ErrorMessage;
-	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[2]")
+	@FindBy(xpath="//strong[contains(text(),\"E-Mail address isn't registered!\")]")
+	WebElement EmailIDNotRegisteredErrorMessage;
+	@FindBy(xpath="//p[contains(text(),'Enter the e-mail address you used to register')]")
+	WebElement EnterRegisteredEmailID;
 	@FindBy(xpath="//*[text()='Your e-mail is invalid.']")
 	WebElement InvalidEmailidErrorMessage;
 	 
-	//@FindBy(xpath="/html/body/div[3]/div[1]/div/div/div/form/div/div/p[3]")
 	@FindBy(xpath="//p[contains(text(),'Your e-mail is required to be at least 5 character')]")
 	WebElement InvalidEmailid5charsErrorMessage;
 	 
@@ -46,12 +46,7 @@ public class ResetPasswordPage extends FunctionLibrary{
 	@FindBy(xpath="//*[text()='Your e-mail is required.']")
 	WebElement EmailidRequireErrorMessageExpectedElement;
 	
-	private static final String ERROR="E-Mail address isn't registered! Please check and try again";
-	private static final String ResetPasswordTitle="Reset your password";
-	private static final String InvalidEmailidErrorMessageExpected="Your e-mail is invalid.";
-	private static final String InvalidEmailid5charsErrorMessageExpected="Your e-mail is required to be at least 5 characters.";
-	private static final String InvalidEmailid50charsErrorMessageExpected="Your e-mail cannot be longer than 50 characters.";
-	private static final String EmailidRequireErrorMessageExpected="Your e-mail is required.";
+	 
 	public ResetPasswordPage(WebDriver driver) {
 		this.driver=driver;
 		logger.info("ResetPasswordPage elements are initialized");
@@ -60,12 +55,7 @@ public class ResetPasswordPage extends FunctionLibrary{
 	
 	public void ResetPasswordPageVerification() {
 			logger.info("ResetPasswordPageVerification is in progress");
-		    //ResetPasswordPageTitle.getText();
-			assertTrue(commonVerifyLabelText(ResetPasswordPageTitle, ResetPasswordTitle));
-			//logger.info("ExpectedResult is "+ResetPasswordTitle);
-			//logger.info("ActualResult is "+ResetPasswordPageTitle.getText());
-		
-		//assertEquals(ResetPasswordPageTitle.getText(),ResetPasswordTitle);
+			assertTrue(commonVerifyLabelText(ResetPasswordPageTitle, AppValidationMessages.ResetPasswordTitle));
 	}
 	
 	public void ForgotPasswordlinkClick() {
@@ -87,33 +77,34 @@ public class ResetPasswordPage extends FunctionLibrary{
 		logger.info("Invalid and unregistered Emailid is entered as "+emailid);
 		commonClick(submit);
 		//assertEquals(ERROR,ErrorMessage.getText());
-		assertTrue(commonVerifyLabelText(ErrorMessage, ERROR));
+		assertTrue(commonVerifyLabelText(EmailIDNotRegisteredErrorMessage, AppValidationMessages.EmailIDisntRegiseredstr));
+		assertTrue(commonVerifyLabelText(EnterRegisteredEmailID, AppValidationMessages.EmailIDUsedtoRegsterstr));
 		EmailTextField.clear();
 		}
 
 	public void InvalidEmailidWithoutSymbol(String emailid) {
 		
 		commonSetTextTextBox(EmailTextField, emailid);
-		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMessage, InvalidEmailidErrorMessageExpected));
+		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMessage, AppValidationMessages.InvalidEmailidErrorMessageExpected));
 		EmailTextField.clear();
 		
 	}
 	public void InvalidEmailid5CharsCheck(String emailid) {
 		commonSetTextTextBox(EmailTextField, emailid);
-		assertTrue(commonVerifyLabelText(InvalidEmailid5charsErrorMessage, InvalidEmailid5charsErrorMessageExpected));
+		assertTrue(commonVerifyLabelText(InvalidEmailid5charsErrorMessage, AppValidationMessages.InvalidEmailid5charsErrorMessageExpected));
 		EmailTextField.clear();
 	}
 	
 	public void InvalidEmailidwith50CharsValidation(String emailid) {
 		commonSetTextTextBox(EmailTextField, emailid);
-		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMsgwith50Chars, InvalidEmailid50charsErrorMessageExpected));
+		assertTrue(commonVerifyLabelText(InvalidEmailidErrorMsgwith50Chars, AppValidationMessages.InvalidEmailid50charsErrorMessageExpected));
 		 EmailTextField.clear();
 	}
 
 	public void NoEmailidVerificationWarningMessage() {
 		commonSetTextTextBox(EmailTextField, "remove");
 		EmailTextField.clear();
-		assertTrue(commonVerifyLabelText(EmailidRequireErrorMessageExpectedElement, EmailidRequireErrorMessageExpected));
+		assertTrue(commonVerifyLabelText(EmailidRequireErrorMessageExpectedElement, AppValidationMessages.EmailidRequireErrorMessageExpected));
 	}
 	 
 	

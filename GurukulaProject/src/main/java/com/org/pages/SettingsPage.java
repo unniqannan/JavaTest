@@ -152,7 +152,6 @@ public class SettingsPage extends FunctionLibrary {
 	public void CloseSession() {
 		logger.info("user closes the session");
 		driver.close();
-		driver.quit();
-		
+		driver.quit();		
 	}
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.org.util.FunctionLibrary;
+import com.org.util.Log;
 import static org.junit.Assert.*;
 
 import org.apache.log4j.Logger;
@@ -21,70 +22,51 @@ public class WelcomePage extends FunctionLibrary {
 	
 	@FindBy(xpath="//*[text()='Account']")
 	WebElement Accountmenu1;
-	
 	@FindBy(xpath="//*[text()='Register']")
-	WebElement Register1;
-	
+	WebElement Register1;	
 	@FindBy(xpath= "//h1[@translate='main.title']")
-	WebElement MainTitle;
-	 
+	WebElement MainTitle;	 
 	@FindBy(xpath= "//a[text()='login']")
 	WebElement login;
-	
 	@FindBy(xpath="//h1[@translate='login.title']")
 	WebElement AuthenticationTitle;
-	
- 
-	
 	@FindBy(xpath="//span[@class='hidden-tablet ng-scope']")
 	WebElement AccountMenu;
 	@FindBy(xpath="//span[text()='Password']")
 	WebElement PasswordSubMenu;
 	@FindBy(xpath="//a[contains(text(),'Register a new account')]")
-	WebElement RegisterANewAccount;
-		
+	WebElement RegisterANewAccount;	
 	@FindBy(xpath="//li//a//span[@translate='global.menu.account.login']")
-	WebElement AuthenticateSubMenu;
-	
+WebElement AuthenticateSubMenu;
 	@FindBy(xpath="//h1[@translate='register.title']")
 	WebElement RegisterationPageTitle;
-	
-	//@FindBy(xpath="//li//a[text()='#/register']//span[@translate='global.menu.account.register']")
 	@FindBy(xpath="//span[contains(text(),'Register')]")
 	WebElement RegisterSubMenu;
 	
 	public WelcomePage(WebDriver driver) {
-	//	super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	public void PasswordSubMenuClick() {
 		commonClick_MenuItem(driver,AccountMenu,PasswordSubMenu);
-		//PasswordSubMenu.click();
 	}
 	public void WelcomePageloginlinkClick() {
 		commonClick(login);
 		logger.info("Welcome Page login link is clicked");		
 	}
-	 
-
 	public void MainTitleVerficationCheck() {
 		String ActualResult=MainTitle.getText();
 		logger.info("Gurukul main page title verification");
-		assertEquals(ActualResult,"Welcome to Gurukula!");
-		
+		assertEquals(ActualResult,"Welcome to Gurukula!");		
 	}
-	
 	public void AuthenticationTitleCheck() {
 		String ActualResult=AuthenticationTitle.getText();
 		logger.info("Verification of Authentication page title ");
 		assertEquals(ActualResult,"Authentication");
-		
 	}
 	public void AccountMenuClick() {
 		AccountMenu.click();
-	}
-	
+	}	
 	public void AuthenticateSubMenuClick() {
 		//AccountMenu.click();
 		logger.info("In welcome Screen, Account Menu is clicked");
@@ -92,20 +74,14 @@ public class WelcomePage extends FunctionLibrary {
 		commonClick_MenuItem(driver,AccountMenu,AuthenticateSubMenu);
 		logger.info("In welcome Screen, Account Menu > Authenticate Sub menu is clicked");
 	}
-	
 	public void RegisterSubMenuClick() {
-		//commonClick_MenuItem(driver,AccountMenu,RegisterSubMenu);
-		//commonClick_MenuItem(driver,Accountmenu1,Register1);
-	//	AccountMenu.click();
 		driver.findElement(By.xpath("//span[@class='hidden-tablet ng-scope']")).click();
 		JavascriptExecutor js = (JavascriptExecutor) driver; 
 		js.executeScript("arguments[0].click();",Accountmenu1);
 		WebElement reg=driver.findElement(By.xpath("//span[contains(text(),'Register')]"));
 		logger.info("In welcome Screen, Account Menu is clicked");
 		JavascriptExecutor js1 = (JavascriptExecutor) driver; 
-		js1.executeScript("arguments[0].click();",reg);
-	    //js.executeScript("arguments[0].click();",RegisterSubMenu);
-		 
+		js1.executeScript("arguments[0].click();",reg);		 
 		logger.info("In welcome Screen, Account Menu > Register Sub menu is clicked");
 	}
 	 

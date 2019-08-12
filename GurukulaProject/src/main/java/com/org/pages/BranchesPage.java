@@ -77,7 +77,7 @@ public class BranchesPage extends FunctionLibrary {
 	WebElement BranchListWebTable;
 	@FindBy(xpath="//span[contains(text(),'View')]")
 	WebElement BranchListView;
-	@FindBy(xpath="//a[text()='1']")
+	@FindBy(xpath="//a[text()='2']")
 	WebElement BranchListIDlink;
 	
 	@FindBy(xpath="//h2/span[@translate='gurukulaApp.branch.detail.title']")
@@ -113,24 +113,19 @@ public class BranchesPage extends FunctionLibrary {
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		 commonSetTextTextBox(BranchSearchtextfield, sText);
-	//	driver.findElement(By.xpath("//*[@id=\"searchQuery\"]")).sendKeys(sText);
+
 		 try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		commonClick(BranchSearchButton);
-		
 	}
 	
 	public void NewBranchButtonClick() {
-		 
-		//wait.until(ExpectedConditions.elementToBeClickable(NewBranch));
 		commonClick(NewBranch);
 		Log.info("NewBranch link is clicked in Branches page");
 		}
@@ -153,7 +148,6 @@ public class BranchesPage extends FunctionLibrary {
 		assertTrue(commonVerifyLabelText(BranchesPageTitle,AppValidationMessages.BranchesPagetitle));
 		}
 	public void NewBranchCancelButton() {
-		
 		commonClick(NewBranchCancelButton);
 	}
 
@@ -295,10 +289,6 @@ public void BranchDeletepopupCancelButton() {
 	commonClick(BranchDeletepopupCancelButton);
 }
 
-public void BranchCheckNotAvailable(String name, String code) {
-	assertTrue(!commonWebTableVerifyText(BranchListWebTable,name,code));
-	
-}
 public void BranchCheckNotAvailable(String name) {
 	assertTrue(!commonWebTableVerifyText(BranchListWebTable,name));
 	

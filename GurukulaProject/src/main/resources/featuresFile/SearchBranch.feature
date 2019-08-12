@@ -1,4 +1,4 @@
-@SmokeTestfdsfs
+@SearchBranch
 Feature: Search Branch 
          
 		 Scenario: Pre-requisites to create Branches for searching       
@@ -40,8 +40,8 @@ Scenario: Search with spaces between words - Branch details should NOT be shown 
 
 Scenario: Branch details should be shown when user search with BRANCH ID  
     Given Search_Branch_Feature_User launches the application and navigates to Account Menu > Branches with default admin login
-    When user search for the branch using branch ID with "1" 
-    Then branch details should be shown with "1"
+    When user search for the branch using branch ID with "2" 
+    Then branch details should be shown with "2"
 
 Scenario: Search with invalid chars - Branch details should NOT be shown when user search with criteria of invalid branch code, invalid branch name, partial branch name, partial code 
     Given Search_Branch_Feature_User launches the application and navigates to Account Menu > Branches with default admin login

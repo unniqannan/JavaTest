@@ -1,19 +1,12 @@
 package cucumber.stepdefinitions;
 
 import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-
-import com.org.managers.WebDriverManager;
 import com.org.pages.LoginPage;
 import com.org.pages.ResetPasswordPage;
-import com.org.util.Log;
 import com.org.util.LoggerHelper;
-
 import cucumber.api.DataTable;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,22 +16,20 @@ public class ResetPasswordFunctionality {
 	Logger logger=LoggerHelper.getLogger(ResetPasswordFunctionality.class);
   
 	@Given("^A user launches application and navigates to Reset Password page through Forgot Password link$")
-	public void a_user_launches_application_and_navigates_to_Reset_Password_page_through_Forgot_Password_link() { 
+	public void ApplicationLaunchNaviageResetPasswordPage() { 
 		driver=CommonPageStepDefinition.lanuchApplication();
 		LoginPage login=new LoginPage(driver);
 		login.ApplicationLaunchLoginButtonClick();
 		 ResetPasswordPage resetPassword=new ResetPasswordPage(driver);
 		 	resetPassword.ForgotPasswordlinkClick();
-			resetPassword.ResetPasswordPageVerification();
-		 
+			resetPassword.ResetPasswordPageVerification();	 
 	   }
 	
 	@Then("^verify that user is able to navigate to ResetPasswordpage$")
-	public void verify_that_user_is_able_to_navigate_to_ResetPasswordpage() {
+	public void ResetPasswordPageTitleVerification() {
 		ResetPasswordPage resetPassword=new ResetPasswordPage(driver);
 		resetPassword.ResetPasswordPageVerification();
 	}
- 
 	
 	@Then("^user provides a unregistered and invalid emailid <Emailid> and verify proper error message is shown$")
 	public void InvalidEmailIdverification(DataTable testdata) throws Throwable {
@@ -82,10 +73,5 @@ public class ResetPasswordFunctionality {
 	public void user_provides_no_emailid_and_verify_proper_error_message_is_shown()   {
 		ResetPasswordPage resetPassword=new ResetPasswordPage(driver);
 	     resetPassword.NoEmailidVerificationWarningMessage();
-	}
-	@Then("^ResetPassword_FunctionalityCheck_Feature_user closes the session$")
-	public void closeBrowser() {
-		logger.info("user closes the session");
-		//CommonPageStepDefinition.Close_session();
 	}
 }

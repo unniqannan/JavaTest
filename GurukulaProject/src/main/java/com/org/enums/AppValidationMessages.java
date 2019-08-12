@@ -19,10 +19,18 @@ public class AppValidationMessages {
 	public static final String SpecialChar="@";
 	
 	//Login
-	public static final String MoreThanFiftycharslengthWarningMessageForLoginstr="Your Login cannot be longer than 50 characters.";
-	
+	public static final String MoreThanFiftycharslengthWarningMessageForLoginstr="Your Login cannot be longer than 50 characters.";	
 	public static final String LoginRquiredStr="Your login is required.";
 	public static final String specialCharsCheckStr="Your login can only contain lower-case letters and digits.";
+	
+	//ResetPassword
+public static final String EmailIDUsedtoRegsterstr="Enter the e-mail address you used to register";
+public static final String EmailIDisntRegiseredstr="E-Mail address isn't registered!";
+public static final String ResetPasswordTitle="Reset your password";
+public static final String InvalidEmailidErrorMessageExpected="Your e-mail is invalid.";
+public static final String InvalidEmailid5charsErrorMessageExpected="Your e-mail is required to be at least 5 characters.";
+public static final String InvalidEmailid50charsErrorMessageExpected="Your e-mail cannot be longer than 50 characters.";
+public static final String EmailidRequireErrorMessageExpected="Your e-mail is required.";
 	
 	//Generic Strings
 	public static final String FiftyCharsCheck="50chars";

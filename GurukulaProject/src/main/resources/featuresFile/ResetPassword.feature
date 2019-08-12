@@ -1,5 +1,5 @@
 #Author: Unni Kannan
-@FunctionalTesting
+@ResetPassword
 Feature: Reset Password
 
   Scenario: Reset Password with unRegistered Email 
@@ -18,7 +18,7 @@ Feature: Reset Password
    
    Scenario: Reset Password with Valid Email - Happy Path
    Given A user launches application and navigates to Reset Password page through Forgot Password link
-   When user provides a valid registered email id "add2kannan@gmail.com"
+   When user provides a valid registered email id "admin@localhost"
     
     
    Scenario: Email id Text Validation - alpha chars, alphanumberic entry

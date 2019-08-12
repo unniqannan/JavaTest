@@ -19,38 +19,42 @@ public class StaffPageFunctionality {
 	public static WebDriver driver;
 Logger logger=LoggerHelper.getLogger(StaffPageFunctionality.class);
 
+//user launches the application
 @Given("^Staff Feature_User launches the application$")
 public void lanuchApplication() {
 	driver=CommonPageStepDefinition.lanuchApplication();
 }
+//Navigating to Staff page
 @Given("^User logs in and navigates to Staff page by clicking Account Menu > Staff$")
-public void user_logs_in_and_navigates_to_Staff_page_by_clicking_Account_Menu_Staff() {
+public void NavigatingtoStaffPage() {
 	    LoginPage loginpage=new LoginPage(driver);
 	    loginpage.ApplicationLaunchLoginButtonClick();
 		loginpage.LoginIntoGuruKulPage("admin","admin");
 		StaffPage searchStaffPage=new StaffPage(driver);
 		searchStaffPage.StaffPageNavigate();
 }
+//Staff page title validation
 @Then("^User should be able to see the Staff page$")
-public void user_should_be_able_to_see_the_Staff_page(){
+public void StaffPageTitleValidation(){
 	StaffPage StaffPage=new StaffPage(driver);
 	StaffPage.StaffPageTitleValidation();
 }
+//Clicking the Create New Staff link to navigate Create Staff Page for creating Staff
 @Given("^User able to click Create a new Staff link$")
-public void user_able_to_click_Create_a_new_Staff_link() throws Throwable {
+public void clickingCreateNewStaffLink() throws Throwable {
 	StaffPage staffPage=new StaffPage(driver);
 		staffPage.NewStaffButtonClick();
 }
-
+//Create Staff Details Pop Up page verification
 @Then("^User should be able to see a popup for creating a Staff$")
-public void user_should_be_able_to_see_a_popup_for_creating_a_Staff() throws Throwable {
+public void CreateStaffPopUp() throws Throwable {
 	StaffPage staffPage=new StaffPage(driver);
 	staffPage.CreateorEditStaffPopupCheck();    
 }
  
-
+//Creating Staff with inputs of Staff and Branch inputs 
 @Then("^create four different Staffs  of <Name> and <Branch>$")
-public void create_four_different_Staffs_of_Name_and_Branch(DataTable testdata) throws Throwable {
+public void CreateStaffWithStaffBranchInputs(DataTable testdata) throws Throwable {
 	StaffPage staffPage=new StaffPage(driver);
 	List<List<String>> data = testdata.raw();
 	for(int i=1;i<data.size();i++) {
@@ -59,16 +63,16 @@ public void create_four_different_Staffs_of_Name_and_Branch(DataTable testdata) 
 		logger.info("New Branches are created for Search functionality check");
 		}
 	}
-
+//Searching with staff name 
 @When("^on the same page, user search for the Staff using Staff name \"([^\"]*)\"$")
-public void on_the_same_page_user_search_for_the_Staff_using_Staff_name(String arg1) throws Throwable {
+public void SearchingForStaff(String arg1) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	BranchesPage branchPage=new BranchesPage(driver);
 	branchPage.BranchSearch(arg1);
 }
 
 @Then("^Staff details page should be shown in the Staff list for \"([^\"]*)\" as the staff is created$")
-public void staff_details_page_should_be_shown_in_the_Staff_list_for_as_the_staff_is_created(String arg1) throws Throwable {
+public void SearchResultsVerificationOfStaff(String arg1) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	BranchesPage branchPage=new BranchesPage(driver);
 	Thread.sleep(2000);
@@ -76,7 +80,7 @@ public void staff_details_page_should_be_shown_in_the_Staff_list_for_as_the_staf
 }
 
 @Given("^User provides the details \"([^\"]*)\" and \"([^\"]*)\" in the Create new Staff popup page and clicks Cancel button$")
-public void user_provides_the_details_and_in_the_Create_new_Staff_popup_page_and_clicks_Cancel_button(String arg1, String arg2) throws Throwable {
+public void CancelButtonValidationinStaffPopup(String arg1, String arg2) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	//StaffPage staffPage=new StaffPage(driver);
 	//staffPage.CreateStaff(arg1,arg2);
@@ -88,33 +92,33 @@ public void user_provides_the_details_and_in_the_Create_new_Staff_popup_page_and
 }
 
 @Then("^User cannot see the Staff \"([^\"]*)\" and \"([^\"]*)\" in the Staffs page as it is cancelled$")
-public void user_cannot_see_the_Staff_and_in_the_Staffs_page_as_it_is_cancelled(String arg1, String arg2) throws Throwable {
+public void NonAvailabilityofStaff(String arg1, String arg2) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	BranchesPage branchPage=new BranchesPage(driver);
-	branchPage.BranchCheckNotAvailable(arg1, arg2);
+	branchPage.BranchNotAvailable(arg1, arg2);
 }
 
 @Given("^User clicks the view link for the <OneStaffSelenium> code in the webtable$")
-public void user_clicks_the_view_link_for_the_OneStaffSelenium_code_in_the_webtable() throws Throwable {
+public void ViewLinkValidation() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.ClickViewButton();
 }
-
+//Staff details screen validation when clicked view link
 @Then("^User can see the Staff details$")
-public void user_can_see_the_Staff_details() throws Throwable {
+public void StaffDetailsScreenValidation() throws Throwable {
 	StaffPage staffPage=new StaffPage(driver);
 	staffPage.ViewBranchDetailsScreen();
 }
-
+//Back button functional check in Staff Details screen
 @Given("^Back should be available in Branch details page and cicking Back button should navigate to Staff page$")
-public void back_should_be_available_in_Branch_details_page_and_cicking_Back_button_should_navigate_to_Staff_page() throws Throwable {
+public void StaffDetailsScreen_BackButtonValidation() throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.clickBackButtonBranchDetailsPage();
 }
-
+//Name field text validation for mandatory , char length check
 @Then("^Create_Edit_Staff_Pop_Up_Name text field has functionality of mandatory check,max char lenth$")
-public void name_text_field_has_mandatory_check_minmum_char_length_max_char_lenth()  throws Throwable {
+public void NameTextFieldValidation()  throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.NameTextFieldNewBranchmandatoryfieldCheck();
 	//branchesPage.MaxCharLengthValidationNameTextField();
@@ -123,81 +127,113 @@ public void name_text_field_has_mandatory_check_minmum_char_length_max_char_lent
 	staffPage.maxfiftyCharslengthCheck();
 }
 
-//Edit
+//Name and Code data verification in Edit staff page
 @Then("^Name and Branch is shown in Edit Staff page$")
-public void name_and_Branch_is_shown_in_Edit_Staff_page() throws Throwable {
+public void EditDetailsScreen() throws Throwable {
 	StaffPage staffPage=new StaffPage(driver);
 	staffPage.CheckNameAndbranchDetailsAvailableforEditedStaff();
 }
+//Edit link functional check in Staff page
 @Given("^User clicks Edit Staff link$")
-public void user_clicks_Edit_Staff_link() throws Throwable {
+public void EditLinkValidation() throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.ClickEditButtonBranchList();
 }
-
+//Click button functionality check in Edit Scren popup
 @Given("^User provides the details \"([^\"]*)\" in the Create new Staff popup page and clicks Cancel button$")
-public void user_provides_the_details_in_the_Create_new_Staff_popup_page_and_clicks_Cancel_button(String arg1) throws Throwable {
+public void EditScreen_CancelButtonValidation(String arg1) throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.EnterNewBranchNametextfield(arg1);
 	Thread.sleep(500);
 	branchesPage.NewBranchCancelButton();
 	logger.info("User is clicked the cancel button");
 }
-
+//Verifying that Staff which is not available in Staff list
 @Then("^User cannot see the staff \"([^\"]*)\" in the Staff page as it is cancelled$")
-public void user_cannot_see_the_staff_in_the_Staff_page_as_it_is_cancelled(String arg1) throws Throwable {
+public void StaffUnavaialbleCheck(String arg1) throws Throwable {
 	BranchesPage branchPage=new BranchesPage(driver);
 	branchPage.BranchCheckNotAvailable(arg1);
 }
-
-//Edit and Save 
+//Save button functionality check in Edit Screen popup
 @Given("^User provides the details \"([^\"]*)\" in the Edit Staff popup page and clicks save button$")
-public void user_provides_the_details_and_in_the_Edit_Staf_popup_page_and_clicks_save_button(String arg1) throws Throwable {
+public void EditScren_SaveButtonFunctionalityCheck(String arg1) throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	StaffPage staffPage=new StaffPage(driver);
 	staffPage.CreateStaff(arg1,"");
 	logger.info("Edited and Save button is clicked");
 }
-
+//Staff created and listed in the Staff
 @Then("^User can see the Staff \"([^\"]*)\" created and listed in the Staff page$")
-public void user_can_see_the_Branch_and_created_and_listed_in_the_Staff_page(String arg1) throws Throwable {
+public void StaffAvailabilityCheck(String arg1) throws Throwable {
 	BranchesPage branchPage=new BranchesPage(driver);
 	Thread.sleep(200);
 	branchPage.BranchCheck(arg1);
 }
-
-//Delete
+//Delete link in Staff Page
 @Given("^User clicks the Delete link for <EditedStaffName>$")
-public void user_clicks_the_Delete_link_for_EditedStaffName() throws Throwable {
+public void StaffPage_DeleteLinkClickFunctionalCheck() throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	branchesPage.BranchIDDelete();
 }
+//Cancel button validation in Staff popup screen
 @Then("^User Clicks the cancel button in Staff popup window$") 
-public void user_Clicks_the_cancel_button_and_seen_that_Branch_ID_is_not_deleted_and_can_be_seen_in_Branch_details_page() throws Throwable {
+public void StaffPage_DeletePopUp_CancelButtonFunctionality() throws Throwable {
 	BranchesPage branchesPage=new BranchesPage(driver);
 	Thread.sleep(5000);
 	branchesPage.BranchDeletepopupCancelButton();
 }
-
+//Verifying for the Staff whether available in Staff page
 @Then("^User can see the Staff \"([^\"]*)\" listed in the Staffs page$")
-public void user_can_see_the_Staff_listed_in_the_Staffs_page(String arg1) throws Throwable {
+public void StaffListingCheck(String arg1) throws Throwable {
 	BranchesPage branchPage=new BranchesPage(driver);
 	Thread.sleep(500);
 	branchPage.BranchCheck(arg1);
 }
+//Clicking Delete button in Delete Popup 
 @Then("^User Clicks the Delete button in Staff popup window$")
-public void user_Clicks_the_Delete_button_and_seen_that_Branch_ID_is_deleted_and_will_not_be_listed_in_Branch_details_page() throws Throwable  {
+public void ClickDeleteButton_DeletePopup() throws Throwable  {
     // Write code here that turns the phrase above into concrete actions
 	BranchesPage branchesPage=new BranchesPage(driver);
 	Thread.sleep(500);
 	branchesPage.BranchListDeletebuttonInPopup();
 }
-
+//Verification for the Staff which is not available
 @Then("^User cannot see the Staff \"([^\"]*)\" in the Staffs page$")
-public void user_cannot_see_the_Staff_in_the_Staffs_page(String arg1) throws Throwable {
+public void StaffUnavailableInStaffList(String arg1) throws Throwable {
 	BranchesPage branchPage=new BranchesPage(driver);
 	Thread.sleep(500);
 	branchPage.BranchCheckNotAvailable(arg1);
 }
-
+//Navigating to Staff page
+@Given("^User logs in and navigates to Branch page by clicking Account Menu > Branch$")
+public void NavigationToStaffPage() throws Throwable {
+	LoginPage loginpage=new LoginPage(driver);
+    loginpage.ApplicationLaunchLoginButtonClick();
+	loginpage.LoginIntoGuruKulPage("admin","admin");
+	BranchesPage branchesPage=new BranchesPage(driver);
+	branchesPage.BranchesPageNavigate();     
+}
+//Creating Branches with Name and Code as part of pre-requisites
+@Then("^User creates Branches <BrancheName> and <Code> as a pre-requisites$")
+public void CreatingMultipleBranchesForStaff(DataTable testdata) throws Throwable {
+	BranchesPage branchPage=new BranchesPage(driver);
+	List<List<String>> data = testdata.raw();
+	for(int i=1;i<data.size();i++) {
+		branchPage.NewBranchButtonClick();
+		branchPage.CreateBranch(data.get(i).get(0),data.get(i).get(1));
+		logger.info("New Branches are created for Search functionality check");
+	}
+}
+//Creating staff without Branches
+@Then("^create four different Staffs  of <Name> without Branch selection$")
+public void CreatingStaff_ForBlankBranch(DataTable testdata) throws Throwable {
+	StaffPage staffPage=new StaffPage(driver);
+	List<List<String>> data = testdata.raw();
+	for(int i=1;i<data.size();i++) {
+		staffPage.NewStaffButtonClick();
+		staffPage.CreateStaff(data.get(i).get(0),data.get(i).get(1));
+		
+		}
+	logger.info("New Staff is created without Branch");
+}
 }

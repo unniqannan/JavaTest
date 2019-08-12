@@ -19,28 +19,17 @@ public class CommonPageStepDefinition extends AbstractPageStepDefinition {
 	public static WebDriver lanuchApplication() {
 		webdrivermanager=new WebDriverManager();
 		 driver=webdrivermanager.getDriver();	
-		 logger.info("driver is initialized");
-	 
+		 logger.info("driver is initialized");	 
 		 return driver;
-	}	
-	
-	 
+	}		 
 	public static void Close_session() {
-			 webdrivermanager.closeDriver();
-	}
-	
+			webdrivermanager.closeDriver();
+	}	
 	@After
 	public void endTest(Scenario scenario) {
-		//String kk;
-		//if(scenario.isFailed()) {
-			//kk=FunctionLibrary.fn_TakeSnapshot(driver, "target/Screenshots/Fail/ScreeshotFail");
 		logger.info(scenario.getName() + "  execution is completed");
 			final byte[] screenshot=((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.embed(screenshot, "image/png");
-			//}
-		//else
-			//kk=FunctionLibrary.fn_TakeSnapshot(driver, "target/Screenshots/Pass/ScreenshotPass");
-		 
 			Close_session();
 	}
 	

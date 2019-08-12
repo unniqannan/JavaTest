@@ -7,13 +7,13 @@ Feature: Validation of Settings Page Functionality
     Then User should be able to see the Settings page
       
 	  
-	  Scenario: Change Settings without changes  - User would be able to change the Settings details in Settings page 
+	  Scenario: Change Settings without changes  - User would be able to save the Settings details in Settings page 
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
     Then user without any changes should be able to change the Settings details by clicking Save button
 	     
 	   
-	  Scenario: Change Settings without changes - User would be able to change the Settings details in Settings page 
+	  Scenario: Change Settings changes - User would be able to change the Settings details in Settings page 
     Given A User launches application logs in successfully with valid credentials
     And User navigates to Settings page by clicking Account Menu > Settings welcome screen 
     Then user does the changes the settings and clicking save button should be able to change the settings 

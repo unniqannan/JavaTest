@@ -89,8 +89,6 @@ public class UpdatePasswordPage extends FunctionLibrary {
 		if(text.equals(strPasswordNotChanged))
 		{
 			assertFalse(true);
-			driver.quit();
-			driver.close();
 		}
 		}
 		catch(Exception e) {}
@@ -108,9 +106,6 @@ public class UpdatePasswordPage extends FunctionLibrary {
 	
 	public void UpdatePasswordPageTitleValidation() {
 		logger.info("update Password Page title Verification");
-		//logger.info("ExpectedResult is "+UpdatePasswordPageTitleText);
-		//logger.info("ActualResult is "+UpdatePasswordPageTitle.getText());
-		//assertEquals(UpdatePasswordPageTitleText,UpdatePasswordPageTitle.getText());
 		  assertTrue(commonVerifyLabelText(UpdatePasswordPageTitle,UpdatePasswordPageTitleText));
 	}
 

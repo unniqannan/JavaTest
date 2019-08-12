@@ -1,4 +1,4 @@
-@FunctionalTesting
+@Registration
 Feature: Registration Page Functionality Check 
    
 	  Scenario: Registering Existing User  - User should not be able to register by providing existing user details   

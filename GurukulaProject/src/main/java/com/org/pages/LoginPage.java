@@ -1,5 +1,6 @@
 package com.org.pages;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.log4j.Logger;
@@ -8,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.org.util.FunctionLibrary;;
+import com.org.util.FunctionLibrary;
 
   
 
@@ -101,14 +102,6 @@ public void rememberMecheckboxClick() {
 		logger.info("Verified that rememberMeCheck is selected or not");
 		rememberMecheckbox.click();
 		logger.info("rememberMe Checkbox if selected, then unchecked it");
-}
-
-public void CloseSession() {
-	 fn_TakeSnapshot(driver,"target//Screenshots");
-	logger.info("user closes the session");
-	driver.close();
-	driver.quit();
-	
 }
 
 }
