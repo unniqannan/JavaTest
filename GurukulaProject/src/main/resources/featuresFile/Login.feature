@@ -1,4 +1,4 @@
-@SmokeTestFunSmokeTest
+@Login
 Feature: Login Functionality Check 
    
  
