@@ -8,8 +8,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import com.org.util.ConfigFileReader;
 
-import cucumber.api.java.After;
-
 import com.org.enums.DriverType;
 import com.org.enums.EnvironmentType;
 
@@ -51,8 +49,6 @@ public class WebDriverManager {
         case FIREFOX : driver = new FirefoxDriver();
 	    	break;
         case CHROME : 
-        	//System.out.println("configreaderdriver   >"+configfileReader.getDriverPath());
-        	//System.setProperty(CHROME_DRIVER_PROPERTY,configfileReader.getDriverPath());// FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	System.setProperty(CHROME_DRIVER_PROPERTY,configfileReader.getDriverPath()+"chromedriver.exe");
         	driver = new ChromeDriver();
     		break;
