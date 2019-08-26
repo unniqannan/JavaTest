@@ -5,7 +5,6 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-
 import com.org.utility.UIOperation;
 
 public class BranchesMainDetailPage extends UIOperation {

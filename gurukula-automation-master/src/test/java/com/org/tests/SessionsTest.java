@@ -3,15 +3,15 @@ package com.org.tests;
 import org.testng.annotations.Test;
 
 import com.org.enums.AppInterfaceEnum;
-import com.gurukula.common.MenuEnum;
-import com.gurukula.common.WelcomeEnum;
-import com.gurukula.pages.LoginPage;
-import com.gurukula.pages.SessionsPage;
-import com.gurukula.pages.WelcomePage;
-import com.gurukula.utility.Init;
+import com.org.enums.AppMenuEnum;
+import com.org.enums.AppWelcomePageEnum;
+import com.org.pages.LoginPage;
+import com.org.pages.SessionsPage;
+import com.org.pages.WelcomePage;
+import com.org.utility.StartApplication;;
 
 @Test(groups = { "sessions" })
-public class SessionsTest extends Init {
+public class SessionsTest extends StartApplication {
 
 	WelcomePage welcomePage;
 	LoginPage loginPage;
@@ -35,9 +35,9 @@ public class SessionsTest extends Init {
 		loginPage = new LoginPage(driver);
 		sessionsPage = new SessionsPage(driver);
 
-		welcomePage.clickOnLink(WelcomeEnum.LOGIN_LINK.getVal());
+		welcomePage.clickOnLink(AppWelcomePageEnum.LOGIN_LINK.getVal());
 		loginPage.LoginSucessFunctionalityCheck(USERNAME, PASSWORD);
-		welcomePage.clickOnOption(MenuEnum.Account.name(), AppInterfaceEnum.Sessions.getVal());
+		welcomePage.clickOnOption(AppMenuEnum.Account.name(), AppInterfaceEnum.Sessions.getVal());
 	}
 
 }

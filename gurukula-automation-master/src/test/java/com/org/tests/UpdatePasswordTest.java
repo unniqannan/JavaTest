@@ -3,7 +3,7 @@ package com.org.tests;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.org.enums.AppValidationMessages;
+import com.org.enums.AppValidationConstantMessages;
 import com.org.enums.AppInterfaceEnum;
 import com.org.enums.AppMenuEnum;
 import com.org.enums.AppWelcomePageEnum;
@@ -57,7 +57,7 @@ public class UpdatePasswordTest extends StartApplication {
 	public void tc_05_testPasswordAndConfirmPasswordMatch() {
 		preSteps();
 		updatePasswordPage.enterNewPasswordAndSubmit("Test#123", "Abc#123");
-		updatePasswordPage.assertMessage(AppValidationMessages.PASSWORD_NOT_MATCHED);
+		updatePasswordPage.assertMessage(AppValidationConstantMessages.PASSWORD_NOT_MATCHED);
 	}
 
 	private void preSteps() {
@@ -74,8 +74,8 @@ public class UpdatePasswordTest extends StartApplication {
 	public Object[][] requiredField() {
 		return new Object[][] {
 			// @formatter:off
-            {UpdatePasswordPage.PASSWORD, AppValidationMessages.PASSWORD_REQUIRED, "req"},
-            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationMessages.CONFIRM_PASSWORD_REQUIRED, "req"},
+            {UpdatePasswordPage.PASSWORD, AppValidationConstantMessages.PASSWORD_REQUIRED, "req"},
+            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationConstantMessages.CONFIRM_PASSWORD_REQUIRED, "req"},
             //@formatter:on
 		};
 	}
@@ -84,12 +84,12 @@ public class UpdatePasswordTest extends StartApplication {
 	public Object[][] validations() {
 		return new Object[][] {
 			// @formatter:off
-            {UpdatePasswordPage.PASSWORD, AppValidationMessages.PASSWORD_MINIMUM, "A"},
-            {UpdatePasswordPage.PASSWORD, AppValidationMessages.PASSWORD_MAXIMUM,
+            {UpdatePasswordPage.PASSWORD, AppValidationConstantMessages.PASSWORD_MINIMUM, "A"},
+            {UpdatePasswordPage.PASSWORD, AppValidationConstantMessages.PASSWORD_MAXIMUM,
                 "this text is to test the max limit of the password1"},
 
-            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationMessages.CONFIRM_PASSWORD_MINIMUM, "A"},
-            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationMessages.CONFIRM_PASSWORD_MAXIMUM,
+            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationConstantMessages.CONFIRM_PASSWORD_MINIMUM, "A"},
+            {UpdatePasswordPage.CONFIRM_PASSWORD, AppValidationConstantMessages.CONFIRM_PASSWORD_MAXIMUM,
                 "this text is to test the max limit of the password1"}
             //@formatter:on
 		};

@@ -9,11 +9,7 @@ public class ConfigFileReader {
 
     private static Properties prop;
 
-    /**
-     * This function is to read properties file
-     *
-     * @return propertires
-     */
+     
     public static Properties ReadProperties() {
         try {
             InputStream input = new FileInputStream("src/test/resources/configuration.properties");

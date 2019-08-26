@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="gurukula-automation-master/src/test/java"/>
+	<classpathentry kind="src" path="gurukula-automation-masterOriginal/gurukula-automation-masterOriginal/src/test/java"/>
+	<classpathentry kind="src" path="GurukulaProject/src/main/java"/>
+	<classpathentry kind="src" path="GurukulaProject/src/test/java"/>
+	<classpathentry kind="src" path="GuruKulProjTestNG/src/main/java"/>
+	<classpathentry kind="src" path="GuruKulProjTestNG/src/test/java"/>
+	<classpathentry kind="src" path="SatMicOptumSelenium/src/main/java"/>
+	<classpathentry kind="src" path="SatMicOptumSelenium/src/test/java"/>
+	<classpathentry kind="src" path="SeleniumTest/src/main/java"/>
+	<classpathentry kind="src" path="SeleniumTest/src/test/java"/>
+	<classpathentry kind="lib" path="SeleniumTest/target/SeleniumTest-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="GurukulaProject/target/classes"/>
+</classpath>

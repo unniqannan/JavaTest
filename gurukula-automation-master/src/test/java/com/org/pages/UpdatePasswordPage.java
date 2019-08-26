@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.org.pages;
 
 import static org.testng.Assert.assertEquals;

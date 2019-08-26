@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 import com.org.enums.AppUserActionsEnum;
 import com.org.enums.AppPageAttributesEnum;
-import com.org.enums.AppMenuEnum;
 import com.org.enums.AppWelcomePageEnum;
+import com.org.enums.AppMenuEnum;
 import com.org.pages.BranchMainPage;
 import com.org.pages.LoginPage;
 import com.org.pages.StaffMainPage;
@@ -31,19 +31,19 @@ public class MiscellaneousScenariosTest extends StartApplication {
 		branchPage.assertBranchRowBy(branchId, branch, code);
 		context.setAttribute("branchId", branchId);
 
-		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), EntitiesEnum.Staff.name());
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Staff.name());
 
 		int staffId = staffPage.createNewStaff(staff, branchId);
 		staffPage.assertStaffRowBy(staffId, staff, branch);
 
-		welcomePage.clickOnOption(MenuEnum.Entities.name(), EntitiesEnum.Branch.name());
-		branchPage.clickOnActionCorrespondingToId(ActionsEnum.Edit.name(), branchId);
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Branch.name());
+		branchPage.clickOnActionCorrespondingToId(AppUserActionsEnum.Edit.name(), branchId);
 		branchPage.assertDetailsOnEditForm(branchId, branch, code);
-		branchPage.updateBranchDetails(ActionsEnum.Save.name(), "Civil", code);
+		branchPage.updateBranchDetails(AppUserActionsEnum.Save.name(), "Civil", code);
 
 		branchPage.assertBranchRowBy(branchId, "Civil", code);
 
-		welcomePage.clickOnOption(MenuEnum.Entities.name(), EntitiesEnum.Staff.name());
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Staff.name());
 		staffPage.assertStaffRowBy(staffId, staff, "Civil");
 
 	}
@@ -52,9 +52,9 @@ public class MiscellaneousScenariosTest extends StartApplication {
 	public void tc_02_testDeleteBranchAssociatedWithStaff(ITestContext context) {
 		preSteps();
 		int branchId = (Integer) context.getAttribute("branchId");
-		branchPage.clickOnActionCorrespondingToId(ActionsEnum.Delete.name(), branchId);
+		branchPage.clickOnActionCorrespondingToId(AppUserActionsEnum.Delete.name(), branchId);
 		branchPage.assertDeleteConfirmationModalForBranch(branchId);
-		branchPage.deleteBranch(ActionsEnum.Delete.name());
+		branchPage.deleteBranch(AppUserActionsEnum.Delete.name());
 
 		/*
 		 * TODO: Code need to be added after defect ID [defect_25] get fixed.
@@ -64,17 +64,17 @@ public class MiscellaneousScenariosTest extends StartApplication {
 	private void preSteps() {
 		welcomePage = new WelcomePage(driver);
 		loginPage = new LoginPage(driver);
-		branchPage = new BranchPage(driver);
-		staffPage = new StaffPage(driver);
+		branchPage = new BranchMainPage(driver);
+		staffPage = new StaffMainPage(driver);
 
-		welcomePage.clickOnLink(WelcomeEnum.LOGIN_LINK.getVal());
-		loginPage.loginAndAssertSuccessfulMessage(USERNAME, PASSWORD);
-		welcomePage.clickOnOption(MenuEnum.Entities.name(), EntitiesEnum.Branch.name());
+		welcomePage.clickOnLink(AppWelcomePageEnum.LOGIN_LINK.getVal());
+		loginPage.LoginSucessFunctionalityCheck(USERNAME, PASSWORD);
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Branch.name());
 	}
 
 	@DataProvider(name = "branchAndStaffDetails")
 	public Object[][] newBranchDetails() {
-		return new Object[][] { { "Mechanical", "ME", "Anuj" } };
+		return new Object[][] { { "Commerce", "ME", "Kannan" } };
 	}
 
 }

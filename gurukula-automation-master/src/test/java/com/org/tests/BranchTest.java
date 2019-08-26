@@ -10,13 +10,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.org.enums.AppUserActionsEnum;
-import com.org.enums.AppValidationMessages;
+import com.org.enums.AppValidationConstantMessages;
 import com.org.enums.AppPageAttributesEnum;
 import com.org.enums.AppMenuEnum;
 import com.org.enums.AppWelcomePageEnum;
 import com.org.pages.BranchMainPage;
 import com.org.pages.BranchesMainDetailPage;
-import com.gurukula.pages.LoginPage;
+import com.org.pages.LoginPage;
 import com.org.pages.WelcomePage;
 import com.org.utility.StartApplication;
  
@@ -161,17 +161,17 @@ public class BranchTest extends StartApplication {
 	public Object[][] validations() {
 		return new Object[][] {
 			// @formatter:off
-			{ "name", AppValidationMessages.BRANCH_NAME_REQUIRED, "" },
-			{ "name", AppValidationMessages.BRANCH_NAME_MINIMUM, "a" },
-			{ "name", AppValidationMessages.BRANCH_NAME_PATTERN, "test1" },
-			{ "name", AppValidationMessages.BRANCH_NAME_PATTERN, "test@"},
-			{ "name", AppValidationMessages.BRANCH_NAME_MAXIMUM , "test the maximum limit of text field"},
+			{ "name", AppValidationConstantMessages.BRANCH_NAME_REQUIRED, "" },
+			{ "name", AppValidationConstantMessages.BRANCH_NAME_MINIMUM, "a" },
+			{ "name", AppValidationConstantMessages.BRANCH_NAME_PATTERN, "test1" },
+			{ "name", AppValidationConstantMessages.BRANCH_NAME_PATTERN, "test@"},
+			{ "name", AppValidationConstantMessages.BRANCH_NAME_MAXIMUM , "test the maximum limit of text field"},
 			
-			{ "code", AppValidationMessages.BRANCH_CODE_REQUIRED, ""  },
-			{ "code", AppValidationMessages.BRANCH_CODE_MINIMUM, "A" },
-			{ "code", AppValidationMessages.BRANCH_CODE_PATTERN, "A@" },
-			{ "code", AppValidationMessages.BRANCH_CODE_PATTERN, "Ac" },
-			{ "code", AppValidationMessages.BRANCH_CODE_MAXIMUM, "CS1234567890" }
+			{ "code", AppValidationConstantMessages.BRANCH_CODE_REQUIRED, ""  },
+			{ "code", AppValidationConstantMessages.BRANCH_CODE_MINIMUM, "A" },
+			{ "code", AppValidationConstantMessages.BRANCH_CODE_PATTERN, "A@" },
+			{ "code", AppValidationConstantMessages.BRANCH_CODE_PATTERN, "Ac" },
+			{ "code", AppValidationConstantMessages.BRANCH_CODE_MAXIMUM, "CS1234567890" }
 			// @formatter:on
 		};
 	}

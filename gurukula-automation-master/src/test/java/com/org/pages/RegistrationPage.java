@@ -41,7 +41,7 @@ public class RegistrationPage extends UIOperation {
     }
 
     /**
-     * This function is to assert Registration page heading.
+     * This function is to checking the Registration page heading.
      */
     public void assertRegistrationPageHeading() {
         waitForElement(xpathHeading);
@@ -53,7 +53,7 @@ public class RegistrationPage extends UIOperation {
     }
 
     /**
-     * This function is to enter details on Registration page.
+     * This function is to provide input details on Registration page.
      *
      * @param name: enter name
      * @param email: enter email

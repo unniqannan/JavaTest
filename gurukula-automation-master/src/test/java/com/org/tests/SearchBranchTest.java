@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.org.tests;
 
 import static org.testng.Assert.assertEquals;
@@ -19,10 +17,6 @@ import com.org.pages.LoginPage;
 import com.org.pages.StaffMainPage;
 import com.org.pages.WelcomePage;
 import com.org.utility.StartApplication;
-
-/**
- * @author AnujKumar
- */
 
 @Test(groups = { "searchBranch" })
 public class SearchBranchTest extends StartApplication {

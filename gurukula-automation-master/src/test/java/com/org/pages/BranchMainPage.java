@@ -2,7 +2,6 @@ package com.org.pages;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
-
 import com.org.enums.AppUserActionsEnum;
 import com.org.utility.UIOperation;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.org.tests;
 
-import com.org.enums.AppValidationMessages;
+import com.org.enums.AppValidationConstantMessages;
 import com.org.enums.AppWelcomePageEnum;
 import com.org.pages.ResetPasswordPage;
 import com.org.pages.WelcomePage;
@@ -46,9 +46,9 @@ public class ResetPasswordTest extends StartApplication {
 	@Test
 	public void tc_05_testRequiredEmailValidation() {
 		preSteps();
-		resetPasswordPage.enterEmail("anuj");
+		resetPasswordPage.enterEmail("kannan");
 		resetPasswordPage.clearText();
-		resetPasswordPage.assertValidationMsg(AppValidationMessages.EMAIL_REQUIRED);
+		resetPasswordPage.assertValidationMsg(AppValidationConstantMessages.EMAIL_REQUIRED);
 		resetPasswordPage.assertResetPasswordBtnDisable();
 	}
 
@@ -64,9 +64,9 @@ public class ResetPasswordTest extends StartApplication {
 	public Object[][] validations() {
 		return new Object[][] {
 			// @formatter:off
-			{ "abcde", AppValidationMessages.EMAIL_INVALID }, 
-			{ "a@b", AppValidationMessages.EMAIL_MINIMUM },
-			{ "ThisEmailIsToValidateTheMaximumLimitOfEmail@TextField.com", AppValidationMessages.EMAIL_MAXIMUM } 
+			{ "abcde", AppValidationConstantMessages.EMAIL_INVALID }, 
+			{ "a@b", AppValidationConstantMessages.EMAIL_MINIMUM },
+			{ "ThisEmailIsToValidateTheMaximumLimitOfEmail@TextField.com", AppValidationConstantMessages.EMAIL_MAXIMUM } 
 			// @formatter:on
 		};
 	}

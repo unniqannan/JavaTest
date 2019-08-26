@@ -16,9 +16,6 @@ public class ScreenshotUtil {
 
     /**
      * This function is to capture screenshot.
-     *
-     * @param driver: instance of web driver
-     * @param testname: file name (preferably test name)
      */
     public static void captureScreenshot(WebDriver driver, String testname) {
         try {

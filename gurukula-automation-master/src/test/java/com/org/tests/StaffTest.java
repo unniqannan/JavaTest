@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.org.enums.AppUserActionsEnum;
-import com.org.enums.AppValidationMessages;
+import com.org.enums.AppValidationConstantMessages;
 import com.org.enums.AppWelcomePageEnum;
 import com.org.enums.AppPageAttributesEnum;
 import com.org.enums.AppMenuEnum;
@@ -170,23 +170,23 @@ public class StaffTest extends StartApplication {
 
 	@DataProvider(name = "newStaffDetails")
 	public Object[][] newStaffDetails() {
-		return new Object[][] { { "Anuj Kumar", "Computer Science" } };
+		return new Object[][] { { "Unni Kannan", "Computer Science" } };
 	}
 
 	@DataProvider(name = "editStaffDetails")
 	public Object[][] editBranchDetails() {
-		return new Object[][] { { "Anuj Kumar", "Computer Science", "Robin", "Computer Science" } };
+		return new Object[][] { { "Unni Kannan", "Computer Science", "Raj", "Computer Science" } };
 	}
 
 	@DataProvider(name = "validations")
 	public Object[][] validations() {
 		return new Object[][] {
 			// @formatter:off
-			{ AppValidationMessages.STAFF_NAME_REQUIRED, "" },
-			{ AppValidationMessages.STAFF_NAME_MINIMUM, "A" },
-			{ AppValidationMessages.STAFF_NAME_MAXIMUM, "test the maximum limit of text field on the staff edit form" },
-			{ AppValidationMessages.STAFF_NAME_PATTERN, "test1" },
-			{ AppValidationMessages.STAFF_NAME_PATTERN, "test@" }
+			{ AppValidationConstantMessages.STAFF_NAME_REQUIRED, "" },
+			{ AppValidationConstantMessages.STAFF_NAME_MINIMUM, "A" },
+			{ AppValidationConstantMessages.STAFF_NAME_MAXIMUM, "test the maximum limit of text field on the staff edit form" },
+			{ AppValidationConstantMessages.STAFF_NAME_PATTERN, "test1" },
+			{ AppValidationConstantMessages.STAFF_NAME_PATTERN, "test@" }
 			
 			// @formatter:on
 		};

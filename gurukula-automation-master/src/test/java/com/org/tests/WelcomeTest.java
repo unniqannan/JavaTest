@@ -10,10 +10,6 @@ import com.org.pages.RegistrationPage;
 import com.org.pages.WelcomePage;
 import com.org.utility.StartApplication;
 
-/**
- * @author AnujKumar
- */
-
 @Test(groups = "welcome")
 public class WelcomeTest extends StartApplication {
 

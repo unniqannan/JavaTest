@@ -3,7 +3,7 @@ package com.org.utility;
 
 import static org.testng.Assert.assertTrue;
 
-import com.gurukula.common.Constants;
+import com.org.enums.AppValidationConstantMessages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -12,9 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
- * @author AnujKumar
- */
+ 
 public abstract class UIOperation {
 
     protected WebDriver driver;
@@ -25,8 +23,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to assert and click on the element.
-     *
-     * @param xpath: locator as xpath
      */
     protected void assertAndClick(String xpath) {
         assertElementPresent(xpath);
@@ -35,9 +31,6 @@ public abstract class UIOperation {
 
     /**
      * This function is assert and get the text present in element.
-     *
-     * @param xpath: locator as xpath
-     * @return element text
      */
     protected String assertAndGetText(String xpath) {
         assertElementPresent(xpath);
@@ -46,9 +39,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to assert and type.
-     *
-     * @param xpath: locator xpath
-     * @param txt: text
      */
     protected void assertAndType(String xpath, String txt) {
         assertElementPresent(xpath);
@@ -58,9 +48,6 @@ public abstract class UIOperation {
 
     /**
      * This functions is to assert and type in element by id
-     *
-     * @param id: locator as id
-     * @param txt: text
      */
     protected void assertEnterText(String id, String txt) {
         assertElementPresentById(id);
@@ -69,8 +56,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to assert element is present by id.
-     *
-     * @param id: locator as id
      */
     private void assertElementPresentById(String id) {
         assertTrue(isElementPresentById(id), "Element " + id + " not found.");
@@ -78,9 +63,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to verify weather element is present or not.
-     *
-     * @param id: locator as id
-     * @return true/false
      */
     private boolean isElementPresentById(String id) {
         try {
@@ -93,9 +75,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to get element visibility.
-     *
-     * @param xpath: locator as xpath
-     * @return true/false
      */
     protected boolean isElementVisible(String xpath) {
         try {
@@ -132,10 +111,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to assert and get value by attribute.
-     *
-     * @param xpath: locator as xpath
-     * @param attribute: attribule as vlaue, innerText, ect.
-     * @return value
      */
     protected String assertAndGetAttributeValue(String xpath, String attribute) {
         assertElementPresent(xpath);
@@ -148,7 +123,7 @@ public abstract class UIOperation {
      * @param xpath: locator as xpath
      */
     protected void waitForElement(String xpath) {
-        new WebDriverWait(driver, Constants.EXPLICIT_WAIT_TIME)
+        new WebDriverWait(driver, AppValidationConstantMessages.EXPLICIT_WAIT_TIME)
             .until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
     }
 
@@ -158,35 +133,28 @@ public abstract class UIOperation {
      * @param xpath: locator as xpath
      */
     protected void waitForElementClickable(String xpath) {
-        new WebDriverWait(driver, Constants.EXPLICIT_WAIT_TIME)
+        new WebDriverWait(driver, AppValidationConstantMessages.EXPLICIT_WAIT_TIME)
             .until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
     }
 
     /**
      * This function is to wait for element visibility.
-     *
-     * @param xpath: locator as xpath
      */
     protected void waitForElementVisibility(String xpath) {
-        new WebDriverWait(driver, Constants.EXPLICIT_WAIT_TIME)
+        new WebDriverWait(driver, AppValidationConstantMessages.EXPLICIT_WAIT_TIME)
             .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
 
     /**
      * This function is to wait for element invisibility.
-     *
-     * @param xpath: locator as xpath
      */
     protected void waitForElementInvisibility(String xpath) {
-        new WebDriverWait(driver, Constants.EXPLICIT_WAIT_TIME)
+        new WebDriverWait(driver, AppValidationConstantMessages.EXPLICIT_WAIT_TIME)
             .until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
     }
 
     /**
      * This function is to select option by visible text.
-     *
-     * @param xpath: locator as xpath
-     * @param txt: option
      */
     protected void selectByVisibleText(String xpath, String txt) {
         waitForElement(xpath);
@@ -197,9 +165,6 @@ public abstract class UIOperation {
 
     /**
      * This function is to select option by value.
-     *
-     * @param xpath: locator as xpath
-     * @param value: option
      */
     protected void selectByValue(String xpath, String value) {
         waitForElement(xpath);
@@ -210,10 +175,6 @@ public abstract class UIOperation {
 
     /**
      * This function is get the first selected option fron Select element.
-     *
-     * @param xpath: locator as xpath
-     * @param attribute: attribute
-     * @return selected text
      */
     protected String getSelectTextByAttribute(String xpath, String attribute) {
         waitForElement(xpath);

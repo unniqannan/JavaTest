@@ -1,0 +1,37 @@
+2019-08-26 01:32:59 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:00 INFO  LoginPage:96 - # Login into application(admin, admin)
+2019-08-26 01:33:06 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:06 INFO  LoginPage:96 - # Login into application(!nv@lid, INVALID)
+2019-08-26 01:33:13 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:13 INFO  LoginPage:96 - # Login into application(admin, INVALID)
+2019-08-26 01:33:19 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:20 INFO  LoginPage:96 - # Login into application(INVALID, admin)
+2019-08-26 01:33:25 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:25 INFO  LoginPage:96 - # Login into application(, )
+2019-08-26 01:33:31 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:31 INFO  LoginPage:96 - # Login into application(admin, )
+2019-08-26 01:33:37 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:37 INFO  LoginPage:96 - # Login into application(, admin)
+2019-08-26 01:33:43 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:44 INFO  LoginPage:83 - # Clicked on link: Did you forget your password?
+2019-08-26 01:33:44 INFO  ResetPasswordPage:42 - # Reset Password page header: Reset your password
+2019-08-26 01:33:50 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:50 INFO  LoginPage:83 - # Clicked on link: Register a new account
+2019-08-26 01:33:50 INFO  RegistrationPage:49 - # Registration page header: Registration
+2019-08-26 01:33:55 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:33:56 INFO  LoginPage:96 - # Login into application(admin, admin)
+2019-08-26 01:33:56 INFO  WelcomePage:62 - # Clicked on 'Account' menu
+2019-08-26 01:33:57 INFO  WelcomePage:75 - # Clicked on 'Log out' Menu Option
+2019-08-26 01:33:57 INFO  WelcomePage:37 - # Welcome page header: Welcome to Gurukula!
+2019-08-26 01:34:03 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:34:03 INFO  LoginPage:96 - # Login into application(admin, admin)
+2019-08-26 01:34:04 INFO  WelcomePage:62 - # Clicked on 'Entities' menu
+2019-08-26 01:34:04 INFO  WelcomePage:75 - # Clicked on 'Staff' Menu Option
+2019-08-26 01:34:04 INFO  WelcomePage:62 - # Clicked on 'Home' menu
+2019-08-26 01:34:04 INFO  WelcomePage:37 - # Welcome page header: Welcome to Gurukula!
+2019-08-26 01:34:10 INFO  WelcomePage:51 - # Clicked on 'login' link
+2019-08-26 01:34:10 INFO  LoginPage:96 - # Login into application(admin, admin)
+2019-08-26 01:34:11 INFO  WelcomePage:62 - # Clicked on 'Entities' menu
+2019-08-26 01:34:11 INFO  WelcomePage:75 - # Clicked on 'Staff' Menu Option
+2019-08-26 01:34:11 INFO  WelcomePage:83 - # Clicked on 'Gurukula Logo'
+2019-08-26 01:34:11 INFO  WelcomePage:37 - # Welcome page header: Welcome to Gurukula!

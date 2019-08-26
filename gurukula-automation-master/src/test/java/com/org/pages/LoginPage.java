@@ -45,9 +45,9 @@ public class LoginPage extends UIOperation {
 
     /**
      * This function is to login into application and assert Successful message
-     *
-     * @param username: enter username
-     * @param password: enter password
+     *parameters
+     * username: enter username
+     * password: enter password
      */
     public void LoginSucessFunctionalityCheck(String username, String password) {
         loginAction(username, password);
@@ -61,9 +61,9 @@ public class LoginPage extends UIOperation {
 
     /**
      * This function is to assert login validation messages
-     *
-     * @param username: enter username
-     * @param password: enter password
+     *parameters
+     * username: enter username
+     * password: enter password
      */
     public void LoginSuccessValidatingMessageCheck(String username, String password) {
         loginAction(username, password);
@@ -75,8 +75,6 @@ public class LoginPage extends UIOperation {
 
     /**
      * This function is to click on the links present on Login page.
-     *
-     * @param lnkTxt: link text
      */
     public void clickOnLink(String lnkTxt) {
         String xpath = xpathLinks.replace("*lnk*", lnkTxt);
@@ -87,9 +85,9 @@ public class LoginPage extends UIOperation {
 
     /**
      * This function is to perform login action
-     *
-     * @param username: enter username
-     * @param password: enter password
+     *parameters
+     * username: enter username
+     * password: enter password
      */
     private void loginAction(String username, String password) {
     	assertEnterText(idUsernameTextField, username);

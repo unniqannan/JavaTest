@@ -5,20 +5,19 @@ import org.apache.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-//import com.org.enums.AccountEnum;
-import com.gurukula.common.EntitiesEnum;
-import com.gurukula.common.MenuEnum;
-import com.gurukula.common.WelcomeEnum;
+import com.org.enums.AppMenuEnum;
+import com.org.enums.AppPageAttributesEnum;
+import com.org.enums.AppWelcomePageEnum;
 import com.org.pages.LoginPage;
-import com.gurukula.pages.RegistrationPage;
-import com.gurukula.pages.ResetPasswordPage;
-import com.gurukula.pages.WelcomePage;
-import com.gurukula.utility.Init;
+import com.org.pages.RegistrationPage;
+import com.org.pages.ResetPasswordPage;
+import com.org.pages.WelcomePage;
+import com.org.utility.StartApplication;
 import com.org.enums.AppInterfaceEnum;
 
 
 @Test(groups = "login")
-public class LoginTest extends Init {
+public class LoginTest extends StartApplication {
 
 	public static Logger logger = Logger.getLogger(LoginTest.class.getName());
 
@@ -60,7 +59,7 @@ public class LoginTest extends Init {
 		preSteps();
 		loginPage.LoginSucessFunctionalityCheck(USERNAME, PASSWORD);
 
-		welcomePage.clickOnOption(MenuEnum.Account.name(), AppInterfaceEnum.Logout.getVal());
+		welcomePage.clickOnOption(AppMenuEnum.Account.name(), AppInterfaceEnum.Logout.getVal());
 		welcomePage.assertWelcomePageHeading();
 
 	}
@@ -70,8 +69,8 @@ public class LoginTest extends Init {
 		preSteps();
 		loginPage.LoginSucessFunctionalityCheck(USERNAME, PASSWORD);
 
-		welcomePage.clickOnOption(MenuEnum.Entities.name(), EntitiesEnum.Staff.name());
-		welcomePage.clickOnMenu(MenuEnum.Home.name());
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Staff.name());
+		welcomePage.clickOnMenu(AppMenuEnum.Home.name());
 		welcomePage.assertWelcomePageHeading();
 	}
 
@@ -80,7 +79,7 @@ public class LoginTest extends Init {
 		preSteps();
 		loginPage.LoginSucessFunctionalityCheck(USERNAME, PASSWORD);
 
-		welcomePage.clickOnOption(MenuEnum.Entities.name(), EntitiesEnum.Staff.name());
+		welcomePage.clickOnOption(AppMenuEnum.Entities.name(), AppPageAttributesEnum.Staff.name());
 		welcomePage.clickOnLogo();
 		welcomePage.assertWelcomePageHeading();
 	}
@@ -89,7 +88,7 @@ public class LoginTest extends Init {
 		welcomePage = new WelcomePage(driver);
 		loginPage = new LoginPage(driver);
 
-		welcomePage.clickOnLink(WelcomeEnum.LOGIN_LINK.getVal());
+		welcomePage.clickOnLink(AppWelcomePageEnum.LOGIN_LINK.getVal());
 	}
 
 	@DataProvider(name = "invalidCredentials")
