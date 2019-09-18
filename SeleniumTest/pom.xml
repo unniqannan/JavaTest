@@ -14,6 +14,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+
+
   <dependencies>
    <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
@@ -23,11 +25,26 @@
 <scope>test</scope>
 </dependency>
   
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		 
     <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.0.0-alpha-1</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>1.1.5</version>
+</dependency>
+<dependency>
+ <groupId>info.cukes</groupId>
+ <artifactId>cucumber-jvm</artifactId>
+ <version>1.1.5</version>
+ <type>pom</type>
+ </dependency>
 
 <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java this is for import cucumber.api.java.en.Given;-->
 <dependency>
@@ -36,7 +53,33 @@
     <version>1.2.5</version>
 </dependency>
 
-
+<dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.4.2</version>
+        <scope>test</scope>
+</dependency>
+<dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.4.2</version>
+        <scope>test</scope>
+    </dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>2.0.0</version>
+    <scope>test</scope>
+</dependency>
 
   </dependencies>
+
+ 
 </project>
