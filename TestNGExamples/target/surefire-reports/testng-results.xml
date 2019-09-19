@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNGExamples.TestNGExamples.AppTest" duration-ms="13691" started-at="2019-09-11T20:47:20Z" finished-at="2019-09-11T20:47:34Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="13691" started-at="2019-09-11T20:47:20Z" finished-at="2019-09-11T20:47:34Z">
+      <class name="TestNGExamples.TestNGExamples.AppTest">
+        <test-method status="PASS" signature="session1()[pri:0, instance:TestNGExamples.TestNGExamples.AppTest@2cb4c3ab]" name="session1" duration-ms="9118" started-at="2019-09-11T20:47:20Z" finished-at="2019-09-11T20:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- session1 -->
+        <test-method status="PASS" signature="session2()[pri:0, instance:TestNGExamples.TestNGExamples.AppTest@2cb4c3ab]" name="session2" duration-ms="4534" started-at="2019-09-11T20:47:29Z" finished-at="2019-09-11T20:47:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- session2 -->
+      </class> <!-- TestNGExamples.TestNGExamples.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- TestNGExamples.TestNGExamples.AppTest -->
+</testng-results>
