@@ -10,7 +10,7 @@ public class AppTest{
 	
 	//Session Handling
 	//Parallel tests run
-	@Test
+	//@Test
 	public void session1() {
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -18,7 +18,7 @@ public class AppTest{
 		   driver.findElement(By.name("uid")).sendKeys("Driver 1");
 	}
 	
-	@Test
+	//@Test
 	public void session2() {
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -26,11 +26,24 @@ public class AppTest{
 		   driver.findElement(By.name("uid")).sendKeys("Driver 2");
 	}
 	
-	@Test
+	//@Test
 	public void session3() {
 		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		   driver.get("http://demo.guru99.com/V4/");
 		   driver.findElement(By.name("uid")).sendKeys("Driver 3");
 	}
+
+	@Test
+	public void FacebookImageClick() {
+		String baseUrl = "https://www.facebook.com/login/identify?ctx=recover";
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get(baseUrl);
+		//driver.findElement(By.xpath("//*[@id=\"blueBarDOMInspector\"]/div/div/div/div[1]/h1/a")).click();
+		driver.findElement(By.cssSelector("a[title=\"Go to Facebook home\"]")).click();
+				 
+	}
+	
 }

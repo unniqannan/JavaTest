@@ -4,22 +4,12 @@
   <listeners>
     <listener class-name="suite1.TestNGListerner"/>
   </listeners>
-  <test thread-count="2" name="Flipkart(failed)" parallel="tests">
-    <classes>
-      <class name="suite1.Flipkart">
-        <methods>
-          <include name="init"/>
-          <include name="searchAndSelectProduct2"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- suite1.Flipkart -->
-    </classes>
-  </test> <!-- Flipkart(failed) -->
   <test thread-count="2" name="SnapDeal(failed)" parallel="tests">
     <classes>
       <class name="suite2.SnapDeal">
         <methods>
           <include name="init"/>
+          <include name="AsearchAndSelectProduct"/>
           <include name="JobApplication"/>
           <include name="quit"/>
         </methods>

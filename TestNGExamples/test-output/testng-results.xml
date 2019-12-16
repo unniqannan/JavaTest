@@ -2,35 +2,71 @@
 <testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="122502" started-at="2019-09-17T23:16:26 CEST" finished-at="2019-09-17T23:18:28 CEST">
+  <suite name="Suite" duration-ms="92955" started-at="2019-09-26T10:43:57 CEST" finished-at="2019-09-26T10:45:30 CEST">
     <groups>
     </groups>
-    <test name="Flipkart" duration-ms="20473" started-at="2019-09-17T23:16:26 CEST" finished-at="2019-09-17T23:16:46 CEST">
+    <test name="Flipkart" duration-ms="17214" started-at="2019-09-26T10:43:57 CEST" finished-at="2019-09-26T10:44:14 CEST">
       <class name="suite1.Flipkart">
-        <test-method status="PASS" signature="init()[pri:0, instance:suite1.Flipkart@34cd072c]" name="init" is-config="true" duration-ms="19039" started-at="2019-09-17T23:16:26 CEST" finished-at="2019-09-17T23:16:45 CEST">
+        <test-method status="PASS" signature="init()[pri:0, instance:suite1.Flipkart@34cd072c]" name="init" is-config="true" duration-ms="14773" started-at="2019-09-26T10:43:57 CEST" finished-at="2019-09-26T10:44:11 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="searchAndSelectProduct()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct" duration-ms="7" started-at="2019-09-17T23:16:45 CEST" finished-at="2019-09-17T23:16:45 CEST">
+        <test-method status="PASS" signature="searchAndSelectProduct()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct" duration-ms="9" started-at="2019-09-26T10:44:11 CEST" finished-at="2019-09-26T10:44:11 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAndSelectProduct -->
-        <test-method status="PASS" signature="searchAndSelectProduct1()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct1" duration-ms="7" started-at="2019-09-17T23:16:45 CEST" finished-at="2019-09-17T23:16:45 CEST">
+        <test-method status="PASS" signature="searchAndSelectProduct1()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct1" duration-ms="10" started-at="2019-09-26T10:44:11 CEST" finished-at="2019-09-26T10:44:11 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAndSelectProduct1 -->
-        <test-method status="FAIL" signature="searchAndSelectProduct2()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct2" duration-ms="7" started-at="2019-09-17T23:16:45 CEST" finished-at="2019-09-17T23:16:45 CEST">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="searchAndSelectProduct2()[pri:0, instance:suite1.Flipkart@34cd072c]" name="searchAndSelectProduct2" duration-ms="5" started-at="2019-09-26T10:44:11 CEST" finished-at="2019-09-26T10:44:11 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndSelectProduct2 -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:suite1.Flipkart@34cd072c]" name="quit" is-config="true" duration-ms="2346" started-at="2019-09-26T10:44:11 CEST" finished-at="2019-09-26T10:44:14 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- suite1.Flipkart -->
+    </test> <!-- Flipkart -->
+    <test name="SnapDeal" duration-ms="92955" started-at="2019-09-26T10:43:57 CEST" finished-at="2019-09-26T10:45:30 CEST">
+      <class name="suite2.SnapDeal">
+        <test-method status="PASS" signature="init()[pri:0, instance:suite2.SnapDeal@36b4cef0]" name="init" is-config="true" duration-ms="12730" started-at="2019-09-26T10:43:57 CEST" finished-at="2019-09-26T10:44:09 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="AsearchAndSelectProduct()[pri:1, instance:suite2.SnapDeal@36b4cef0]" name="AsearchAndSelectProduct" duration-ms="45737" started-at="2019-09-26T10:44:09 CEST" finished-at="2019-09-26T10:44:55 CEST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
+              <![CDATA[element not interactable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e9b333ce50362bd986b2b03bdd3d38a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at suite1.Flipkart.searchAndSelectProduct2(Flipkart.java:41)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=76.0.3809.132)
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e9b333ce50362bd986b2b03bdd3d38a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:308)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at suite2.SnapDeal.AsearchAndSelectProduct(SnapDeal.java:81)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -56,27 +92,11 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchAndSelectProduct2 -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:suite1.Flipkart@34cd072c]" name="quit" is-config="true" duration-ms="1336" started-at="2019-09-17T23:16:45 CEST" finished-at="2019-09-17T23:16:46 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- suite1.Flipkart -->
-    </test> <!-- Flipkart -->
-    <test name="SnapDeal" duration-ms="122502" started-at="2019-09-17T23:16:26 CEST" finished-at="2019-09-17T23:18:28 CEST">
-      <class name="suite2.SnapDeal">
-        <test-method status="PASS" signature="init()[pri:0, instance:suite2.SnapDeal@36b4cef0]" name="init" is-config="true" duration-ms="13149" started-at="2019-09-17T23:16:26 CEST" finished-at="2019-09-17T23:16:39 CEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="AsearchAndSelectProduct()[pri:1, instance:suite2.SnapDeal@36b4cef0]" name="AsearchAndSelectProduct" duration-ms="55537" started-at="2019-09-17T23:16:39 CEST" finished-at="2019-09-17T23:17:34 CEST">
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AsearchAndSelectProduct -->
-        <test-method status="FAIL" signature="JobApplication()[pri:2, instance:suite2.SnapDeal@36b4cef0]" name="JobApplication" duration-ms="53738" started-at="2019-09-17T23:17:34 CEST" finished-at="2019-09-17T23:18:28 CEST">
+        <test-method status="FAIL" signature="JobApplication()[pri:2, instance:suite2.SnapDeal@36b4cef0]" name="JobApplication" duration-ms="34374" started-at="2019-09-26T10:44:55 CEST" finished-at="2019-09-26T10:45:30 CEST">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
@@ -85,9 +105,9 @@ from unknown error: web view not found
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ca5f9bec28f188ef83f460b008ac1a25
-*** Element info: {Using=xpath, value=//div[@id='jsJobResContent']/div[23]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e9b333ce50362bd986b2b03bdd3d38a
+*** Element info: {Using=xpath, value=//div[@id='jsJobResContent']/div[13]}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
@@ -96,9 +116,9 @@ from unknown error: web view not found
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
 System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.2.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ca5f9bec28f188ef83f460b008ac1a25
-*** Element info: {Using=xpath, value=//div[@id='jsJobResContent']/div[23]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\unkan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6e9b333ce50362bd986b2b03bdd3d38a
+*** Element info: {Using=xpath, value=//div[@id='jsJobResContent']/div[13]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -143,7 +163,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JobApplication -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:suite2.SnapDeal@36b4cef0]" name="quit" is-config="true" duration-ms="1" started-at="2019-09-17T23:18:28 CEST" finished-at="2019-09-17T23:18:28 CEST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:suite2.SnapDeal@36b4cef0]" name="quit" is-config="true" duration-ms="2" started-at="2019-09-26T10:45:30 CEST" finished-at="2019-09-26T10:45:30 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
