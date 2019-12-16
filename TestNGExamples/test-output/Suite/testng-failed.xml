@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="suite1.TestNGListerner"/>
   </listeners>
-  <test thread-count="2" name="SnapDeal(failed)" parallel="tests">
+  <test thread-count="2" name="IEtests(failed)" parallel="tests">
+    <parameter name="portNO" value="4549"/>
     <classes>
-      <class name="suite2.SnapDeal">
+      <class name="suite1.Flipkart">
         <methods>
-          <include name="init"/>
-          <include name="AsearchAndSelectProduct"/>
-          <include name="JobApplication"/>
+          <include name="setUp"/>
+          <include name="searchAndSelectProduct"/>
           <include name="quit"/>
         </methods>
-      </class> <!-- suite2.SnapDeal -->
+      </class> <!-- suite1.Flipkart -->
     </classes>
-  </test> <!-- SnapDeal(failed) -->
+  </test> <!-- IEtests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

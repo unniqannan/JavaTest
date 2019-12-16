@@ -62,7 +62,7 @@ public class FinalExample {
 	
 	AxisFinalPackage Parvathy=new AxisFinalPackage("Current");     //calls axibank constructor-parameter ,    automatically send a commu to superclass
 	
-	PunjabBankFinalPackage p=new PunjabBankFinalPackage();
+	PunjabBankFinalPackage p=new PunjabBankFinalPackage("Current");
 	p.accountCreate(501);
 	}
 }

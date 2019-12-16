@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="RegressionTest(failed)">
+    <classes>
+      <class name="RegressionTestPackage.RegComponent1.RegressionTCs">
+        <methods>
+          <include name="CreateCustomer"/>
+        </methods>
+      </class> <!-- RegressionTestPackage.RegComponent1.RegressionTCs -->
+      <class name="SmokeTestPackage.Component2">
+        <methods>
+          <include name="Component2TC1"/>
+        </methods>
+      </class> <!-- SmokeTestPackage.Component2 -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+  <test thread-count="5" name="InegrationTest(failed)">
+    <classes>
+      <class name="RegressionTestPackage.RegComponent1.RegressionTCs">
+        <methods>
+          <include name="CreateCustomer"/>
+        </methods>
+      </class> <!-- RegressionTestPackage.RegComponent1.RegressionTCs -->
+    </classes>
+  </test> <!-- InegrationTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

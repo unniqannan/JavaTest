@@ -1,0 +1,269 @@
+2019-10-05 22:37:40 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 22:38:27 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 22:40:24 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 22:42:12 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 22:43:37 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 22:47:18 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2019-10-05 23:07:35 INFO  CurrencyConverterPage:103 - # Clicked on button: convert
+2019-10-06 12:26:10 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:26:12 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:26:12 INFO  CurrencyConverterPage:113 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:39:44 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:39:47 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:39:47 INFO  CurrencyConverterPage:113 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:41:41 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:41:44 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:41:44 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:51:13 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:51:15 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:51:15 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:53:37 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:53:39 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:53:39 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:54:28 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 12:54:30 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 12:54:30 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 12:54:30 INFO  CurrencyConverterPage:125 - # Actual Source Currency results USD
+2019-10-06 13:11:36 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 13:11:37 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 13:11:37 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 13:13:19 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 13:13:21 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 13:13:21 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 13:13:21 INFO  CurrencyConverterPage:126 - # Actual Source Currency results USD
+2019-10-06 13:17:06 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 13:17:08 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 13:17:08 INFO  CurrencyConverterPage:114 - # Actual Source Currency results 1 EUR ?
+2019-10-06 13:17:08 INFO  CurrencyConverterPage:126 - # Actual Source Currency results 1.09790 USD
+2019-10-06 14:00:36 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 14:00:39 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 14:00:39 INFO  CurrencyConverterPage:112 - # Actual Source Currency results 1 EUR ?
+2019-10-06 14:00:39 INFO  CurrencyConverterPage:121 - # Actual Source Currency results 1.09790 USD
+2019-10-06 14:05:00 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 14:05:02 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 14:05:02 INFO  CurrencyConverterPage:112 - # Actual Source Currency results 1 EUR
+2019-10-06 14:05:03 INFO  CurrencyConverterPage:121 - # Actual Target Currency results 1.09790 USD
+2019-10-06 14:05:11 INFO  CurrencyConverterPage:44 - # Convert Page Header Currency Converter
+2019-10-06 14:05:13 INFO  CurrencyConverterPage:106 - # Clicked on button: convert
+2019-10-06 14:23:03 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:23:04 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:23:04 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 14:23:11 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:23:13 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:23:13 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 14:27:43 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:27:45 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:27:45 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 14:27:51 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:27:53 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:27:53 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 14:28:00 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:28:01 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:28:01 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 GBP
+2019-10-06 14:30:24 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:30:26 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:30:26 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 14:30:33 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:30:35 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:30:35 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 14:30:41 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:30:43 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:30:43 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 GBP
+2019-10-06 14:30:50 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:30:51 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:30:51 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 CAD
+2019-10-06 14:30:58 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 14:30:59 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 14:30:59 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 AUD
+2019-10-06 15:01:50 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:01:52 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:01:52 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 15:01:59 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:02:01 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:02:02 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 15:02:08 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:02:10 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:02:10 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 GBP
+2019-10-06 15:02:17 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:02:19 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:02:19 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 CAD
+2019-10-06 15:02:26 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:02:27 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:02:27 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 AUD
+2019-10-06 15:21:08 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:21:10 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:21:10 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 15:21:17 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:21:19 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:21:19 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 15:21:26 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:21:28 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:21:28 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 GBP
+2019-10-06 15:21:35 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:21:36 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:21:37 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 CAD
+2019-10-06 15:21:43 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:21:45 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:21:45 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 AUD
+2019-10-06 15:25:33 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:25:34 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:25:34 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 EUR
+2019-10-06 15:25:34 INFO  CurrencyConverterPage:125 - # Actual Target Currency results 1.09790 USD
+2019-10-06 15:25:41 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:25:43 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:25:43 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 INR
+2019-10-06 15:25:43 INFO  CurrencyConverterPage:125 - # Actual Target Currency results 0.01412 USD
+2019-10-06 15:25:50 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:25:51 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:25:51 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 GBP
+2019-10-06 15:25:52 INFO  CurrencyConverterPage:125 - # Actual Target Currency results 87.36970 INR
+2019-10-06 15:25:58 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:26:00 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:26:00 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 CAD
+2019-10-06 15:26:00 INFO  CurrencyConverterPage:125 - # Actual Target Currency results 14.66340 MXN
+2019-10-06 15:26:07 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:26:09 INFO  CurrencyConverterPage:110 - # Clicked on button: convert
+2019-10-06 15:26:09 INFO  CurrencyConverterPage:116 - # Actual Source Currency results 1 AUD
+2019-10-06 15:26:09 INFO  CurrencyConverterPage:125 - # Actual Target Currency results 1.07238 NZD
+2019-10-06 15:26:54 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:27:05 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:27:15 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:27:26 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:27:36 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:49:57 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:51:13 INFO  CurrencyConverterPage:48 - # Convert Page Header Currency Converter
+2019-10-06 15:53:40 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 15:53:47 INFO  CurrencyConverterPage:123 - # Clicked on button: convert
+2019-10-06 15:53:47 INFO  CurrencyConverterPage:129 - # Actual Source Currency results 1 GBP
+2019-10-06 16:01:37 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 16:01:44 INFO  CurrencyConverterPage:94 - # Clicked on button: convert
+2019-10-06 16:05:55 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 16:06:03 INFO  CurrencyConverterPage:94 - # Clicked on button: convert
+2019-10-06 21:18:20 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:22:20 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:25:03 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:27:27 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:30:57 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:39:16 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:42:17 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:46:03 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:49:44 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 21:55:09 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:04:13 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:06:43 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:08:38 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:09:44 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:10:10 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:11:07 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:26:50 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:28:44 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:30:08 INFO  CurrencyConverterPage:51 - # Convert Page Header Currency Converter
+2019-10-06 22:39:37 INFO  CurrencyConverterPage:52 - # Convert Page Header Currency Converter
+2019-10-06 22:39:37 INFO  CurrencyConverterPage:66 - # Source From Drop Down Selected EUR
+2019-10-06 22:40:11 INFO  CurrencyConverterPage:52 - # Convert Page Header Currency Converter
+2019-10-06 22:40:11 INFO  CurrencyConverterPage:66 - # Source From Drop Down Selected EUR
+2019-10-06 22:40:58 INFO  CurrencyConverterPage:52 - # Convert Page Header Currency Converter
+2019-10-06 22:40:58 INFO  CurrencyConverterPage:66 - # Source From Drop Down Selected EUR
+2019-10-06 22:40:59 INFO  CurrencyConverterPage:75 - # Source From Drop Down Selected USD
+2019-10-06 22:42:06 INFO  CurrencyConverterPage:52 - # Convert Page Header Currency Converter
+2019-10-06 22:42:06 INFO  CurrencyConverterPage:66 - # Source From Drop Down Selected EUR
+2019-10-06 22:42:07 INFO  CurrencyConverterPage:75 - # Source From Drop Down Selected USD
+2019-10-06 22:42:09 INFO  CurrencyConverterPage:93 - # Clicked on button: convert
+2019-10-06 22:42:09 INFO  CurrencyConverterPage:99 - # Actual Source Currency results 1 EUR
+2019-10-06 22:42:09 INFO  CurrencyConverterPage:108 - # Actual Target Currency results 1.09820 USD
+2019-10-06 22:48:40 INFO  CurrencyConverterPage:52 - # Convert Page Header Currency Converter
+2019-10-06 22:48:41 INFO  CurrencyConverterPage:66 - # Source From Drop Down Selected EUR
+2019-10-06 22:48:42 INFO  CurrencyConverterPage:75 - # Source From Drop Down Selected USD
+2019-10-06 22:48:43 INFO  CurrencyConverterPage:93 - # Clicked on button: convert
+2019-10-06 22:48:43 INFO  CurrencyConverterPage:99 - # Actual Source Currency results 1 EUR
+2019-10-06 22:48:44 INFO  CurrencyConverterPage:108 - # Actual Target Currency results 1.09835 USD
+2019-10-06 23:05:12 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:05:12 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected EUR
+2019-10-06 23:05:13 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected USD
+2019-10-06 23:05:15 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:05:15 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 EUR
+2019-10-06 23:05:15 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 1.09820 USD
+2019-10-06 23:05:22 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:05:23 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected INR
+2019-10-06 23:05:23 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected USD
+2019-10-06 23:05:25 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:05:25 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 INR
+2019-10-06 23:05:25 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 0.01412 USD
+2019-10-06 23:05:32 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:05:32 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected GBP
+2019-10-06 23:05:33 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected INR
+2019-10-06 23:05:34 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:05:34 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 GBP
+2019-10-06 23:05:34 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 87.20680 INR
+2019-10-06 23:05:42 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:05:42 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected CAD
+2019-10-06 23:05:43 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected MXN
+2019-10-06 23:05:44 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:05:44 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 CAD
+2019-10-06 23:05:44 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 14.66210 MXN
+2019-10-06 23:05:52 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:05:52 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected AUD
+2019-10-06 23:05:53 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected NZD
+2019-10-06 23:05:54 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:05:55 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 AUD
+2019-10-06 23:05:55 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 1.07160 NZD
+2019-10-06 23:09:13 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:09:14 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected EUR
+2019-10-06 23:09:14 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected USD
+2019-10-06 23:09:16 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:09:16 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 EUR
+2019-10-06 23:09:16 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 1.09820 USD
+2019-10-06 23:09:23 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:09:24 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected INR
+2019-10-06 23:09:24 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected USD
+2019-10-06 23:09:26 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:09:26 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 INR
+2019-10-06 23:09:26 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 0.01412 USD
+2019-10-06 23:09:33 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:09:34 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected GBP
+2019-10-06 23:09:34 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected INR
+2019-10-06 23:09:36 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:09:36 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 GBP
+2019-10-06 23:09:36 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 87.21040 INR
+2019-10-06 23:09:43 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:09:44 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected CAD
+2019-10-06 23:09:44 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected MXN
+2019-10-06 23:09:47 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:09:47 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 CAD
+2019-10-06 23:09:47 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 14.66170 MXN
+2019-10-06 23:09:54 INFO  CurrencyConverterPage:45 - # Convert Page Header Currency Converter
+2019-10-06 23:09:55 INFO  CurrencyConverterPage:59 - # Source From Drop Down Selected AUD
+2019-10-06 23:09:55 INFO  CurrencyConverterPage:68 - # Source From Drop Down Selected NZD
+2019-10-06 23:09:57 INFO  CurrencyConverterPage:77 - # Clicked on button: convert
+2019-10-06 23:09:57 INFO  CurrencyConverterPage:83 - # Actual Source Currency results 1 AUD
+2019-10-06 23:09:57 INFO  CurrencyConverterPage:92 - # Actual Target Currency results 1.07167 NZD
+2019-10-06 23:49:58 INFO  CurrencyConverterPage:41 - # Convert Page Header Currency Converter
+2019-10-06 23:49:59 INFO  CurrencyConverterPage:55 - # Source From Drop Down Selected EUR
+2019-10-06 23:49:59 INFO  CurrencyConverterPage:64 - # Source From Drop Down Selected USD
+2019-10-06 23:50:02 INFO  CurrencyConverterPage:73 - # Clicked on button: convert
+2019-10-06 23:50:02 INFO  CurrencyConverterPage:79 - # Actual Source Currency results 1 EUR
+2019-10-06 23:50:02 INFO  CurrencyConverterPage:88 - # Actual Target Currency results 1.09795 USD
+2019-10-06 23:50:10 INFO  CurrencyConverterPage:41 - # Convert Page Header Currency Converter
+2019-10-06 23:50:11 INFO  CurrencyConverterPage:55 - # Source From Drop Down Selected INR
+2019-10-06 23:50:11 INFO  CurrencyConverterPage:64 - # Source From Drop Down Selected USD
+2019-10-06 23:50:13 INFO  CurrencyConverterPage:73 - # Clicked on button: convert
+2019-10-06 23:50:13 INFO  CurrencyConverterPage:79 - # Actual Source Currency results 1 INR
+2019-10-06 23:50:13 INFO  CurrencyConverterPage:88 - # Actual Target Currency results 0.01412 USD
+2019-10-06 23:50:21 INFO  CurrencyConverterPage:41 - # Convert Page Header Currency Converter
+2019-10-06 23:50:22 INFO  CurrencyConverterPage:55 - # Source From Drop Down Selected GBP
+2019-10-06 23:50:22 INFO  CurrencyConverterPage:64 - # Source From Drop Down Selected INR
+2019-10-06 23:50:24 INFO  CurrencyConverterPage:73 - # Clicked on button: convert
+2019-10-06 23:50:24 INFO  CurrencyConverterPage:79 - # Actual Source Currency results 1 GBP
+2019-10-06 23:50:25 INFO  CurrencyConverterPage:88 - # Actual Target Currency results 87.26700 INR
+2019-10-06 23:50:32 INFO  CurrencyConverterPage:41 - # Convert Page Header Currency Converter
+2019-10-06 23:50:33 INFO  CurrencyConverterPage:55 - # Source From Drop Down Selected CAD
+2019-10-06 23:50:34 INFO  CurrencyConverterPage:64 - # Source From Drop Down Selected MXN
+2019-10-06 23:50:36 INFO  CurrencyConverterPage:73 - # Clicked on button: convert
+2019-10-06 23:50:36 INFO  CurrencyConverterPage:79 - # Actual Source Currency results 1 CAD
+2019-10-06 23:50:36 INFO  CurrencyConverterPage:88 - # Actual Target Currency results 14.66820 MXN
+2019-10-06 23:50:44 INFO  CurrencyConverterPage:41 - # Convert Page Header Currency Converter
+2019-10-06 23:50:45 INFO  CurrencyConverterPage:55 - # Source From Drop Down Selected AUD
+2019-10-06 23:50:45 INFO  CurrencyConverterPage:64 - # Source From Drop Down Selected NZD
+2019-10-06 23:50:47 INFO  CurrencyConverterPage:73 - # Clicked on button: convert
+2019-10-06 23:50:48 INFO  CurrencyConverterPage:79 - # Actual Source Currency results 1 AUD
+2019-10-06 23:50:48 INFO  CurrencyConverterPage:88 - # Actual Target Currency results 1.07011 NZD

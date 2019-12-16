@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="5" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53131" started-at="2019-10-06T21:09:05Z" finished-at="2019-10-06T21:09:58Z">
+    <groups>
+      <group name="CurrencyConverter">
+        <method signature="CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" class="com.org.tests.CurrencyConverterTests"/>
+      </group> <!-- CurrencyConverter -->
+    </groups>
+    <test name="Default test" duration-ms="53131" started-at="2019-10-06T21:09:05Z" finished-at="2019-10-06T21:09:58Z">
+      <class name="com.org.tests.CurrencyConverterTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="setUp" is-config="true" duration-ms="8264" started-at="2019-10-06T21:09:05Z" finished-at="2019-10-06T21:09:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" duration-ms="3017" started-at="2019-10-06T21:09:13Z" data-provider="CurrencyInput" finished-at="2019-10-06T21:09:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.09820 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testLoginWithInValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="teardown" is-config="true" duration-ms="2" started-at="2019-10-06T21:09:16Z" finished-at="2019-10-06T21:09:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testLoginWithInValidCredentials status=SUCCESS method=CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="setUp" is-config="true" duration-ms="7167" started-at="2019-10-06T21:09:16Z" finished-at="2019-10-06T21:09:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" duration-ms="2898" started-at="2019-10-06T21:09:23Z" data-provider="CurrencyInput" finished-at="2019-10-06T21:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0.01412 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testLoginWithInValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="teardown" is-config="true" duration-ms="1" started-at="2019-10-06T21:09:26Z" finished-at="2019-10-06T21:09:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testLoginWithInValidCredentials status=SUCCESS method=CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="setUp" is-config="true" duration-ms="6995" started-at="2019-10-06T21:09:26Z" finished-at="2019-10-06T21:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" duration-ms="2885" started-at="2019-10-06T21:09:33Z" data-provider="CurrencyInput" finished-at="2019-10-06T21:09:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GBP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[INR]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[87.20680 INR]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual heading '87.21040 INR' should be same as expected heading '87.20680 INR'. expected [87.20680 INR] but found [87.21040 INR]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual heading '87.21040 INR' should be same as expected heading '87.20680 INR'. expected [87.20680 INR] but found [87.21040 INR]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.org.pages.CurrencyConverterPage.TargetCurrencyValidateResults(CurrencyConverterPage.java:93)
+at com.org.tests.CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(CurrencyConverterTests.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testLoginWithInValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="teardown" is-config="true" duration-ms="540" started-at="2019-10-06T21:09:36Z" finished-at="2019-10-06T21:09:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testLoginWithInValidCredentials status=FAILURE method=CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="setUp" is-config="true" duration-ms="6844" started-at="2019-10-06T21:09:37Z" finished-at="2019-10-06T21:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" duration-ms="3371" started-at="2019-10-06T21:09:43Z" data-provider="CurrencyInput" finished-at="2019-10-06T21:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CAD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MXN]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[14.66340 MXN]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual heading '14.66170 MXN' should be same as expected heading '14.66340 MXN'. expected [14.66340 MXN] but found [14.66170 MXN]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual heading '14.66170 MXN' should be same as expected heading '14.66340 MXN'. expected [14.66340 MXN] but found [14.66170 MXN]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.org.pages.CurrencyConverterPage.TargetCurrencyValidateResults(CurrencyConverterPage.java:93)
+at com.org.tests.CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(CurrencyConverterTests.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testLoginWithInValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="teardown" is-config="true" duration-ms="451" started-at="2019-10-06T21:09:47Z" finished-at="2019-10-06T21:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testLoginWithInValidCredentials status=FAILURE method=CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="setUp" is-config="true" duration-ms="6906" started-at="2019-10-06T21:09:47Z" finished-at="2019-10-06T21:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="tc_01_testLoginWithInValidCredentials" duration-ms="3206" started-at="2019-10-06T21:09:54Z" data-provider="CurrencyInput" finished-at="2019-10-06T21:09:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AUD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NZD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.07160 NZD]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual heading '1.07167 NZD' should be same as expected heading '1.07160 NZD'. expected [1.07160 NZD] but found [1.07167 NZD]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual heading '1.07167 NZD' should be same as expected heading '1.07160 NZD'. expected [1.07160 NZD] but found [1.07167 NZD]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.org.pages.CurrencyConverterPage.TargetCurrencyValidateResults(CurrencyConverterPage.java:93)
+at com.org.tests.CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(CurrencyConverterTests.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testLoginWithInValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e]" name="teardown" is-config="true" duration-ms="528" started-at="2019-10-06T21:09:57Z" finished-at="2019-10-06T21:09:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testLoginWithInValidCredentials status=FAILURE method=CurrencyConverterTests.tc_01_testLoginWithInValidCredentials(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.CurrencyConverterTests@6fc6f14e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.org.tests.CurrencyConverterTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

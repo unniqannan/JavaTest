@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 public class SnapDeal {
 	WebDriver driver; 
-	@BeforeClass
+	//@BeforeClass
 	public void init() {
 		
 		//driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
@@ -32,7 +32,7 @@ public class SnapDeal {
 	}
 	
 	// Search For product
-		@Test(priority=1)	
+		//@Test(priority=1)	
 		public void AsearchAndSelectProduct() throws InterruptedException {	
 			System.out.println("AsearchAndSelectProduct");
 			driver.findElement(By.id("loginMnu")).click();
@@ -87,12 +87,17 @@ public class SnapDeal {
 				 
 		}
 		
-		@AfterClass
+		@Test
+		public void SnapDealTest() {
+			System.out.println("SnapDealTest");
+		}
+		
+		//@AfterClass
 		public void quit() {
 		//	driver.close();
 		}
 
-		@Test(priority=2)	
+		//@Test(priority=2)	
 		public void JobApplication() {
 			System.out.println("job application");
 			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);

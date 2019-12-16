@@ -10,14 +10,16 @@ class Bank{
 
 class AxisBank extends Bank{
 	AxisBank(){
-		count=count+1;
+		count=count+1;//1
 	}
 }
 
 class iciciBank extends Bank{
 	iciciBank(){
-		count=count+1;
+		count=count+1;//2
 	}
+	void method() {}//declaration
+	//void method1() {slfjsdlfj;slafjslf}
 }
 
 class hdfcBank extends Bank{
@@ -30,7 +32,7 @@ public class StaticExample {
 public static void main(String[] args)
 {
 	Bank b=new Bank();
-   System.out.println(b.count);
+   System.out.println(b.count);//0
    AxisBank a=new AxisBank();
    System.out.println(a.count);
    iciciBank i=new iciciBank();

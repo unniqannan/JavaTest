@@ -5,8 +5,8 @@ import java.awt.image.SampleModel;
 public class Plant {
 
 
-	private int iprivate=10;
-	
+	private int iprivate=10; // why do we use // if private then how do we accesss
+								// using getter and setter
 	protected int iprotected=20;
 	
 	public int ipublic=30;

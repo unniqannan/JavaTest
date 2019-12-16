@@ -4,6 +4,8 @@ package pk2;
 class Bankstatic{
 	static int count=0;
 	//int count=0;
+	
+	
 	void accountCreate() {
 		count++; 
 		System.out.println(count);

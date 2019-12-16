@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="suite1.TestNGListerner"/>
-  </listeners>
-  <test thread-count="2" name="SnapDeal(failed)" parallel="tests">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="suite2.SnapDeal">
+      <class name="suite1.Flipkart">
         <methods>
-          <include name="init"/>
-          <include name="AsearchAndSelectProduct"/>
-          <include name="JobApplication"/>
-          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="searchAndSelectProduct1"/>
         </methods>
-      </class> <!-- suite2.SnapDeal -->
+      </class> <!-- suite1.Flipkart -->
     </classes>
-  </test> <!-- SnapDeal(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

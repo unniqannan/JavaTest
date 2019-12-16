@@ -6,6 +6,9 @@ public class SubClassSamePackage extends Plant {
 	//Same pack so i can access pub, prot,default
 	// Any sub class  can access the public, protected and default vairables of super class
 	
+	public SubClassSamePackage() {    //constructor
+		
+	}
 	
 	
 	
@@ -22,6 +25,7 @@ public class SubClassSamePackage extends Plant {
 	public static void main(String[] args) {
 		SubClassSamePackage cp=new SubClassSamePackage();
 		cp.subclassinsamepck();
+		 
 	   
 }
 }
