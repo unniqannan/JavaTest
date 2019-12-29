@@ -1,14 +1,18 @@
 package FirstClassSelenium.FirstClassSelenium;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +20,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import com.org.UIElementLibrary.IdentifyElement;
@@ -467,8 +473,37 @@ public void Wait_ExplictWait() {
     driver.quit();
 }
 
+@Test		
+public void fluent_Wait() {
+	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	
+	driver.get("http://demo.guru99.com/test/guru99home/" );
+	//Maximizes the browser window
+	driver.manage().window().maximize() ;
+	
 
+	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
+			.withTimeout(Duration.ofMinutes(2)) 			
+			.pollingEvery(Duration.ofSeconds(1)) 			
+			.ignoring(WebDriverException.class);
+	
+	WebElement clickseleniumlink = wait.until(new Function<WebDriver, WebElement>(){
+	
+		public WebElement apply(WebDriver driver ) {
+System.out.println("check");
+			return driver.findElement(By.xpath("/html/body/div[1]/section/div[2]/div/div[1]/div/div[1]/div/div/div/div[2]/div[2]/div/div/div/div/div[1]/div/div/a/i"));
+		}
+		
+	});
+	//click on the selenium link
+	clickseleniumlink.click();
+	//close~ browser
+	driver.close() ;
+	}
 //Java
+
+
 //@Test		
 public void JavaScriptEXecutorExcercise() throws InterruptedException 					
 {		
@@ -521,7 +556,7 @@ public void JavaScriptEXecutorExcercise() throws InterruptedException
 		}
 
 		
-@Test
+//@Test
 public void WebTableExcercise1() {
 	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 	ChromeOptions option=new ChromeOptions();
@@ -542,7 +577,40 @@ public void WebTableExcercise1() {
 
 }
 
-		
-		
+//@Test		
+public void CalendarPick() {
+	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	
+	driver.get("https://www.cleartrip.com/flights");
+	driver.findElement(By.xpath("//dl[@class='vertical']//i[@class='icon ir datePicker'][contains(text(),'Cal')]")).click();
+	String YearPicker=null;
+	String MonthPicker=null;
+	
+	while(true) {
+	YearPicker=driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/div/div/span[2]")).getText();
+	//span[contains(text(),'2019')]
+	System.out.println(YearPicker);
+		if(YearPicker.equals("2021"))
+		 {
+			MonthPicker=driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/div/div/span[1]")).getText();
+			if(MonthPicker.equalsIgnoreCase("November"))
+				break;
+			else
+				driver.findElement(By.xpath("//a[contains(@class,'nextMonth')]")).click();
+		 }
+			
+			driver.findElement(By.xpath("//a[contains(@class,'nextMonth')]")).click();
+	}
+	List<WebElement> eles=driver.findElements(By.xpath("//div[@class='monthBlock first']//a[contains(@class,'ui-state-default')]"));
+	
+	for(WebElement ele : eles) {
+    	System.out.println(ele.getText());
+    	if(ele.getText().equals("27"))
+    		ele.click();
+	}	
+    	
+	    
+}
 		
 }

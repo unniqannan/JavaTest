@@ -18,7 +18,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="src" output="target/classes" path="Users/unkan/git/JavaTest/FirstClassSelenium">
+	<classpathentry kind="src" output="target/classes" path="DevTools/eclipse/workspace/HomeGurukulaWorkspace/FirstClassSelenium">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>

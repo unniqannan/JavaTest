@@ -5,7 +5,7 @@
     <classes>
       <class name="FirstClassSelenium.FirstClassSelenium.SeleniumExcercises">
         <methods>
-          <include name="WebTableExcercise1"/>
+          <include name="fluent_Wait"/>
         </methods>
       </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumExcercises -->
     </classes>
