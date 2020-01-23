@@ -50,7 +50,6 @@ public class SeleniumExcercises extends IdentifyElement {
 				  			driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();  //Next button click
 	}
 
-	
 	//@Test
 	public void FirefoxTest() throws InterruptedException {
 		
@@ -473,7 +472,7 @@ public void Wait_ExplictWait() {
     driver.quit();
 }
 
-@Test		
+//@Test		
 public void fluent_Wait() {
 	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();

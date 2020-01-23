@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Chrome Test(failed)">
+    <parameter name="Port" value="5555"/>
     <classes>
-      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumExcercises">
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest">
         <methods>
-          <include name="FindElementsExcercise"/>
+          <include name="testApp"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumExcercises -->
+      </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumGridTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

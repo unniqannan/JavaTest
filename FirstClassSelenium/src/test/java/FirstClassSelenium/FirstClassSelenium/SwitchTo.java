@@ -9,22 +9,22 @@ import org.testng.annotations.Test;
 public class SwitchTo {
 	WebDriver driver;
 	
-	//@Test //Switching to a frame + reading the elements
+	@Test //Switching to a frame + reading the elements
      public void SwitchToOneFrame() {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\unkan\\Downloads\\chromedriver_win32 (6)\\chromedriver.exe");//
 		driver=new ChromeDriver();
 		
 		driver.get("http://demo.guru99.com/test/guru99home/"); //Navigate to WebPage
 			driver.switchTo().frame("a077aa5e");
 			 System.out.println(driver.findElement(By.xpath("//html//body//a")).getAttribute("href"));
 			   driver.findElement(By.xpath("//html//body//a//img")).click();
-			
+			driver.quit();
 	}
 	
 	@Test
 	public void SwitchBackToMainFrame() {
-    System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\unkan\\Downloads\\chromedriver_win32 (6)\\chromedriver.exe");//
 		
 		driver=new ChromeDriver();
 			driver.get("http://demo.guru99.com/test/guru99home/");
@@ -39,6 +39,7 @@ public class SwitchTo {
 			
 			String textName=driver.findElement(By.xpath("//label[@class='previewLabel']")).getText();
 				System.out.println(textName);
+				driver.quit();
 	}
 	//@Test
 	public void FindingTotalFramesInWebPage() {
@@ -52,7 +53,7 @@ public class SwitchTo {
 				 System.out.println(size);
 		}
 	
-	//@Test
+	@Test
 	public void FindingTotalFramesInWebPage1() {
 			
 			System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
@@ -73,9 +74,10 @@ public class SwitchTo {
 						System.out.println(total);
 					    //driver.switchTo().defaultContent();
 						}
+		driver.close();
 		}
 	
-	//@Test
+	@Test
 	public void AlertsExamples() throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
@@ -87,6 +89,7 @@ public class SwitchTo {
 		   	Alert alert1=driver.switchTo().alert();    
 		   	   		 System.out.println(alert1.getText());
 		   	   		 alert1.accept(); 
+		   	   	driver.quit();
 		   
 	}
 }

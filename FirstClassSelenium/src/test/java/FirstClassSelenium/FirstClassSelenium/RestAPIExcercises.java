@@ -13,7 +13,7 @@ import org.json.simple.JSONObject;
 
 public class RestAPIExcercises {
 
-	//@Test
+	@Test
 	public void getSingleUser() {
 		RequestSpecification request=RestAssured.given();
 		/*request.header("Content-Type","application/json");
@@ -26,7 +26,7 @@ public class RestAPIExcercises {
 	//	System.out.println(code);
 		assertEquals(code, expectedCode,"The actual code is "+code+" and the expected code should be "+expectedCode);
 	}
-	@Test
+	//@Test
 	public void SingleUserNotFound() {
 		RequestSpecification request=RestAssured.given();
 		
