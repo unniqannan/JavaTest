@@ -3,11 +3,15 @@ package FirstClassSelenium.FirstClassSelenium;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.AssertJUnit;
@@ -26,19 +30,16 @@ public class SeleniumGridTest {
 	    		
 	    	 if(Port.equals("5555")) {
 	    			System.out.println("5555");
+	    			System.setProperty("webdriver.chrome.driver", "C:\\Users\\unkan\\Downloads\\chromedriver79\\chromedriver.exe");
 	    				cap=DesiredCapabilities.chrome();
+	    		
 	    				cap.setBrowserName("chrome");
-	    				cap.setVersion("random");
-	    				cap.setPlatform(Platform.WINDOWS);
-	    				File file = new File("drivers/chromedriver.exe");
-	    				System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, file.getAbsolutePath());
-	    			//	System.setProperty("ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY", "C:\\Users\\unkan\\Downloads\\chromedriver75\\chromedriver.exe");
+	    				cap.setVersion("79");
+	    				
+	    				//cap.setPlatform(Platform.WINDOWS);
+	    				cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
+	    				
 	    					nodeURL="http://192.168.2.5:5555/wd/hub";
-	    					try {
-	    						
-	    					driver=new RemoteWebDriver(new URL(nodeURL),cap);
-	    					}
-	    					catch(Exception e) {e.printStackTrace();}
 	    		}
 	    	 else if(Port.equals("5556")){
 	    			System.out.println("5556");
@@ -50,22 +51,30 @@ public class SeleniumGridTest {
 	    		else if(Port.equals("5557")) {
 	    			System.out.println("5557");
 	    				cap=DesiredCapabilities.internetExplorer();
-	    				cap.setBrowserName("iexplore");
+	    				cap.setBrowserName("internet explorer");
 	    				cap.setPlatform(Platform.WINDOWS);
 	    					nodeURL="http://192.168.2.5:5557/wd/hub";
 	    		}
 	    	 driver=new RemoteWebDriver(new URL(nodeURL),cap);
 				System.out.println("Remote driver setup done");
 	    }
-	    
+	   
 	    @Test
-		public void testApp() throws MalformedURLException, InterruptedException
-	    {
-	    	System.out.println("test created");
-			   driver.get("http://demo.guru99.com/V4/");
-			   driver.findElement(By.name("uid")).sendKeys("Driver 1");
-			   Thread.sleep(5000);
-	        AssertJUnit.assertTrue( true );
-	        driver.quit();
-	    }
+	  		public void testApp1() 
+	  	    {
+	  	    	System.out.println("test created");
+	  	    	try {
+	  	    	driver.get("https://www.techbeamers.com/");
+	  	  	
+	  			 List<WebElement> PythonElements=driver.findElements(By.xpath("//div[@class='main-container']//div[3]//div[1]//div[2]//div[1]//ul[1]/li")); 
+	  			   
+	  			 for(WebElement eachElement:PythonElements)
+	  			    {
+	  				   System.out.println(eachElement.getText());
+	  			    }	
+	  	  	}
+	  	  	catch(Exception e) {e.printStackTrace();}
+	  			 driver.close();
+	  	        driver.quit();
+	  	    }
 }

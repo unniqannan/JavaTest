@@ -483,8 +483,8 @@ public void fluent_Wait() {
 	
 
 	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)							
-			.withTimeout(Duration.ofMinutes(2)) 			
-			.pollingEvery(Duration.ofSeconds(1)) 			
+			//.withTimeout(Duration.ofMinutes(2)) 			
+			//.pollingEvery(Duration.ofSeconds(1)) 			
 			.ignoring(WebDriverException.class);
 	
 	WebElement clickseleniumlink = wait.until(new Function<WebDriver, WebElement>(){

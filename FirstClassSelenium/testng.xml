@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="BlogSuite" parallel="tests">
+<test name="Chrome Test">
+<parameter name="Port" value="5555"/>
     <classes>
-      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumExcercises"/>
-      <class name="FirstClassSelenium.FirstClassSelenium.RestAPIExcercises"/>
-       <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest"/>
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+   <test name="IE Test">
+  <parameter name="Port" value="5557"/>
+    <classes>
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest"/>
+    </classes>
+  </test> 
+ <test name="firefox Test">
+<parameter name="Port" value="5556"/>
+    <classes>
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest"/>
+    </classes>
+  </test> 
 </suite> <!-- Suite -->

@@ -8,8 +8,33 @@
         <methods>
           <include name="testApp"/>
           <include name="setUp"/>
+          <include name="testApp1"/>
         </methods>
       </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumGridTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" name="firefox Test(failed)">
+    <parameter name="Port" value="5556"/>
+    <classes>
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest">
+        <methods>
+          <include name="testApp"/>
+          <include name="setUp"/>
+          <include name="testApp1"/>
+        </methods>
+      </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumGridTest -->
+    </classes>
+  </test> <!-- firefox Test(failed) -->
+  <test thread-count="5" name="IE Test(failed)">
+    <parameter name="Port" value="5557"/>
+    <classes>
+      <class name="FirstClassSelenium.FirstClassSelenium.SeleniumGridTest">
+        <methods>
+          <include name="testApp"/>
+          <include name="setUp"/>
+          <include name="testApp1"/>
+        </methods>
+      </class> <!-- FirstClassSelenium.FirstClassSelenium.SeleniumGridTest -->
+    </classes>
+  </test> <!-- IE Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
